@@ -38,6 +38,7 @@ import {
   CollapseStack,
   ColumnStack,
   ContainerStack,
+  ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
 // https://github.com/react-navigation/react-navigation/issues/1632
@@ -407,6 +408,13 @@ const routes = [
     ],
     screen: ContainerStack,
     icon: "settings-overscan",
+  },
+  {
+    name: "customtheme",
+    title: "Custom Theme",
+    variants: [{ title: "Custom Theme Example", name: "customThemeUsage" }],
+    screen: ThemeStack,
+    icon: "settings",
   },
 ];
 
