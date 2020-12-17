@@ -20,5 +20,5 @@ export * from "./CodeStack";
 export * from "./CollapseStack";
 export * from "./ColumnStack";
 export * from "./ContainerStack";
-
+export * from "./DividerStack";
 export * from "./ThemeStack";

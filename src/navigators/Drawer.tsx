@@ -38,6 +38,7 @@ import {
   CollapseStack,
   ColumnStack,
   ContainerStack,
+  DividerStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -415,6 +416,17 @@ const routes = [
     variants: [{ title: "Custom Theme Example", name: "customThemeUsage" }],
     screen: ThemeStack,
     icon: "settings",
+  },
+  {
+    name: "divider",
+    title: "Divider",
+    variants: [
+      { title: "Divider Usage", name: "dividerUsage" },
+      { title: "Divider Orientation", name: "dividerOrientation" },
+      { title: "Divider Composition", name: "dividerComposition" },
+    ],
+    screen: DividerStack,
+    icon: "remove",
   },
 ];
 
