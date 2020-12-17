@@ -35,6 +35,9 @@ import {
   CircularProgressStack,
   CloseButtonStack,
   CodeStack,
+  CollapseStack,
+  ColumnStack,
+  ContainerStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
 // https://github.com/react-navigation/react-navigation/issues/1632
@@ -367,6 +370,43 @@ const routes = [
     ],
     screen: CodeStack,
     icon: "code",
+  },
+  {
+    name: "collapse",
+    title: "Collapse",
+    variants: [
+      { title: "Collapse Usage", name: "collapseUsage" },
+      {
+        title: "Collapse Animation Duration (Web Support not Available)",
+        name: "collapseDuration",
+      },
+      {
+        title: "Collapse onAnimationStart and onAnimationEnd",
+        name: "collapseCallbacks",
+      },
+    ],
+    screen: CollapseStack,
+    icon: "expand-more",
+  },
+  {
+    name: "column",
+    title: "Column",
+    variants: [{ title: "Column Usage", name: "columnUsage" }],
+    screen: ColumnStack,
+    icon: "clear-all",
+  },
+  {
+    name: "container",
+    title: "Container",
+    variants: [
+      { title: "Container Usage", name: "containerUsage" },
+      {
+        title: "Container Centering Children",
+        name: "containerCentering",
+      },
+    ],
+    screen: ContainerStack,
+    icon: "settings-overscan",
   },
 ];
 
