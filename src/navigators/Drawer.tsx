@@ -39,6 +39,7 @@ import {
   ColumnStack,
   ContainerStack,
   DividerStack,
+  FlexStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -427,6 +428,16 @@ const routes = [
     ],
     screen: DividerStack,
     icon: "remove",
+  },
+  {
+    name: "flex",
+    title: "Flex",
+    variants: [
+      { title: "Flex Usage", name: "flexUsage" },
+      { title: "Flex Spacer Example", name: "flexSpacer" },
+    ],
+    screen: FlexStack,
+    icon: "reorder",
   },
 ];
 
