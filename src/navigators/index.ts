@@ -29,4 +29,6 @@ export * from "./IconStack";
 export * from "./IconButtonStack";
 export * from "./ImageStack";
 export * from "./InputStack";
+export * from "./KbdStack";
+export * from "./LinkStack";
 export * from "./ThemeStack";

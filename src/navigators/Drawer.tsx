@@ -47,6 +47,8 @@ import {
   IconButtonStack,
   ImageStack,
   InputStack,
+  KbdStack,
+  LinkStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -527,6 +529,26 @@ const routes = [
     ],
     screen: InputStack,
     icon: "edit",
+  },
+  {
+    name: "kbd",
+    title: "Kbd",
+    variants: [{ title: "Kbd Usage", name: "kbdUsage" }],
+    screen: KbdStack,
+    icon: "explicit",
+  },
+  {
+    name: "link",
+    title: "Link",
+    variants: [
+      { title: "Link Usage", name: "linkUsage" },
+      { title: "Link External", name: "linkExternal" },
+      { title: "Link Not Underlined", name: "linkNotUnderlined" },
+      { title: "Link custom onPress", name: "linkOnpress" },
+      { title: "Link Composition", name: "linkComposite" },
+    ],
+    screen: LinkStack,
+    icon: "open-in-new",
   },
 ];
 
