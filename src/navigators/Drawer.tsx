@@ -54,6 +54,7 @@ import {
   MenuStack,
   ModalStack,
   ModeStack,
+  NumberInputStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -594,6 +595,22 @@ const routes = [
     variants: [{ title: "Mode Usage", name: "modeUsage" }],
     screen: ModeStack,
     icon: "brightness-3",
+  },
+  {
+    name: "numberinput",
+    title: "NumberInput",
+    variants: [
+      { title: "NumberInput Usage", name: "numberInputUsage" },
+      { title: "NumberInput DefaultValue", name: "numberInputDefaultValue" },
+      { title: "NumberInput Min Max", name: "numberInputMinMax" },
+      { title: "NumberInput Steps", name: "numberInputSteps" },
+      {
+        title: "NumberInput FormControlled",
+        name: "numberInputFormControlled",
+      },
+    ],
+    screen: NumberInputStack,
+    icon: "unfold-more",
   },
 ];
 

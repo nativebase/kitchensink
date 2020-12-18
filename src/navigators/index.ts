@@ -35,4 +35,5 @@ export * from "./ListStack";
 export * from "./MenuStack";
 export * from "./ModalStack";
 export * from "./ModeStack";
+export * from "./NumberInputStack";
 export * from "./ThemeStack";
