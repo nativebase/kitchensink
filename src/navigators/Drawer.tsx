@@ -45,6 +45,7 @@ import {
   HstackStack,
   IconStack,
   IconButtonStack,
+  ImageStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -496,6 +497,19 @@ const routes = [
     ],
     screen: IconButtonStack,
     icon: "play-circle-filled",
+  },
+  {
+    name: "image",
+    title: "Image",
+    variants: [
+      { title: "Image Usage", name: "imageUsage" },
+      { title: "Image Sizes", name: "imageSize" },
+      { title: "Image Border Radius", name: "imageBorderRadius" },
+      { title: "Image Fallback Support", name: "imageFallback" },
+      { title: "Image With Ref", name: "imageRef" },
+    ],
+    screen: ImageStack,
+    icon: "photo",
   },
 ];
 
