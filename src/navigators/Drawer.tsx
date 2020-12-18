@@ -42,6 +42,9 @@ import {
   FlexStack,
   FormControlStack,
   HeadingStack,
+  HstackStack,
+  IconStack,
+  IconButtonStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -464,6 +467,35 @@ const routes = [
     ],
     screen: HeadingStack,
     icon: "title",
+  },
+  {
+    name: "hstack",
+    title: "HStack",
+    variants: [{ title: "HStack Usage", name: "hstackUsage" }],
+    screen: HstackStack,
+    icon: "pause",
+  },
+  {
+    name: "icon",
+    title: "Icon",
+    variants: [
+      { title: "Icon Usage", name: "iconUsage" },
+      { title: "Custom Icon", name: "iconCustom" },
+      { title: "Create Icon", name: "iconCreate" },
+    ],
+    screen: IconStack,
+    icon: "warning",
+  },
+  {
+    name: "iconbutton",
+    title: "IconButton",
+    variants: [
+      { title: "Icon Button Usage", name: "iconButtonUsage" },
+      { title: "Icon Button Sizes", name: "iconButtonSize" },
+      { title: "Icon Button Variants", name: "iconButtonVariant" },
+    ],
+    screen: IconButtonStack,
+    icon: "play-circle-filled",
   },
 ];
 

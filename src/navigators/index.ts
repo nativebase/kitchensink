@@ -24,4 +24,7 @@ export * from "./DividerStack";
 export * from "./FlexStack";
 export * from "./FormControlStack";
 export * from "./HeadingStack";
+export * from "./HStack";
+export * from "./IconStack";
+export * from "./IconButtonStack";
 export * from "./ThemeStack";
