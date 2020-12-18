@@ -41,6 +41,7 @@ import {
   DividerStack,
   FlexStack,
   FormControlStack,
+  HeadingStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -450,6 +451,19 @@ const routes = [
     ],
     screen: FormControlStack,
     icon: "receipt",
+  },
+  {
+    name: "heading",
+    title: "Heading",
+    variants: [
+      { title: "Heading Usage", name: "headingUsage" },
+      { title: "Heading Sizes", name: "headingSize" },
+      { title: "Heading Truncate", name: "headingTruncate" },
+      { title: "Heading Overriden Style", name: "headingOverriden" },
+      { title: "Heading Composition", name: "headingComposition" },
+    ],
+    screen: HeadingStack,
+    icon: "title",
   },
 ];
 
