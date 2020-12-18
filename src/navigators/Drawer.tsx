@@ -17,6 +17,7 @@ import {
   AccordionButton,
   AccordionIcon,
   AccordionPanel,
+  useColorModeValue,
 } from "native-base";
 import {
   AppbarStack,
@@ -601,7 +602,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
 
   return (
     <DrawerContentScrollView {...props}>
-      <Box py={8}>
+      <Box py={8} bg={useColorModeValue("gray.50", "gray.800")}>
         <VStack>
           <Box pl={8}>
             <Heading>Nativebase V3</Heading>
@@ -624,11 +625,17 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                         space={3}
                         alignItems="center"
                       >
-                        <Icon name={item.icon} type="MaterialIcons" />
+                        <Icon
+                          color={useColorModeValue("black", "gray.100")}
+                          name={item.icon}
+                          type="MaterialIcons"
+                        />
                         <Text fontSize="lg">{item.title}</Text>
                       </HStack>
                     </Box>
-                    <AccordionIcon />
+                    <AccordionIcon
+                      color={useColorModeValue("black", "gray.100")}
+                    />
                   </AccordionButton>
                   <AccordionPanel borderWidth={0}>
                     {item.variants.map((variant, ind) => {
@@ -663,7 +670,7 @@ export function Drawer() {
   return (
     <DrawerNavigator.Navigator
       initialRouteName="accordion"
-      drawerContent={CustomDrawerContent}
+      drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
       {routes.map((route) => {
         return (

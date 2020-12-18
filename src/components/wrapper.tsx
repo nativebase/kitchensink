@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "native-base";
+import { View, useColorModeValue } from "native-base";
 
 export const Wrapper = function ({ children }: any) {
   return (
@@ -9,7 +9,7 @@ export const Wrapper = function ({ children }: any) {
       width="100%"
       justifyContent="center"
       alignItems="center"
-      bg="gray.50"
+      bg={useColorModeValue("gray.50", "gray.800")}
     >
       {children}
     </View>

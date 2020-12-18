@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Modal,
   ModalBody,
@@ -9,8 +9,8 @@ import {
   Button,
   Center,
   Input,
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 
 export const ModalUsage = function () {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -59,4 +59,4 @@ export const ModalUsage = function () {
       </Center>
     </Wrapper>
   );
-};
+}
