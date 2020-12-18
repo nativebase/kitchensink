@@ -49,6 +49,10 @@ import {
   InputStack,
   KbdStack,
   LinkStack,
+  ListStack,
+  MenuStack,
+  ModalStack,
+  ModeStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -549,6 +553,46 @@ const routes = [
     ],
     screen: LinkStack,
     icon: "open-in-new",
+  },
+  {
+    name: "list",
+    title: "List",
+    variants: [
+      { title: "List Usage", name: "listUsage" },
+      { title: "List with Icons", name: "listIcons" },
+    ],
+    screen: ListStack,
+    icon: "format-list-bulleted",
+  },
+  {
+    name: "menu",
+    title: "Menu",
+    variants: [
+      { title: "Menu Usage", name: "menuUsage" },
+      { title: "Menu Group", name: "menuGroup" },
+      { title: "Menu Options Group", name: "menuOptionGroup" },
+    ],
+    screen: MenuStack,
+    icon: "menu",
+  },
+  {
+    name: "modal",
+    title: "Modal",
+    variants: [
+      { title: "Modal Usage", name: "modalUsage" },
+      { title: "Modal Size", name: "modalSize" },
+      { title: "Modal Ref Example", name: "modalRef" },
+      { title: "Modal with Keyboard Avoid View", name: "modalKeyboardAvoid" },
+    ],
+    screen: ModalStack,
+    icon: "picture-in-picture",
+  },
+  {
+    name: "mode",
+    title: "Mode",
+    variants: [{ title: "Mode Usage", name: "modeUsage" }],
+    screen: ModeStack,
+    icon: "brightness-3",
   },
 ];
 
