@@ -55,6 +55,7 @@ import {
   ModalStack,
   ModeStack,
   NumberInputStack,
+  OverlayStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -611,6 +612,16 @@ const routes = [
     ],
     screen: NumberInputStack,
     icon: "unfold-more",
+  },
+  {
+    name: "overlay",
+    title: "Overlay",
+    variants: [
+      { title: "Overlay Usage", name: "overlayUsage" },
+      { title: "Overlay Customized", name: "overlayCustomized" },
+    ],
+    screen: OverlayStack,
+    icon: "view-carousel",
   },
 ];
 

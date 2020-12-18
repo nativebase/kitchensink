@@ -36,4 +36,5 @@ export * from "./MenuStack";
 export * from "./ModalStack";
 export * from "./ModeStack";
 export * from "./NumberInputStack";
+export * from "./OverlayStack";
 export * from "./ThemeStack";
