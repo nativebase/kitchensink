@@ -40,6 +40,7 @@ import {
   ContainerStack,
   DividerStack,
   FlexStack,
+  FormControlStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -438,6 +439,17 @@ const routes = [
     ],
     screen: FlexStack,
     icon: "reorder",
+  },
+  {
+    name: "formcontrol",
+    title: "FormControl",
+    variants: [
+      { title: "FormControl Usage", name: "formControlUsage" },
+      { title: "FormControl Formik Example", name: "formControlFormik" },
+      { title: "FormControl Custom Style Example", name: "formControlStyle" },
+    ],
+    screen: FormControlStack,
+    icon: "receipt",
   },
 ];
 
