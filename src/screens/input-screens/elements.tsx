@@ -1,0 +1,21 @@
+import React from "react";
+
+import { Input, Icon } from "native-base";
+import { Wrapper } from "../../components";
+
+export const InputElements = () => {
+  return (
+    <Wrapper>
+      <Input
+        w="90%"
+        InputLeftElement={
+          <Icon name="phone" fontSize="xl" type="MaterialIcons" />
+        }
+        InputRightElement={
+          <Icon name="person" fontSize="xl" type="MaterialIcons" />
+        }
+        placeholder="Left and Right InputElement"
+      />
+    </Wrapper>
+  );
+};

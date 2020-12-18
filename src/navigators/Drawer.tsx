@@ -46,6 +46,7 @@ import {
   IconStack,
   IconButtonStack,
   ImageStack,
+  InputStack,
   ThemeStack,
 } from "./index";
 // Drawer Needs stack navigator to display headers
@@ -510,6 +511,22 @@ const routes = [
     ],
     screen: ImageStack,
     icon: "photo",
+  },
+  {
+    name: "input",
+    title: "Input",
+    variants: [
+      { title: "Input Usage", name: "inputUsage" },
+      { title: "Input Sizes", name: "inputSize" },
+      { title: "Input Variants", name: "inputVariant" },
+      { title: "Input Addons", name: "inputAddon" },
+      { title: "Input Elements", name: "inputElement" },
+      { title: "Input Password", name: "inputPassword" },
+      { title: "Value Controlled Input", name: "inputControlled" },
+      { title: "Input Focus and Error borders", name: "inputFocusError" },
+    ],
+    screen: InputStack,
+    icon: "edit",
   },
 ];
 

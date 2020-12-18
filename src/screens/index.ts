@@ -27,3 +27,4 @@ export * from "./hstack-screens";
 export * from "./icon-screens";
 export * from "./iconbutton-screens";
 export * from "./image-screens";
+export * from "./input-screens";
