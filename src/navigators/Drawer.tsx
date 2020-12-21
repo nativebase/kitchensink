@@ -58,11 +58,31 @@ import {
   OverlayStack,
   PinInputStack,
   PopoverStack,
+  ProgressStack,
   RadioStack,
   ResponsiveStack,
+  RowStack,
+  SimpleGridStack,
+  SkeletonStack,
+  SliderStack,
+  SnackbarStack,
+  SpinnerStack,
+  StackStack,
+  StatStack,
+  SwitchStack,
+  TabsStack,
+  TagStack,
+  TextAreaStack,
+  TextStack,
   ThemeStack,
+  ToastStack,
+  TransitionStack,
+  UseHookStack,
+  UseMediaQueryStack,
+  VStackStack,
+  WrapStack,
+  ZStackStack,
 } from "./index";
-import { ProgressStack } from "./ProgressStack";
 // Drawer Needs stack navigator to display headers
 // https://github.com/react-navigation/react-navigation/issues/1632
 const DrawerNavigator = createDrawerNavigator();
@@ -734,6 +754,466 @@ const routes = [
     ],
     screen: ResponsiveStack,
     icon: "border-clear",
+  },
+  {
+    name: "row",
+    title: "Row",
+    variants: [
+      {
+        title: "Row Basic",
+        name: "rowUsage",
+      },
+    ],
+    screen: RowStack,
+    icon: "more-horiz",
+  },
+  {
+    name: "simplegrid",
+    title: "SimpleGrid",
+    variants: [
+      {
+        title: "SimpleGrid using Columns",
+        name: "simpleGridColumns",
+      },
+      {
+        title: "SimpleGrid using minChildWidth",
+        name: "simpleGridMinChildWidth",
+      },
+    ],
+    screen: SimpleGridStack,
+    icon: "view-comfy",
+  },
+  {
+    name: "skeleton",
+    title: "Skeleton",
+    variants: [
+      {
+        title: "Skeleton Usage",
+        name: "skeletonUsage",
+      },
+      {
+        title: "Skeleton Wrapper",
+        name: "skeletonWrapper",
+      },
+      {
+        title: "Skeleton Circle",
+        name: "skeletonCircle",
+      },
+      {
+        title: "Skeleton Text",
+        name: "skeletonText",
+      },
+      {
+        title: "Skeleton Color",
+        name: "skeletonColor",
+      },
+      {
+        title: "Skeleton Loaded",
+        name: "skeletonLoaded",
+      },
+    ],
+    screen: SkeletonStack,
+    icon: "texture",
+  },
+  {
+    name: "slider",
+    title: "Slider",
+    variants: [
+      {
+        title: "Slider Usage",
+        name: "sliderUsage",
+      },
+      {
+        title: "Slider Size",
+        name: "sliderSize",
+      },
+      {
+        title: "Slider Color",
+        name: "sliderColor",
+      },
+      {
+        title: "Slider Value",
+        name: "sliderValue",
+      },
+      {
+        title: "Slider Customized",
+        name: "sliderCustomized",
+      },
+      {
+        title: "Slider Form Controlled",
+        name: "sliderFormControlled",
+      },
+    ],
+    screen: SliderStack,
+    icon: "tune",
+  },
+  {
+    name: "snackbar",
+    title: "Snackbar",
+    variants: [
+      {
+        title: "Snackbar Usage",
+        name: "snackbarUsage",
+      },
+      {
+        title: "Snackbar Hook",
+        name: "snackbarHook",
+      },
+    ],
+    screen: SnackbarStack,
+    icon: "payment",
+  },
+  {
+    name: "spinner",
+    title: "Spinner",
+    variants: [
+      {
+        title: "Spinner Usage",
+        name: "spinnerUsage",
+      },
+      {
+        title: "Spinner Color",
+        name: "spinnerColor",
+      },
+      {
+        title: "Spinner Size",
+        name: "spinnerSize",
+      },
+    ],
+    screen: SpinnerStack,
+    icon: "donut-large",
+  },
+  {
+    name: "stack",
+    title: "Stack",
+    variants: [
+      {
+        title: "Stack Usage",
+        name: "stackUsage",
+      },
+    ],
+    screen: StackStack,
+    icon: "clear-all",
+  },
+  {
+    name: "stat",
+    title: "Stat",
+    variants: [
+      {
+        title: "Stat Default",
+        name: "statDefault",
+      },
+      {
+        title: "Stat with Indicator",
+        name: "statIndicator",
+      },
+    ],
+    screen: StatStack,
+    icon: "assessment",
+  },
+  {
+    name: "switch",
+    title: "Switch",
+    variants: [
+      {
+        title: "Switch Usage",
+        name: "switchUsage",
+      },
+      {
+        title: "Switch Sizes",
+        name: "switchSize",
+      },
+      {
+        title: "Switch BgColor",
+        name: "switchBgColor",
+      },
+    ],
+    screen: SwitchStack,
+    icon: "toll",
+  },
+  {
+    name: "tab",
+    title: "Tab",
+    variants: [
+      {
+        title: "Tab Usage",
+        name: "tabsUsage",
+      },
+      {
+        title: "Tab Composition",
+        name: "tabsComposition",
+      },
+      {
+        title: "Tab Variants",
+        name: "tabsVariant",
+      },
+      {
+        title: "Tab Alignment",
+        name: "tabsAlignment",
+      },
+      {
+        title: "Tab Colors",
+        name: "tabsColor",
+      },
+      {
+        title: "Tab Size",
+        name: "tabsSize",
+      },
+      {
+        title: "Tab isFitted",
+        name: "tabsFitted",
+      },
+      {
+        title: "Tab Bar Only",
+        name: "tabsBarOnly",
+      },
+    ],
+    screen: TabsStack,
+    icon: "view-compact",
+  },
+  {
+    name: "tag",
+    title: "Tag",
+    variants: [
+      {
+        title: "Tag Usage",
+        name: "tagUsage",
+      },
+      {
+        title: "Tag Sizes",
+        name: "tagSize",
+      },
+      {
+        title: "Tag LeftIcon",
+        name: "tagLeftIcon",
+      },
+      {
+        title: "Tag RightIcon",
+        name: "tagRightIcon",
+      },
+      {
+        title: "Tag CloseButton",
+        name: "tagCloseButton",
+      },
+      {
+        title: "Custom Tag",
+        name: "tagCustom",
+      },
+    ],
+    screen: TagStack,
+    icon: "label",
+  },
+  {
+    name: "text",
+    title: "Text",
+    variants: [
+      {
+        title: "Text Usage",
+        name: "textUsage",
+      },
+      {
+        title: "Text Changing FontSize",
+        name: "textFontSize",
+      },
+      {
+        title: "Text Truncated",
+        name: "textTruncated",
+      },
+      {
+        title: "Text Overriden",
+        name: "textUsage",
+      },
+      {
+        title: "Text Nested",
+        name: "textNested",
+      },
+    ],
+    screen: TextStack,
+    icon: "assignment",
+  },
+  {
+    name: "textarea",
+    title: "TextArea",
+    variants: [
+      {
+        title: "TextArea Usage",
+        name: "textAreaUsage",
+      },
+      {
+        title: "TextArea Invalid and Disabled",
+        name: "textAreaInvalidDisabled",
+      },
+      {
+        title: "TextArea Sizes",
+        name: "textAreaSize",
+      },
+      {
+        title: "TextArea Value Controlled",
+        name: "textAreaValueControlled",
+      },
+    ],
+    screen: TextAreaStack,
+    icon: "library-books",
+  },
+  {
+    name: "toast",
+    title: "Toast",
+    variants: [
+      {
+        title: "Toast Usage",
+        name: "toastUsage",
+      },
+      {
+        title: "Toast Position",
+        name: "toastPosition",
+      },
+      {
+        title: "Toast Offset",
+        name: "toastOffset",
+      },
+    ],
+    screen: ToastStack,
+    icon: "remove-from-queue",
+  },
+  {
+    name: "transition",
+    title: "Transition",
+    variants: [
+      {
+        title: "Transition Fade",
+        name: "transitionFade",
+      },
+      {
+        title: "Transition Scale Fade",
+        name: "transitionScaleFade",
+      },
+      {
+        title: "Transition Slide",
+        name: "transitionSlide",
+      },
+      {
+        title: "Transition Slide Wrapped inside Parent",
+        name: "transitionSlideWrapped",
+      },
+      {
+        title: "Transition Slide Composition",
+        name: "transitionSlideComposition",
+      },
+      {
+        title: "Transition Slide Fade",
+        name: "transitionSlideFade",
+      },
+    ],
+    screen: TransitionStack,
+    icon: "leak-add",
+  },
+  {
+    name: "usebreakpointvalue",
+    title: "useBreakpointValue",
+    variants: [
+      {
+        title: "useBreakpointValue Usage",
+        name: "useBreakpointValue",
+      },
+    ],
+    screen: UseHookStack,
+    icon: "linear-scale",
+  },
+  {
+    name: "useclipboard",
+    title: "useClipboard",
+    variants: [
+      {
+        title: "useClipboard Usage",
+        name: "useClipboard",
+      },
+    ],
+    screen: UseHookStack,
+    icon: "linear-scale",
+  },
+  {
+    name: "usedisclose",
+    title: "useDisclose",
+    variants: [
+      {
+        title: "useDisclose Usage",
+        name: "useDisclose",
+      },
+    ],
+    screen: UseHookStack,
+    icon: "linear-scale",
+  },
+  {
+    name: "usemediaquery",
+    title: "useMediaQuery",
+    variants: [
+      {
+        title: "useMediaQuery MinWidth",
+        name: "useMediaQueryMinWidth",
+      },
+      {
+        title: "useMediaQuery MaxHeight",
+        name: "useMediaQueryMaxHeight",
+      },
+      {
+        title: "useMediaQuery Orientation",
+        name: "useMediaQueryOrientation",
+      },
+    ],
+    screen: UseMediaQueryStack,
+    icon: "linear-scale",
+  },
+  {
+    name: "vstack",
+    title: "VStack",
+    variants: [
+      {
+        title: "VStack Usage",
+        name: "vstackUsage",
+      },
+    ],
+    screen: VStackStack,
+    icon: "layers",
+  },
+  {
+    name: "wrap",
+    title: "Wrap",
+    variants: [
+      {
+        title: "Wrap Usage",
+        name: "wrapUsage",
+      },
+      {
+        title: "Wrap Spacing",
+        name: "wrapSpacing",
+      },
+      {
+        title: "Wrap Alignment Align",
+        name: "wrapAlignmentAlign",
+      },
+      {
+        title: "Wrap Alignment Justify",
+        name: "wrapAlignmentJustify",
+      },
+    ],
+    screen: WrapStack,
+    icon: "fullscreen",
+  },
+  {
+    name: "zstack",
+    title: "ZStack",
+    variants: [
+      {
+        title: "ZStack Usage",
+        name: "zstackUsage",
+      },
+      {
+        title: "ZStack items Centered",
+        name: "zstackCentered",
+      },
+    ],
+    screen: ZStackStack,
+    icon: "nfc",
   },
 ];
 
