@@ -56,8 +56,13 @@ import {
   ModeStack,
   NumberInputStack,
   OverlayStack,
+  PinInputStack,
+  PopoverStack,
+  RadioStack,
+  ResponsiveStack,
   ThemeStack,
 } from "./index";
+import { ProgressStack } from "./ProgressStack";
 // Drawer Needs stack navigator to display headers
 // https://github.com/react-navigation/react-navigation/issues/1632
 const DrawerNavigator = createDrawerNavigator();
@@ -622,6 +627,113 @@ const routes = [
     ],
     screen: OverlayStack,
     icon: "view-carousel",
+  },
+  {
+    name: "pininput",
+    title: "PinInput",
+    variants: [
+      { title: "PinInput Usage", name: "pinInputUsage" },
+      { title: "PinInput Size", name: "pinInputSize" },
+      { title: "PinInput DefaultValue", name: "pinInputDefaultValue" },
+      { title: "PinInput Placeholder", name: "pinInputPlaceholder" },
+      { title: "PinInput Manage Focus", name: "pinInputManageFocus" },
+      { title: "PinInput Variants", name: "pinInputVariant" },
+      { title: "PinInput FormControlled", name: "pinInputFormControlled" },
+    ],
+    screen: PinInputStack,
+    icon: "fiber-pin",
+  },
+  {
+    name: "popover",
+    title: "Popover",
+    variants: [
+      { title: "Popover Usage", name: "popoverUsage" },
+      { title: "Popover Size", name: "popoverSize" },
+      { title: "Popover Focus on Open", name: "popoverRef" },
+    ],
+    screen: PopoverStack,
+    icon: "filter-frames",
+  },
+  {
+    name: "progress",
+    title: "Progress",
+    variants: [
+      { title: "Progress Usage", name: "progressUsage" },
+      { title: "Progress Color", name: "progressColor" },
+      { title: "Progress Rounded", name: "progressRounded" },
+      { title: "Progress Custom BgColor", name: "progressBgColor" },
+      { title: "Progress Composition", name: "progressComposition" },
+    ],
+    screen: ProgressStack,
+    icon: "timeline",
+  },
+  {
+    name: "radio",
+    title: "Radio",
+    variants: [
+      {
+        title: "Controlled Radio",
+        name: "radioControlled",
+      },
+      {
+        title: "Uncontrolled Radio",
+        name: "radioUncontrolled",
+      },
+      {
+        title: "Radio Disabled",
+        name: "radioDisabled",
+      },
+      {
+        title: "Radio Invalid",
+        name: "radioInvalid",
+      },
+      {
+        title: "Radio Size",
+        name: "radioSize",
+      },
+      {
+        title: "Radio Color",
+        name: "radioColor",
+      },
+      {
+        title: "Radio Icon",
+        name: "radioIcon",
+      },
+      {
+        title: "Radio Form Controlled",
+        name: "radioFormControlled",
+      },
+      {
+        title: "Radio With Ref",
+        name: "radioWithRef",
+      },
+    ],
+    screen: RadioStack,
+    icon: "radio-button-checked",
+  },
+  {
+    name: "responsive",
+    title: "Responsive",
+    variants: [
+      {
+        title: "Responsive Basic",
+        name: "responsiveUsage",
+      },
+      {
+        title: "Responsive FontSize",
+        name: "responsiveFontSize",
+      },
+      {
+        title: "Responsive More",
+        name: "responsiveMore",
+      },
+      {
+        title: "Responsive Demo",
+        name: "responsiveDemo",
+      },
+    ],
+    screen: ResponsiveStack,
+    icon: "border-clear",
   },
 ];
 
