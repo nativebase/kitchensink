@@ -65,9 +65,9 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
             {`${colorMode === "light" ? "Dark" : "Light"} Mode`}
           </Button>
           <Box p={4} />
-          {routes.map((item, index) => {
+          {routes.map((item: any, index: number) => {
             return (
-              <Accordion>
+              <Accordion key={`drawer-content-${index}`}>
                 <AccordionItem>
                   <AccordionButton>
                     <Box>
