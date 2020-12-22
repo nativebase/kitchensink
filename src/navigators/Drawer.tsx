@@ -91,7 +91,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                     />
                   </AccordionButton>
                   <AccordionPanel borderWidth={0}>
-                    {item.variants.map((variant, ind) => {
+                    {item.variants.map((variant: { name: any; title: any; }, ind: number) => {
                       const isSelected = selectedIndex === ind;
                       return (
                         <Button
