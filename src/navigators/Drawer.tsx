@@ -95,6 +95,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                       const isSelected = selectedIndex === ind;
                       return (
                         <Button
+                        key={ind}
                           pl={8}
                           justifyContent="space-between"
                           onPress={() =>
