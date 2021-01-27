@@ -12,7 +12,8 @@ import {
 import { ScrollView, TouchableOpacity } from "react-native";
 
 import { Wrapper } from "../../components";
-export function AppbarExamples() {
+
+export const AppbarExamples = function () {
   return (
     <Wrapper>
       <ScrollView style={{ width: "100%" }}>
@@ -40,7 +41,7 @@ export function AppbarExamples() {
 
 function Material() {
   return (
-    <AppBar shadow={1} bg="gray.900" height={80}>
+    <AppBar shadow={1} colorScheme="lightBlue">
       <AppBar.Left>
         <LeftArrowIconButton />
       </AppBar.Left>
@@ -57,15 +58,9 @@ function Material() {
       </AppBar.Content>
 
       <AppBar.Right space={2}>
-        <Box>
-          <HeartIcon />
-        </Box>
-        <Box>
-          <SearchIcon />
-        </Box>
-        <Box>
-          <MoreIcon />
-        </Box>
+        <HeartIcon />
+        <SearchIcon />
+        <MoreIcon />
       </AppBar.Right>
     </AppBar>
   );
