@@ -4,9 +4,9 @@ import {
   AlertDescription,
   AlertTitle,
   AlertIcon,
-  AlertCloseButton,
   Box,
   VStack,
+  CloseButton
 } from "native-base";
 import { Wrapper } from "../../components";
 export const AlertComposition = () => {
@@ -41,7 +41,7 @@ export const AlertComposition = () => {
               application and respond within the next 48 hours.
             </AlertDescription>
           </Box>
-          <AlertCloseButton />
+          <CloseButton />
         </Alert>
       </VStack>
     </Wrapper>

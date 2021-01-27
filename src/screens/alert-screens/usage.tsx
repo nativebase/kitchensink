@@ -4,7 +4,7 @@ import {
   AlertDescription,
   AlertTitle,
   AlertIcon,
-  AlertCloseButton,
+  CloseButton,
   Box,
 } from "native-base";
 import { Wrapper } from "../../components";
@@ -16,7 +16,7 @@ export const AlertUsage = function () {
           <AlertIcon />
           <AlertTitle>Error Alert</AlertTitle>
           <AlertDescription>description goes here</AlertDescription>
-          <AlertCloseButton />
+          <CloseButton />
         </Alert>
       </Box>
     </Wrapper>

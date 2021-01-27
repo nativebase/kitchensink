@@ -27,8 +27,8 @@ export const AlertDialogTransition = function () {
       >
         <AlertDialogOverlay />
 
-        <AlertDialogContent pt={5}>
-          <AlertDialogCloseButton />
+        <AlertDialogContent>
+          {/* <AlertDialogCloseButton /> */}
           <AlertDialogHeader>Discard Changes?</AlertDialogHeader>
           <AlertDialogBody>
             Are you sure you want to discard all of your notes? 44 words will be
