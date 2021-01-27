@@ -30,8 +30,6 @@ export const AlertComposition = () => {
             Thanks for submitting your application. Our team will get back to
             you soon.
           </AlertDescription>
-
-          <AlertCloseButton />
         </Alert>
 
         <Alert status="success">

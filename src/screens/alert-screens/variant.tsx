@@ -12,7 +12,7 @@ export const AlertVariants = function () {
   return (
     <Wrapper>
       <Stack space={4} mx={3}>
-        <Alert variant="solid" status="success">
+        <Alert variant="solid" status="teal">
           <AlertIcon />
           <AlertTitle>Alert Solid Variant</AlertTitle>
           <AlertCloseButton />
@@ -22,12 +22,12 @@ export const AlertVariants = function () {
           <AlertTitle>Alert Left Accent Variant</AlertTitle>
           <AlertCloseButton />
         </Alert>
-        <Alert variant="top-accent" status="success">
+        <Alert variant="top-accent" status="error">
           <AlertIcon />
           <AlertTitle>Alert Top Accent Variant</AlertTitle>
           <AlertCloseButton />
         </Alert>
-        <Alert status="success">
+        <Alert status="warning">
           <AlertIcon />
           <AlertTitle>Alert Default/Subtle Variant</AlertTitle>
           <AlertCloseButton />

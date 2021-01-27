@@ -24,9 +24,10 @@ export const AlertDialogUsage = function () {
         isOpen={isOpen}
         onClose={onClose}
         motionPreset={"slide"}
+        isCentered
       >
         <AlertDialogOverlay />
-        <AlertDialogContent>
+        <AlertDialogContent pt={5}>
           <AlertDialogHeader fontSize="lg" fontWeight="bold">
             Delete Customer
           </AlertDialogHeader>
@@ -34,7 +35,7 @@ export const AlertDialogUsage = function () {
             Are you sure? You can't undo this action afterwards.
           </AlertDialogBody>
           <AlertDialogFooter>
-            <Button ref={cancelRef} onPress={onClose}>
+            <Button  onPress={onClose}>
               Cancel
             </Button>
             <Button colorScheme="red" onPress={onClose} ml={3}>

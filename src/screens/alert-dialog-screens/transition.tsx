@@ -27,7 +27,7 @@ export const AlertDialogTransition = function () {
       >
         <AlertDialogOverlay />
 
-        <AlertDialogContent>
+        <AlertDialogContent pt={5}>
           <AlertDialogCloseButton />
           <AlertDialogHeader>Discard Changes?</AlertDialogHeader>
           <AlertDialogBody>
@@ -35,7 +35,7 @@ export const AlertDialogTransition = function () {
             deleted.
           </AlertDialogBody>
           <AlertDialogFooter>
-            <Button ref={cancelRef} onPress={onClose}>
+            <Button  onPress={onClose}>
               No
             </Button>
             <Button colorScheme="red" ml={3}>
