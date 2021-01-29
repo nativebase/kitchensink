@@ -41,6 +41,7 @@ import {
     RadioStack,
     ResponsiveStack,
     RowStack,
+    SelectStack,
     SimpleGridStack,
     SkeletonStack,
     SliderStack,
@@ -741,6 +742,18 @@ export const routes = [
         },
       ],
       screen: RowStack,
+      icon: "more-horiz",
+    },
+    {
+      name: "select",
+      title: "Select",
+      variants: [
+        {
+          title: "Select Basic",
+          name: "selectUsage",
+        },
+      ],
+      screen: SelectStack,
       icon: "more-horiz",
     },
     {
