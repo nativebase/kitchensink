@@ -1014,7 +1014,7 @@ export const routes = [
         },
         {
           title: "Text Overriden",
-          name: "textUsage",
+          name: "textOverriden",
         },
         {
           title: "Text Nested",
