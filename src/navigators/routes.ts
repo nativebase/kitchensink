@@ -916,6 +916,10 @@ export const routes = [
           title: "Switch BgColor",
           name: "switchBgColor",
         },
+        {
+          title: "Switch Accessibility",
+          name: "switchAccessibility",
+        },
       ],
       screen: SwitchStack,
       icon: "toll",
