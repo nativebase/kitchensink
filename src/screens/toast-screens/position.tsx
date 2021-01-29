@@ -3,13 +3,13 @@ import { Button, useToast, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
 export const ToastPosition = function () {
-  const { setToast } = useToast();
+  const toast  = useToast();
   return (
     <Wrapper>
       <VStack space={2}>
         <Button
           onPress={() => {
-            setToast({
+            toast({
               position: "top",
               title: "Top Toast",
             });
@@ -19,7 +19,7 @@ export const ToastPosition = function () {
         </Button>
         <Button
           onPress={() => {
-            setToast({
+            toast({
               position: "center",
               title: "Center",
             });
@@ -29,7 +29,7 @@ export const ToastPosition = function () {
         </Button>
         <Button
           onPress={() => {
-            setToast({
+            toast({
               position: "bottom",
               title: "Bottom",
             });

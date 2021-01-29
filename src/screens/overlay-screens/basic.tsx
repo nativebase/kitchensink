@@ -30,6 +30,7 @@ export const OverlayUsage = function () {
               </Alert>,
               {
                 position: "top",
+                closeOnPress: true,
                 // disableOverlay: true,
               }
             )

@@ -13,7 +13,7 @@ export const OverlayCustomized = function () {
           onPress={() =>
             setOverlay(
               <Button onPress={closeOverlay}>Press to close Overlay</Button>,
-              { disableOverlay, position: "top", backgroundColor: "#5511ff44" }
+              { disableOverlay, position: "bottom", backgroundColor: "#5511ff44" }
             )
           }
         >
