@@ -1,36 +1,30 @@
-import React from "react";
-import {
-  Alert,
-  Stack,
-  AlertTitle,
-  AlertIcon,
-  AlertCloseButton,
-} from "native-base";
+import React from 'react';
+import { Alert, Stack, AlertTitle, AlertIcon } from 'native-base';
 
-import { Wrapper } from "../../components";
+import { Wrapper } from '../../components';
 export const AlertVariants = function () {
   return (
     <Wrapper>
       <Stack space={4} mx={3}>
-        <Alert variant="solid" status="success">
+        <Alert variant='solid' status='teal'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertTitle>Alert Solid Variant</AlertTitle>
-          <AlertCloseButton />
         </Alert>
-        <Alert variant="left-accent" status="success">
+        <Alert variant='left-accent' status='success'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertTitle>Alert Left Accent Variant</AlertTitle>
-          <AlertCloseButton />
         </Alert>
-        <Alert variant="top-accent" status="success">
+        <Alert variant='top-accent' status='error'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertTitle>Alert Top Accent Variant</AlertTitle>
-          <AlertCloseButton />
         </Alert>
-        <Alert status="success">
+        <Alert status='warning'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertTitle>Alert Default/Subtle Variant</AlertTitle>
-          <AlertCloseButton />
         </Alert>
       </Stack>
     </Wrapper>

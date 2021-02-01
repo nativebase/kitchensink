@@ -29,7 +29,7 @@ export const ModalSize = function () {
         size={size}
       >
         <ModalContent>
-          <ModalCloseButton />
+          {/* <ModalCloseButton /> */}
           <ModalHeader fontSize="4xl" fontWeight="bold">
             Hello World
           </ModalHeader>

@@ -2,7 +2,6 @@ import React from "react";
 import {
   Modal,
   ModalBody,
-  ModalCloseButton,
   ModalContent,
   ModalFooter,
   ModalHeader,
@@ -22,7 +21,7 @@ export const UseDiscloseUsage = function () {
         <Modal isCentered isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalCloseButton />
+            {/* <ModalCloseButton /> */}
             <ModalHeader fontSize="4xl" fontWeight="bold">
               Hello World
             </ModalHeader>

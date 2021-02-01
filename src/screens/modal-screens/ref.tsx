@@ -25,7 +25,7 @@ export const ModalRef = function () {
         finalFocusRef={finalRef}
       >
         <ModalContent>
-          <ModalCloseButton />
+          {/* <ModalCloseButton /> */}
           <ModalHeader fontSize="4xl" fontWeight="bold">
             Hello World
           </ModalHeader>

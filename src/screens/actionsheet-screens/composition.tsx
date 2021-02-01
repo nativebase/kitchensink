@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Button,
   Divider,
@@ -8,8 +8,8 @@ import {
   ActionsheetHeader,
   ActionsheetItem,
   useDisclose,
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 export const ActionsheetComposition = () => {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (

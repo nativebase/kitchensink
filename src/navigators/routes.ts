@@ -41,6 +41,7 @@ import {
     RadioStack,
     ResponsiveStack,
     RowStack,
+    SelectStack,
     SimpleGridStack,
     SkeletonStack,
     SliderStack,
@@ -744,6 +745,18 @@ export const routes = [
       icon: "more-horiz",
     },
     {
+      name: "select",
+      title: "Select",
+      variants: [
+        {
+          title: "Select Basic",
+          name: "selectUsage",
+        },
+      ],
+      screen: SelectStack,
+      icon: "more-horiz",
+    },
+    {
       name: "simplegrid",
       title: "SimpleGrid",
       variants: [
@@ -903,6 +916,10 @@ export const routes = [
           title: "Switch BgColor",
           name: "switchBgColor",
         },
+        {
+          title: "Switch Accessibility",
+          name: "switchAccessibility",
+        },
       ],
       screen: SwitchStack,
       icon: "toll",
@@ -997,7 +1014,7 @@ export const routes = [
         },
         {
           title: "Text Overriden",
-          name: "textUsage",
+          name: "textOverriden",
         },
         {
           title: "Text Nested",

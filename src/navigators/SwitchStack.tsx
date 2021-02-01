@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { SwitchBgColor, SwitchSize, SwitchUsage } from "../screens";
+import { SwitchBgColor, SwitchSize, SwitchUsage, SwitchAccessibility } from "../screens";
 import { MenuButton } from "../components";
 
 const Stack = createStackNavigator();
@@ -32,6 +32,16 @@ export function SwitchStack(props: any) {
         component={SwitchBgColor}
         options={{
           headerTitle: "Switch BgColor",
+          headerLeft: () => {
+            return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+        }}
+      />
+      <Stack.Screen
+        name="switchAccessibility"
+        component={SwitchAccessibility}
+        options={{
+          headerTitle: "Switch Accessibility",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },

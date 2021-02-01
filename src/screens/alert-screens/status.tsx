@@ -1,39 +1,39 @@
-import React from "react";
+import React from 'react';
 import {
   Stack,
   AlertDescription,
   Alert,
   AlertIcon,
-  AlertCloseButton,
-} from "native-base";
+  AlertTitle,
+} from 'native-base';
 
-import { Wrapper } from "../../components";
+import { Wrapper } from '../../components';
 export const AlertStatus = function () {
   return (
     <Wrapper>
       <Stack space={3} mx={3}>
-        <Alert status="error">
+        <Alert status='error'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertDescription>There was an error.</AlertDescription>
-          <AlertCloseButton />
         </Alert>
 
-        <Alert status="success">
+        <Alert status='success'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertDescription>Data uploaded to the server.</AlertDescription>
-          <AlertCloseButton />
         </Alert>
 
-        <Alert status="warning">
+        <Alert status='warning'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertDescription>Your account is about expire</AlertDescription>
-          <AlertCloseButton />
         </Alert>
 
-        <Alert status="default">
+        <Alert status='default'>
           <AlertIcon />
+          <AlertTitle>Error Alert</AlertTitle>
           <AlertDescription>NativeBase is going live soon.</AlertDescription>
-          <AlertCloseButton />
         </Alert>
       </Stack>
     </Wrapper>

@@ -4,7 +4,7 @@ import { Wrapper } from "../../components";
 export const WrapUsage = function () {
   return (
     <Wrapper>
-      <Wrap direction="row">
+      <Wrap direction="row" justify={'center'}>
         <Center w="180px" h="80px" bg="red.200">
           Box 1
         </Center>

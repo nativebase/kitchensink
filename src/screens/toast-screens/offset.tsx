@@ -3,13 +3,13 @@ import { Button, useToast } from "native-base";
 import { Wrapper } from "../../components";
 
 export const ToastOffset = function () {
-  const { setToast } = useToast();
+  const  toast = useToast();
 
   return (
     <Wrapper>
       <Button
         onPress={() => {
-          setToast({
+          toast({
             position: "center",
             duration: 1000,
             title: "Toast Center",

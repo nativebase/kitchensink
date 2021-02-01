@@ -1,21 +1,21 @@
-import React from "react";
-import { Button, useToast } from "native-base";
-import { Wrapper } from "../../components";
+import React from 'react';
+import { Button, useToast } from 'native-base';
+import { Wrapper } from '../../components';
 
 export const ToastUsage = function () {
-  const { setToast } = useToast();
+  const toast = useToast();
 
   return (
     <Wrapper>
       <Button
         onPress={() => {
-          setToast({
-            position: "top",
-            title: "Hey! Toast here",
+          toast({
+            position: 'center',
+            title: 'Toast Top',
           });
         }}
       >
-        Bottom
+        Button
       </Button>
     </Wrapper>
   );

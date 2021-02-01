@@ -43,6 +43,7 @@ export * from "./ProgressStack";
 export * from "./RadioStack";
 export * from "./ResponsiveStack";
 export * from "./RowStack";
+export * from "./SelectStack";
 export * from "./SimpleGridStack";
 export * from "./SkeletonStack";
 export * from "./SliderStack";

@@ -1,6 +1,6 @@
-import React from "react";
-import { Button, useOverlay, VStack } from "native-base";
-import { Wrapper } from "../../components";
+import React from 'react';
+import { Button, useOverlay, VStack } from 'native-base';
+import { Wrapper } from '../../components';
 
 export const OverlayCustomized = function () {
   const [disableOverlay, setDisableOverlay] = React.useState(false);
@@ -13,7 +13,11 @@ export const OverlayCustomized = function () {
           onPress={() =>
             setOverlay(
               <Button onPress={closeOverlay}>Press to close Overlay</Button>,
-              { disableOverlay, position: "top", backgroundColor: "#5511ff44" }
+              {
+                disableOverlay,
+                position: 'center',
+                backgroundColor: '#5511ff44',
+              }
             )
           }
         >
@@ -24,7 +28,7 @@ export const OverlayCustomized = function () {
             setDisableOverlay(!disableOverlay);
           }}
         >
-          {disableOverlay ? "Enable " : "Disable "}Overlay
+          {disableOverlay ? 'Enable ' : 'Disable '}Overlay
         </Button>
         <Button onPress={closeOverlay}>Hide Overlay</Button>
       </VStack>

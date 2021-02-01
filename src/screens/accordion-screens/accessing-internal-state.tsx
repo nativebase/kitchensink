@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -7,8 +7,8 @@ import {
   AccordionIcon,
   Box,
   Icon,
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 export const AccordionAccessingInternalState = () => {
   return (
     <Wrapper>
@@ -16,7 +16,7 @@ export const AccordionAccessingInternalState = () => {
         <Accordion allowMultiple defaultIndex={[1]}>
           <AccordionItem>
             <AccordionButton>
-              <Box textAlign="left">Section 1 title</Box>
+              <Box textAlign='left'>Section 1 title</Box>
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel>
@@ -31,11 +31,11 @@ export const AccordionAccessingInternalState = () => {
             {({ isExpanded }: any) => (
               <>
                 <AccordionButton>
-                  <Box textAlign="left">{isExpanded ? "Fire" : "Snow"}</Box>
+                  <Box textAlign='left'>{isExpanded ? 'Fire' : 'Snow'}</Box>
                   {isExpanded ? (
-                    <Icon name="fire" type="MaterialCommunityIcons" />
+                    <Icon name='fire' type='MaterialCommunityIcons' />
                   ) : (
-                    <Icon name="snowflake" type="MaterialCommunityIcons" />
+                    <Icon name='snowflake' type='MaterialCommunityIcons' />
                   )}
                 </AccordionButton>
                 <AccordionPanel>

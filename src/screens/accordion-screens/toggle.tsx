@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -6,8 +6,8 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 export const AccordionToggle = () => {
   return (
     <Wrapper>

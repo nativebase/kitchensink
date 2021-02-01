@@ -42,6 +42,7 @@ export * from "./progress-screens";
 export * from "./radio-screens";
 export * from "./responsive-screens";
 export * from "./row-screen";
+export * from "./select-screens";
 export * from "./simple-grid-screens";
 export * from "./skeleton-screens";
 export * from "./slider-screens";
