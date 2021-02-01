@@ -16,6 +16,7 @@
     "expo": "~40.0.0",
     "expo-status-bar": "~1.0.3",
     "formik": "^2.2.6",
+    "intl": "^1.2.5",
     "lodash": "^4.17.20",
     "native-base": "^3.0.0-next.19",
     "react": "16.13.1",
