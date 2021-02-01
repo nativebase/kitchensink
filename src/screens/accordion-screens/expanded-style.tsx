@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -6,15 +6,15 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 export const AccordionExpandedStyle = () => {
   return (
     <Wrapper>
       <Box m={3}>
         <Accordion allowMultiple>
           <AccordionItem>
-            <AccordionButton _expanded={{ backgroundColor: "orange.300" }}>
+            <AccordionButton _expanded={{ backgroundColor: 'orange.300' }}>
               <Box>Click me to see a different style</Box>
               <AccordionIcon />
             </AccordionButton>
@@ -26,7 +26,7 @@ export const AccordionExpandedStyle = () => {
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem id={9} isDisabled>
-            <AccordionButton _disabled={{ backgroundColor: "gray.300" }}>
+            <AccordionButton _disabled={{ backgroundColor: 'gray.300' }}>
               <Box>I'm Disabled 😢</Box>
               <AccordionIcon />
             </AccordionButton>

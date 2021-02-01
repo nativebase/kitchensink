@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Button,
   Actionsheet,
@@ -7,9 +7,9 @@ import {
   ActionsheetHeader,
   ActionsheetItem,
   useDisclose,
-} from "native-base";
+} from 'native-base';
 
-import { Wrapper } from "../../components";
+import { Wrapper } from '../../components';
 export const ActionsheetDisableOverlay = () => {
   const { isOpen, onOpen, onClose } = useDisclose();
   return (

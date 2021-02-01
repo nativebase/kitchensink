@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Alert,
   AlertDescription,
@@ -6,23 +6,22 @@ import {
   AlertIcon,
   Box,
   VStack,
-  CloseButton
-} from "native-base";
-import { Wrapper } from "../../components";
+} from 'native-base';
+import { Wrapper } from '../../components';
 export const AlertComposition = () => {
   return (
     <Wrapper>
       <VStack mx={3} space={3}>
         <Alert
-          status="success"
-          variant="subtle"
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-          justifyContent="center"
-          height="200px"
+          status='success'
+          variant='subtle'
+          display='flex'
+          flexDirection='column'
+          alignItems='center'
+          justifyContent='center'
+          height='200px'
         >
-          <AlertIcon boxSize="40px" mr={0} />
+          <AlertIcon boxSize='40px' mr={0} />
           <AlertTitle mt={4} mb={1}>
             Application submitted!
           </AlertTitle>
@@ -32,7 +31,7 @@ export const AlertComposition = () => {
           </AlertDescription>
         </Alert>
 
-        <Alert status="success">
+        <Alert status='success'>
           <AlertIcon />
           <Box flex={1}>
             <AlertTitle>Success!</AlertTitle>
@@ -41,7 +40,6 @@ export const AlertComposition = () => {
               application and respond within the next 48 hours.
             </AlertDescription>
           </Box>
-          <CloseButton />
         </Alert>
       </VStack>
     </Wrapper>
