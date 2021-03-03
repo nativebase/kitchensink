@@ -1,5 +1,5 @@
 import React from "react";
-import { Checkbox, CheckboxGroup, Text } from "native-base";
+import { Checkbox, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const CheckboxControlled = function ControlledCheckbox() {
@@ -9,14 +9,14 @@ export const CheckboxControlled = function ControlledCheckbox() {
 
   return (
     <Wrapper>
-      <CheckboxGroup onChange={setGroupValues} value={groupValues}>
+      <Checkbox.Group onChange={setGroupValues} value={groupValues}>
         <Checkbox value="one">
           <Text>One</Text>
         </Checkbox>
         <Checkbox value="two">
           <Text>Two</Text>
         </Checkbox>
-      </CheckboxGroup>
+      </Checkbox.Group>
     </Wrapper>
   );
 };

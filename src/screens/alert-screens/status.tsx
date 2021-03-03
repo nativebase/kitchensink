@@ -1,39 +1,33 @@
-import React from 'react';
-import {
-  Stack,
-  AlertDescription,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-} from 'native-base';
+import React from "react";
+import { Stack, Alert } from "native-base";
 
-import { Wrapper } from '../../components';
+import { Wrapper } from "../../components";
 export const AlertStatus = function () {
   return (
     <Wrapper>
       <Stack space={3} mx={3}>
-        <Alert status='error'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>There was an error.</AlertDescription>
+        <Alert status="error">
+          <Alert.Icon />
+          <Alert.Title>Error Alert</Alert.Title>
+          <Alert.Description>There was an error.</Alert.Description>
         </Alert>
 
-        <Alert status='success'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>Data uploaded to the server.</AlertDescription>
+        <Alert status="success">
+          <Alert.Icon />
+          <Alert.Title>Error Alert</Alert.Title>
+          <Alert.Description>Data uploaded to the server.</Alert.Description>
         </Alert>
 
-        <Alert status='warning'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>Your account is about expire</AlertDescription>
+        <Alert status="warning">
+          <Alert.Icon />
+          <Alert.Title>Error Alert</Alert.Title>
+          <Alert.Description>Your account is about expire</Alert.Description>
         </Alert>
 
-        <Alert status='default'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>NativeBase is going live soon.</AlertDescription>
+        <Alert status="default">
+          <Alert.Icon />
+          <Alert.Title>Error Alert</Alert.Title>
+          <Alert.Description>NativeBase is going live soon.</Alert.Description>
         </Alert>
       </Stack>
     </Wrapper>

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Menu,
-  MenuItemOption,
-  IconButton,
-  MenuOptionGroup,
-  Divider,
-  Icon,
-} from "native-base";
+import { Menu, IconButton, Divider, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
 export const MenuOGExample = function () {
@@ -24,16 +17,16 @@ export const MenuOGExample = function () {
           );
         }}
       >
-        <MenuOptionGroup defaultValue="asc" title="Order" type="radio">
-          <MenuItemOption value="asc">Ascending</MenuItemOption>
-          <MenuItemOption value="desc">Descending</MenuItemOption>
-        </MenuOptionGroup>
+        <Menu.OptionGroup defaultValue="asc" title="Order" type="radio">
+          <Menu.ItemOption value="asc">Ascending</Menu.ItemOption>
+          <Menu.ItemOption value="desc">Descending</Menu.ItemOption>
+        </Menu.OptionGroup>
         <Divider />
-        <MenuOptionGroup title="Country" type="checkbox">
-          <MenuItemOption value="email">Email</MenuItemOption>
-          <MenuItemOption value="phone">Phone</MenuItemOption>
-          <MenuItemOption value="country">Country</MenuItemOption>
-        </MenuOptionGroup>
+        <Menu.OptionGroup title="Country" type="checkbox">
+          <Menu.ItemOption value="email">Email</Menu.ItemOption>
+          <Menu.ItemOption value="phone">Phone</Menu.ItemOption>
+          <Menu.ItemOption value="country">Country</Menu.ItemOption>
+        </Menu.OptionGroup>
       </Menu>
     </Wrapper>
   );

@@ -1,16 +1,6 @@
-import React from 'react';
-import {
-  Button,
-  useOverlay,
-  VStack,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-  AlertDescription,
-  CloseButton,
-  Box,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Button, useOverlay, VStack, CloseButton, Box } from "native-base";
+import { Wrapper } from "../../components";
 
 export const OverlayUsage = function () {
   const { closeOverlay, setOverlay } = useOverlay();
@@ -23,7 +13,7 @@ export const OverlayUsage = function () {
             setOverlay(
               <Button onPress={closeOverlay}>Press to close Overlay</Button>,
               {
-                position: 'center',
+                position: "center",
                 closeOnPress: true,
                 // disableOverlay: true,
               }

@@ -13,10 +13,6 @@ import {
   Heading,
   Icon,
   Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionIcon,
-  AccordionPanel,
   useColorModeValue,
   useColorMode,
 } from "native-base";
@@ -39,8 +35,9 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
             <Heading>KitchenSink</Heading>
           </Box>
           <Button
-            my={8}
-            rightIcon={
+            mx={10}
+            my={4}
+            endIcon={
               colorMode === "light" ? (
                 <Icon
                   name="brightness-3"
@@ -59,7 +56,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
             }
             colorScheme={colorMode === "light" ? "blue" : "red"}
             onPress={() => {
-              toggleColorMode();
+              toggleColorMode && toggleColorMode();
             }}
           >
             {`${colorMode === "light" ? "Dark" : "Light"} Mode`}
@@ -67,13 +64,23 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
           <Box p={4} />
           {routes.map((item: any, index: number) => {
             return (
-              <Accordion key={`drawer-content-${index}`}>
-                <AccordionItem>
-                  <AccordionButton>
+              <Accordion key={`drawer-content-${index}`} border={0}>
+                <Accordion.Item>
+                  <Accordion.Summary
+                    // borderWidth={0}
+                    // border={1}
+                    borderRadius={0}
+                    _expanded={{
+                      bg: "blue.200",
+                      _text: {
+                        color: "white",
+                      },
+                    }}
+                  >
                     <Box>
                       <HStack
                         key={index}
-                        py={2}
+                        // py={2}
                         pl={0}
                         space={3}
                         alignItems="center"
@@ -83,34 +90,39 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                           name={item.icon}
                           type="MaterialIcons"
                         />
-                        <Text fontSize="lg">{item.title}</Text>
+                        <Text fontSize="lg" bold>
+                          {item.title}
+                        </Text>
                       </HStack>
                     </Box>
-                    <AccordionIcon
+                    <Accordion.Icon
                       color={useColorModeValue("black", "gray.100")}
                     />
-                  </AccordionButton>
-                  <AccordionPanel borderWidth={0}>
-                    {item.variants.map((variant: { name: any; title: any; }, ind: number) => {
-                      const isSelected = selectedIndex === ind;
-                      return (
-                        <Button
-                        key={ind}
-                          pl={8}
-                          justifyContent="space-between"
-                          onPress={() =>
-                            props.navigation.navigate(item.name, {
-                              screen: variant.name,
-                            })
-                          }
-                          variant="ghost"
-                        >
-                          <Text fontSize="lg">{variant.title}</Text>
-                        </Button>
-                      );
-                    })}
-                  </AccordionPanel>
-                </AccordionItem>
+                  </Accordion.Summary>
+                  <Accordion.Details py={0} border={0}>
+                    {item.variants.map(
+                      (variant: { name: any; title: any }, ind: number) => {
+                        const isSelected = selectedIndex === ind;
+                        return (
+                          <Button
+                            key={ind}
+                            // py={0}
+                            pl={8}
+                            justifyContent="space-between"
+                            onPress={() =>
+                              props.navigation.navigate(item.name, {
+                                screen: variant.name,
+                              })
+                            }
+                            variant="ghost"
+                          >
+                            <Text fontSize="lg">{variant.title}</Text>
+                          </Button>
+                        );
+                      }
+                    )}
+                  </Accordion.Details>
+                </Accordion.Item>
               </Accordion>
             );
           })}

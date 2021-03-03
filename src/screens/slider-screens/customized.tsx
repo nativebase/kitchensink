@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-  Icon,
-  Box,
-} from "native-base";
+import { Slider, Icon, Box } from "native-base";
 import { Wrapper } from "../../components";
 
 export const SliderCustomized = function () {
@@ -14,12 +7,12 @@ export const SliderCustomized = function () {
     <Wrapper>
       <Box mx={5} width="80%">
         <Slider defaultValue={70} colorScheme="purple">
-          <SliderTrack bg="orange.100">
-            <SliderFilledTrack bg="orange.400" />
-          </SliderTrack>
-          <SliderThumb>
+          <Slider.Track bg="orange.100">
+            <Slider.FilledTrack bg="orange.400" />
+          </Slider.Track>
+          <Slider.Thumb>
             <Icon name="circle" type="MaterialIcons" />
-          </SliderThumb>
+          </Slider.Thumb>
         </Slider>
       </Box>
     </Wrapper>

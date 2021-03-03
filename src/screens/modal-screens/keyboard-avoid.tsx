@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  Button,
-  Input,
-  VStack,
-  Text,
-} from "native-base";
+import { Modal, Button, Input, VStack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const ModalKeyboardAvoid = function () {
@@ -23,19 +12,19 @@ export const ModalKeyboardAvoid = function () {
         onClose={setModalVisible}
         avoidKeyboard
       >
-        <ModalContent>
-          {/* <ModalCloseButton /> */}
-          <ModalHeader fontSize="4xl" fontWeight="bold">
+        <Modal.Content>
+          {/* <Modal.CloseButton /> */}
+          <Modal.Header fontSize="4xl" fontWeight="bold">
             Hello World
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
             cupiditate expedita, ipsa corporis officia totam similique delectus!
             Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
             Accusamus?
             <Input mt={4} placeholder="Lorem ipsum dolor sit" />
-          </ModalBody>
-          <ModalFooter>
+          </Modal.Body>
+          <Modal.Footer>
             <Button colorScheme="blue" mr={1}>
               Save
             </Button>
@@ -46,8 +35,8 @@ export const ModalKeyboardAvoid = function () {
             >
               Close
             </Button>
-          </ModalFooter>
-        </ModalContent>
+          </Modal.Footer>
+        </Modal.Content>
       </Modal>
       <VStack space={2}>
         <Button

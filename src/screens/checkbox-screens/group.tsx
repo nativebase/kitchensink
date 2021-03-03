@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Checkbox,
-  CheckboxGroup,
-  Heading,
-  HStack,
-  Text,
-  View,
-} from "native-base";
+import { Checkbox, Heading, HStack, Text, View } from "native-base";
 import { Wrapper } from "../../components";
 
 export const CheckboxGroupExample = function () {
@@ -15,9 +8,9 @@ export const CheckboxGroupExample = function () {
     <Wrapper>
       <View display="flex" justifyContent="space-between" alignItems="center">
         <HStack mb={2} alignItems="baseline">
-          <Heading mt={3}>CheckboxGroup </Heading>
+          <Heading mt={3}>Checkbox.Group </Heading>
         </HStack>
-        <CheckboxGroup
+        <Checkbox.Group
           colorScheme="green"
           defaultValue={groupValue}
           onChange={(values: any) => {
@@ -40,7 +33,7 @@ export const CheckboxGroupExample = function () {
           >
             <Text mx={2}>Indeterminate Item</Text>
           </Checkbox>
-        </CheckboxGroup>
+        </Checkbox.Group>
         <HStack mt={3} alignItems="baseline">
           <Text fontSize="md">Selected Values: </Text>
           <Text fontSize="md" bold>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Li, Heading, Ul, Ol, Box } from "native-base";
+import { List, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
 export const ListUsage = function () {
@@ -9,21 +9,21 @@ export const ListUsage = function () {
         <Heading fontSize={32} color="indigo.500">
           Unordered List
         </Heading>
-        <Ol my={2} fontSize={24} spacing={4} color="red.200">
-          <Li>Inferno</Li>
-          <Li>Mirage</Li>
-          <Li>Dust 2</Li>
-          <Li>Nuke</Li>
-        </Ol>
+        <List.Item my={2} fontSize={24} spacing={4} color="red.200">
+          <List.Item>Inferno</List.Item>
+          <List.Item>Mirage</List.Item>
+          <List.Item>Dust 2</List.Item>
+          <List.Item>Nuke</List.Item>
+        </List.Item>
         <Heading fontSize={32} color="indigo.500">
           Ordered List
         </Heading>
-        <Ul mt={2} fontSize={24} spacing={4} color="red.200">
-          <Li>Inferno</Li>
-          <Li>Mirage</Li>
-          <Li>Dust 2</Li>
-          <Li>Nuke</Li>
-        </Ul>
+        <List.Item mt={2} fontSize={24} spacing={4} color="red.200">
+          <List.Item>Inferno</List.Item>
+          <List.Item>Mirage</List.Item>
+          <List.Item>Dust 2</List.Item>
+          <List.Item>Nuke</List.Item>
+        </List.Item>
       </Box>
     </Wrapper>
   );

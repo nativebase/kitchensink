@@ -1,44 +1,37 @@
-import React from 'react';
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-  AlertIcon,
-  Box,
-  VStack,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Alert, Box, VStack } from "native-base";
+import { Wrapper } from "../../components";
 export const AlertComposition = () => {
   return (
     <Wrapper>
       <VStack mx={3} space={3}>
         <Alert
-          status='success'
-          variant='subtle'
-          display='flex'
-          flexDirection='column'
-          alignItems='center'
-          justifyContent='center'
-          height='200px'
+          status="success"
+          variant="subtle"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          height="200px"
         >
-          <AlertIcon boxSize='40px' mr={0} />
-          <AlertTitle mt={4} mb={1}>
+          <Alert.Icon boxSize="40px" mr={0} />
+          <Alert.Title mt={4} mb={1}>
             Application submitted!
-          </AlertTitle>
-          <AlertDescription>
+          </Alert.Title>
+          <Alert.Description>
             Thanks for submitting your application. Our team will get back to
             you soon.
-          </AlertDescription>
+          </Alert.Description>
         </Alert>
 
-        <Alert status='success'>
-          <AlertIcon />
+        <Alert status="success">
+          <Alert.Icon />
           <Box flex={1}>
-            <AlertTitle>Success!</AlertTitle>
-            <AlertDescription>
+            <Alert.Title>Success!</Alert.Title>
+            <Alert.Description>
               Your application has been received. We will review your
               application and respond within the next 48 hours.
-            </AlertDescription>
+            </Alert.Description>
           </Box>
         </Alert>
       </VStack>

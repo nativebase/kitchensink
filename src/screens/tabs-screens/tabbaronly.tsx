@@ -1,17 +1,17 @@
 import React from "react";
-import { Tabs, TabBar, Tab } from "native-base";
+import { Tabs } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TabsBarOnly = function () {
   return (
     <Wrapper>
       <Tabs>
-        <TabBar>
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
-          <Tab>Three</Tab>
-          <Tab>Four</Tab>
-        </TabBar>
+        <Tabs.Bar>
+          <Tabs.Tab>One</Tabs.Tab>
+          <Tabs.Tab>Two</Tabs.Tab>
+          <Tabs.Tab>Three</Tabs.Tab>
+          <Tabs.Tab>Four</Tabs.Tab>
+        </Tabs.Bar>
       </Tabs>
     </Wrapper>
   );

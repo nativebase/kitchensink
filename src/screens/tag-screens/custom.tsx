@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Tag,
-  TagCloseButton,
-  TagLabel,
-  Avatar,
-  AvatarBadge,
-} from "native-base";
+import { Tag, Avatar } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TagCustom = function () {
@@ -20,8 +14,7 @@ export const TagCustom = function () {
           name={"Sanket Sahu"}
           mr={2}
         ></Avatar>
-        <TagLabel>Custom Tag</TagLabel>
-        <TagCloseButton />
+        Custom Tag
       </Tag>
     </Wrapper>
   );

@@ -1,29 +1,21 @@
 import React from "react";
-import {
-  Popover,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverHeader,
-  PopoverTrigger,
-  Button,
-} from "native-base";
+import { Popover, Button } from "native-base";
 import { Wrapper } from "../../components";
 
 export const PopoverUsage = function () {
   return (
     <Wrapper>
       <Popover>
-        <PopoverTrigger>
+        <Popover.Trigger>
           <Button>Trigger</Button>
-        </PopoverTrigger>
-        <PopoverContent>
-          <PopoverCloseButton />
-          <PopoverHeader>Confirmation!</PopoverHeader>
-          <PopoverBody>
+        </Popover.Trigger>
+        <Popover.Content>
+          <Popover.CloseButton />
+          <Popover.Header>Confirmation!</Popover.Header>
+          <Popover.Body>
             Are you sure you want to have that milkshake?
-          </PopoverBody>
-        </PopoverContent>
+          </Popover.Body>
+        </Popover.Content>
       </Popover>
     </Wrapper>
   );

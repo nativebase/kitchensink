@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-  Stack,
-  Text,
-} from "native-base";
+import { Slider, Stack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const SliderValue = function () {
@@ -27,10 +20,10 @@ export const SliderValue = function () {
             v && setOnChangeEndValue(Math.floor(v));
           }}
         >
-          <SliderTrack>
-            <SliderFilledTrack />
-          </SliderTrack>
-          <SliderThumb />
+          <Slider.Track>
+            <Slider.FilledTrack />
+          </Slider.Track>
+          <Slider.Thumb />
         </Slider>
       </Stack>
     </Wrapper>

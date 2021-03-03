@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Tabs, TabBar, TabViews, Tab, TabView } from "native-base";
+import { Box, Tabs } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TabsFitted = function () {
@@ -7,16 +7,16 @@ export const TabsFitted = function () {
     <Wrapper>
       <Box width="100%" p={3}>
         <Tabs isFitted>
-          <TabBar>
-            <Tab>One</Tab>
-            <Tab>Two</Tab>
-            <Tab>Three</Tab>
-          </TabBar>
-          <TabViews>
-            <TabView>One</TabView>
-            <TabView>Two</TabView>
-            <TabView>Three</TabView>
-          </TabViews>
+          <Tabs.Bar>
+            <Tabs.Tab>One</Tabs.Tab>
+            <Tabs.Tab>Two</Tabs.Tab>
+            <Tabs.Tab>Three</Tabs.Tab>
+          </Tabs.Bar>
+          <Tabs.Views>
+            <Tabs.View>One</Tabs.View>
+            <Tabs.View>Two</Tabs.View>
+            <Tabs.View>Three</Tabs.View>
+          </Tabs.Views>
         </Tabs>
       </Box>
     </Wrapper>

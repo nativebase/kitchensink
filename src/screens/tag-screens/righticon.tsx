@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag, TagLabel, TagRightIcon, HStack } from "native-base";
+import { Tag, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TagRightIconExample = function () {
@@ -14,8 +14,7 @@ export const TagRightIconExample = function () {
             rounded={100}
             size={size}
           >
-            <TagLabel>Menu</TagLabel>
-            <TagRightIcon name={"menu"} type="MaterialIcons" color="white" />
+            Menu
           </Tag>
         ))}
       </HStack>

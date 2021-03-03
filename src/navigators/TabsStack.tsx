@@ -20,7 +20,7 @@ export function TabsStack(props: any) {
         name="tabsUsage"
         component={TabsUsage}
         options={{
-          headerTitle: "Tab Usage",
+          headerTitle: "Tabs.Tab Usage",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -30,7 +30,7 @@ export function TabsStack(props: any) {
         name="tabsComposition"
         component={TabsComposition}
         options={{
-          headerTitle: "Tab Composition",
+          headerTitle: "Tabs.Tab Composition",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -40,7 +40,7 @@ export function TabsStack(props: any) {
         name="tabsVariant"
         component={TabsVariant}
         options={{
-          headerTitle: "Tab Variants",
+          headerTitle: "Tabs.Tab Variants",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -50,7 +50,7 @@ export function TabsStack(props: any) {
         name="tabsAlignment"
         component={TabsAlignment}
         options={{
-          headerTitle: "Tab Alignment",
+          headerTitle: "Tabs.Tab Alignment",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -60,7 +60,7 @@ export function TabsStack(props: any) {
         name="tabsColor"
         component={TabsColor}
         options={{
-          headerTitle: "Tab Colors",
+          headerTitle: "Tabs.Tab Colors",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -70,7 +70,7 @@ export function TabsStack(props: any) {
         name="tabsFitted"
         component={TabsFitted}
         options={{
-          headerTitle: "Tab isFitted",
+          headerTitle: "Tabs.Tab isFitted",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -80,7 +80,7 @@ export function TabsStack(props: any) {
         name="tabsBarOnly"
         component={TabsBarOnly}
         options={{
-          headerTitle: "Tab Bar Only",
+          headerTitle: "Tabs.Tab Bar Only",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
@@ -90,7 +90,7 @@ export function TabsStack(props: any) {
         name="tabsSize"
         component={TabsSize}
         options={{
-          headerTitle: "Tab Size",
+          headerTitle: "Tabs.Tab Size",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },

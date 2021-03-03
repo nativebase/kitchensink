@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
-  Button,
-  Center,
-  Input,
-  useDisclose,
-} from "native-base";
+import { Modal, Button, Center, Input, useDisclose } from "native-base";
 import { Wrapper } from "../../components";
 
 export const UseDiscloseUsage = function () {
@@ -19,26 +8,26 @@ export const UseDiscloseUsage = function () {
     <Wrapper>
       <Center>
         <Modal isCentered isOpen={isOpen} onClose={onClose}>
-          <ModalOverlay />
-          <ModalContent>
-            {/* <ModalCloseButton /> */}
-            <ModalHeader fontSize="4xl" fontWeight="bold">
+          <Modal.Overlay />
+          <Modal.Content>
+            {/* <Modal.CloseButton /> */}
+            <Modal.Header fontSize="4xl" fontWeight="bold">
               Hello World
-            </ModalHeader>
-            <ModalBody>
+            </Modal.Header>
+            <Modal.Body>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
               quasi cupiditate expedita, ipsa corporis officia totam similique
               delectus! Debitis esse, ea blanditiis iste enim iure at odit
               fugiat autem. Accusamus?
               <Input mt={4} placeholder="Lorem ipsum dolor sit" />
-            </ModalBody>
-            <ModalFooter>
+            </Modal.Body>
+            <Modal.Footer>
               <Button colorScheme="blue" mr={1}>
                 Save
               </Button>
               <Button onPress={onClose}>Close</Button>
-            </ModalFooter>
-          </ModalContent>
+            </Modal.Footer>
+          </Modal.Content>
         </Modal>
         <Button onPress={onOpen}>Open Modal</Button>
       </Center>

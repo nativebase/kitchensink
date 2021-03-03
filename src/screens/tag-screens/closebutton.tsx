@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag, TagLabel, TagCloseButton, HStack } from "native-base";
+import { Tag, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TagCloseButtonExample = function () {
@@ -15,8 +15,7 @@ export const TagCloseButtonExample = function () {
             rounded={100}
             size={size}
           >
-            <TagLabel>NativeBase</TagLabel>
-            <TagCloseButton />
+            NativeBase
           </Tag>
         ))}
       </HStack>

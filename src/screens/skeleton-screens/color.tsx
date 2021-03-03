@@ -10,7 +10,8 @@ export const SkeletonColor = function () {
         <Skeleton
           startColor="warning.200"
           endColor="danger.200"
-          height="20px"
+          size={20}
+          variant="circle"
         />
       </VStack>
     </Wrapper>
