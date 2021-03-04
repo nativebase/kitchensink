@@ -5,17 +5,19 @@ export const BreadCrumbSeparators = function () {
   return (
     <Wrapper>
       <Box>
-        <Heading mb={4}>BreadCrumb with String Separator</Heading>
+        <Heading mb={4}>Breadcrumb with String Separator</Heading>
         <Breadcrumb bold italic separator="-">
           <Breadcrumb.Item isCurrentPage>
             <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Breadcrumb.Link>Docs</Breadcrumb.Link>
+            <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+              Docs
+            </Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
             <Breadcrumb.Link
-              href="https://github.com/GeekyAnts/nativebase-v3"
+              href="https://github.com/GeekyAnts/nativebase"
               isExternal
             >
               Github

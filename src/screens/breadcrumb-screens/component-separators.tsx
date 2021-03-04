@@ -5,7 +5,7 @@ export const BreadCrumbComponentSeparator = function () {
   return (
     <Wrapper>
       <Box>
-        <Heading mb={4}>BreadCrumb with Custom Separator</Heading>
+        <Heading mb={4}>Breadcrumb with Custom Separator</Heading>
         <Breadcrumb
           spacing={1}
           separator={<Icon name="keyboard-arrow-right" size={5} />}
@@ -14,11 +14,13 @@ export const BreadCrumbComponentSeparator = function () {
             <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Breadcrumb.Link>Docs</Breadcrumb.Link>
+            <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+              Docs
+            </Breadcrumb.Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
             <Breadcrumb.Link
-              href="https://github.com/GeekyAnts/nativebase-v3"
+              href="https://github.com/GeekyAnts/nativebase"
               isExternal
             >
               Github

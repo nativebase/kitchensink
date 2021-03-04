@@ -1,5 +1,5 @@
 import React from "react";
-import { Stat, StatArrow, StatGroup, Heading, Box } from "native-base";
+import { Stat, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
 export const StatIndicator = function () {
@@ -7,24 +7,24 @@ export const StatIndicator = function () {
     <Wrapper>
       <Box>
         <Heading>Stat with Indicator</Heading>
-        <StatGroup mt={6} color="indigo.500">
+        <Stat.Group mt={6}>
           <Stat>
             <Stat.Label>Sent</Stat.Label>
-            <Stat.Number>3,670</Stat.Number>
+            <Stat.Number>$3600</Stat.Number>
             <Stat.HelpText>
-              <StatArrow type="increase" />
-              23.36%
+              <Stat.Arrow type="increase" />
+              56.67%
             </Stat.HelpText>
           </Stat>
           <Stat>
-            <Stat.Label>Clicked</Stat.Label>
-            <Stat.Number>45</Stat.Number>
+            <Stat.Label>Received</Stat.Label>
+            <Stat.Number>$454</Stat.Number>
             <Stat.HelpText>
-              <StatArrow type="increase" />
-              9.05%
+              <Stat.Arrow type="decrease" />
+              99.56%
             </Stat.HelpText>
           </Stat>
-        </StatGroup>
+        </Stat.Group>
       </Box>
     </Wrapper>
   );

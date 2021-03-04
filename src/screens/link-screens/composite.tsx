@@ -13,7 +13,7 @@ export const LinkComposite = () => {
               Box
             </Text>
           </Box>
-          <Text>Clicking anywhere will trigger the link</Text>
+          Clicking anywhere will trigger the link
           <Box my={3} p={8} bg="blue.300">
             <Text color="white" fontSize={16}>
               Box

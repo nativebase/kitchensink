@@ -9,7 +9,7 @@ export const MenuGroupExample = function () {
         closeOnSelect={false}
         onOpen={() => console.log("opened")}
         onClose={() => console.log("closed")}
-        trigger={(triggerProps: JSX.IntrinsicAttributes) => {
+        trigger={(triggerProps: any) => {
           return (
             <IconButton icon={<Icon name="menu" />} {...triggerProps}>
               Show Menu
@@ -23,7 +23,7 @@ export const MenuGroupExample = function () {
         </Menu.Group>
         <Divider />
         <Menu.Group title="Help">
-          <Menu.Item disabled>Menu item 3</Menu.Item>
+          <Menu.Item isDisabled>Menu item 3</Menu.Item>
           <Menu.Item>Menu item 4</Menu.Item>
         </Menu.Group>
       </Menu>

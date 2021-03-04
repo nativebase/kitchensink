@@ -6,12 +6,12 @@ export const SliderCustomized = function () {
   return (
     <Wrapper>
       <Box mx={5} width="80%">
-        <Slider defaultValue={70} colorScheme="purple">
+        <Slider defaultValue={70} colorScheme="orange">
           <Slider.Track bg="orange.100">
-            <Slider.FilledTrack bg="orange.400" />
+            <Slider.FilledTrack bg="green.400" />
           </Slider.Track>
           <Slider.Thumb>
-            <Icon name="circle" type="MaterialIcons" />
+            <Icon name="park" type="MaterialIcons" color="green.500" />
           </Slider.Thumb>
         </Slider>
       </Box>

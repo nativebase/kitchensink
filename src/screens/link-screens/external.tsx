@@ -7,7 +7,12 @@ export const LinkExternal = () => {
     <Wrapper>
       <View>
         <Heading>External Link</Heading>
-        <Link href="https://nativebase.io" isExternal mt={4}>
+        <Link
+          _text={{ color: "blue.700" }}
+          href="https://nativebase.io"
+          isExternal
+          mt={4}
+        >
           https://nativebase.io
         </Link>
       </View>

@@ -1,59 +1,65 @@
-import React from 'react';
-import { Avatar, HStack } from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Avatar, HStack } from "native-base";
+import { Wrapper } from "../../components";
 
 export const AvatarSizes = function () {
   return (
     <Wrapper>
       <HStack space={1}>
         <Avatar
-          size='xs'
-          name='Sanket Sahu'
+          size="xs"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg",
           }}
-        />
+        >
+          SS
+        </Avatar>
         <Avatar
-          size='sm'
-          name='Himanshu Satija'
+          size="sm"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/929409889788510208/gRr2f7rZ_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/929409889788510208/gRr2f7rZ_400x400.jpg",
           }}
-        />
+        >
+          HS
+        </Avatar>
         <Avatar
-          size='md'
-          name='Rohit Singh'
+          size="md"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1260766060401188864/ySJfMIbZ_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1352844693151731713/HKO7cnlW_400x400.jpg",
           }}
-        />
+        >
+          RS
+        </Avatar>
         <Avatar
-          size='lg'
-          name='Ankur Kedia'
+          size="lg"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1309797238651060226/18cm6VhQ_400x400.jpg",
           }}
-        />
+        >
+          AK
+        </Avatar>
         <Avatar
-          size='xl'
-          name='Gaurav Guha'
+          size="xl"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
           }}
-        />
+        >
+          GG
+        </Avatar>
         <Avatar
-          size='2xl'
-          name='Rehman Baig'
+          size="2xl"
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1320985200663293952/lE_Kg6vr_400x400.jpg",
           }}
-        />
+        >
+          RB
+        </Avatar>
       </HStack>
     </Wrapper>
   );

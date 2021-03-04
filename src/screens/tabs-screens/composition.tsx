@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Heading,
-  Tabs,
-  Text,
-} from "native-base";
+import { Box, Heading, Tabs, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const TabsComposition = function () {

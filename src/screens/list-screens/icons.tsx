@@ -6,8 +6,8 @@ export const ListIcons = function () {
   return (
     <Wrapper>
       <Box height="50%">
-        <Heading color="indigo.500">List with Icons</Heading>
-        <List mt={2} fontSize={32} spacing={4} color="red.200">
+        <Heading>List with Icons</Heading>
+        <List mt={2} fontSize={24} spacing={4} my={2}>
           <List.Item>
             <List.Icon
               name="check-circle-outline"

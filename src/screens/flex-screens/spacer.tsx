@@ -4,7 +4,7 @@ import { Wrapper } from "../../components";
 
 export const FlexSpacer = () => {
   return (
-    <Flex my="auto" direction="row">
+    <Flex direction="row">
       <Center w="100px" bg="tomato">
         <Text>Box 1</Text>
       </Center>

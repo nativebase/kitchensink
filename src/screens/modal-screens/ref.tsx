@@ -16,8 +16,8 @@ export const ModalRef = function () {
         finalFocusRef={finalRef}
       >
         <Modal.Content>
-          {/* <Modal.CloseButton /> */}
-          <Modal.Header fontSize="4xl" fontWeight="bold">
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: "4xl", fontWeight: "bold" }}>
             Hello World
           </Modal.Header>
           <Modal.Body>
@@ -32,6 +32,7 @@ export const ModalRef = function () {
               Save
             </Button>
             <Button
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}

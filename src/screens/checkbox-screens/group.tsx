@@ -8,7 +8,7 @@ export const CheckboxGroupExample = function () {
     <Wrapper>
       <View display="flex" justifyContent="space-between" alignItems="center">
         <HStack mb={2} alignItems="baseline">
-          <Heading mt={3}>Checkbox.Group </Heading>
+          <Heading mt={3}>CheckboxGroup </Heading>
         </HStack>
         <Checkbox.Group
           colorScheme="green"

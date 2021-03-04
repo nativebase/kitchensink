@@ -11,6 +11,11 @@ export const InputVariant = () => {
           <Heading>Input Variants</Heading>
         </Center>
         <Input variant="outline" placeholder="Outline" />
+        <Input
+          variant="outline"
+          placeholder="Outline with label"
+          label="Outline"
+        />
         <Input variant="filled" placeholder="Filled" />
         <Input variant="underlined" placeholder="Underlined" />
         <Input variant="unstyled" placeholder="Unstyled" />

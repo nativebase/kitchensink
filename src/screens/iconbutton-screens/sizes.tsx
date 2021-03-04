@@ -1,7 +1,6 @@
-import React from 'react';
-import { HStack, IconButton, Icon } from 'native-base';
-import { Wrapper } from '../../components';
-import { ScrollView } from 'react-native';
+import React from "react";
+import { HStack, IconButton, Icon } from "native-base";
+import { Wrapper } from "../../components";
 export const IconButtonSize = function () {
   return (
     <Wrapper>
@@ -10,9 +9,9 @@ export const IconButtonSize = function () {
           <IconButton
             key={size}
             size={size}
-            variant='solid'
-            colorScheme='blue'
-            icon={<Icon name={'menu'} />}
+            variant="solid"
+            colorScheme="blue"
+            icon={<Icon name={"menu"} />}
           />
         ))}
       </HStack>

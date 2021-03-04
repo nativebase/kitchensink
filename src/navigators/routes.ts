@@ -20,6 +20,7 @@ import {
   ContainerStack,
   DividerStack,
   FlexStack,
+  FabStack,
   FormControlStack,
   HeadingStack,
   HstackStack,
@@ -57,8 +58,10 @@ import {
   ThemeStack,
   ToastStack,
   TransitionStack,
+  TypeaheadStack,
   UseHookStack,
   UseMediaQueryStack,
+  ViewStack,
   VStackStack,
   WrapStack,
   ZStackStack,
@@ -75,13 +78,13 @@ export const routes = [
     name: "accordion",
     title: "Accordion",
     variants: [
-      { title: "Accordion Usage", name: "accordionUsage" },
-      { title: "Accordion Multiple", name: "accordionMultiple" },
-      { title: "Accordion DefaultIndex", name: "accordionDefaultIndex" },
-      { title: "Accordion Toggle", name: "accordionToggle" },
-      { title: "Accordion Expanded Style", name: "accordionExpandedStyle" },
+      { title: "Basic", name: "accordionUsage" },
+      { title: "Multiple", name: "accordionMultiple" },
+      { title: "DefaultIndex", name: "accordionDefaultIndex" },
+      { title: "Toggle", name: "accordionToggle" },
+      { title: "Expanded Style", name: "accordionExpandedStyle" },
       {
-        title: "Accordion Accessing Internal State",
+        title: "Accessing Internal State",
         name: "accordionAccessingInternalState",
       },
     ],
@@ -92,12 +95,12 @@ export const routes = [
     name: "actionsheet",
     title: "Actionsheet",
     variants: [
-      { title: "Actionsheet Usage", name: "actionsheetUsage" },
+      { title: "Basic", name: "actionsheetUsage" },
       {
-        title: "Actionsheet DisableOverlay",
+        title: "DisableOverlay",
         name: "actionsheetDisableOverlay",
       },
-      { title: "Actionsheet Composition", name: "actionsheetComposition" },
+      { title: "Composition", name: "actionsheetComposition" },
     ],
     screen: ActionsheetStack,
     icon: "more-vert",
@@ -106,16 +109,16 @@ export const routes = [
     name: "alert",
     title: "Alert",
     variants: [
-      { title: "Alert Usage", name: "alertUsage" },
+      { title: "Basic", name: "alertUsage" },
       {
-        title: "Alert Status",
+        title: "Status",
         name: "alertStatus",
       },
       {
-        title: "Alert Variants",
+        title: "Variants",
         name: "alertVariants",
       },
-      { title: "Alert Composition", name: "alertComposition" },
+      { title: "Composition", name: "alertComposition" },
     ],
     screen: AlertStack,
     icon: "alarm",
@@ -124,9 +127,9 @@ export const routes = [
     name: "alertdialog",
     title: "Alert Dialog",
     variants: [
-      { title: "AlertDialog Usage", name: "alertDialogUsage" },
+      { title: "Basic", name: "alertDialogUsage" },
       {
-        title: "AlertDialog Transition",
+        title: "Transition",
         name: "alertDialogTransition",
       },
     ],
@@ -137,9 +140,9 @@ export const routes = [
     name: "aspectratio",
     title: "AspectRatio",
     variants: [
-      { title: "AspectRatio Usage", name: "aspectRatioUsage" },
+      { title: "Basic", name: "aspectRatioUsage" },
       {
-        title: "AspectRatio Embed Image",
+        title: "Embed Image",
         name: "aspectRatioEmbedImage",
       },
     ],
@@ -150,21 +153,21 @@ export const routes = [
     name: "avatar",
     title: "Avatar",
     variants: [
-      { title: "Avatar Usage", name: "avatarUsage" },
+      { title: "Basic", name: "avatarUsage" },
       {
-        title: "Avatar Size",
+        title: "Size",
         name: "avatarSize",
       },
       {
-        title: "Avatar Fallback",
+        title: "Fallback",
         name: "avatarFallback",
       },
       {
-        title: "Avatar Badge",
+        title: "Badge",
         name: "avatarBadge",
       },
       {
-        title: "Avatar Group",
+        title: "Group",
         name: "avatarGroup",
       },
     ],
@@ -175,14 +178,18 @@ export const routes = [
     name: "badge",
     title: "Badge",
     variants: [
-      { title: "Badge Usage", name: "badgeUsage" },
+      { title: "Basic", name: "badgeUsage" },
       {
-        title: "Badge Color",
+        title: "Color",
         name: "badgeColor",
       },
       {
-        title: "Badge Variants",
+        title: "Variants",
         name: "badgeVariant",
+      },
+      {
+        title: "Composition",
+        name: "badgeConposition",
       },
     ],
     screen: BadgeStack,
@@ -192,13 +199,13 @@ export const routes = [
     name: "box",
     title: "Box",
     variants: [
-      { title: "Box Usage", name: "boxUsage" },
+      { title: "Basic", name: "boxUsage" },
       {
-        title: "Box Composite",
+        title: "Composite",
         name: "boxComposite",
       },
       {
-        title: "Box with Refs",
+        title: "with Refs",
         name: "boxRef",
       },
     ],
@@ -209,17 +216,17 @@ export const routes = [
     name: "breadcrumb",
     title: "BreadCrumb",
     variants: [
-      { title: "BreadCrumb Usage", name: "breadCrumbUsage" },
+      { title: "Basic", name: "breadCrumbUsage" },
       {
-        title: "BreadCrumb Separator",
+        title: "Separator",
         name: "breadCrumbSeparator",
       },
       {
-        title: "BreadCrumb Component Separator",
+        title: "Component Separator",
         name: "breadCrumbComponentSeparator",
       },
       {
-        title: "BreadCrumb Composition",
+        title: "Composition",
         name: "breadCrumbComposition",
       },
     ],
@@ -230,33 +237,33 @@ export const routes = [
     name: "button",
     title: "Button",
     variants: [
-      { title: "Button Usage", name: "buttonUsage" },
+      { title: "Basic", name: "buttonUsage" },
       {
-        title: "Button Sizes",
+        title: "Sizes",
         name: "buttonSize",
       },
       {
-        title: "Button Variants",
+        title: "Variants",
         name: "buttonVariant",
       },
       {
-        title: "Button Loading",
+        title: "Loading",
         name: "buttonLoading",
       },
       {
-        title: "Button Icons",
+        title: "Icons",
         name: "buttonIcon",
       },
       {
-        title: "Button Group",
+        title: "Group",
         name: "buttonGroupExample",
       },
       {
-        title: "Button Composition",
+        title: "Composition",
         name: "buttonComposition",
       },
       {
-        title: "Button With Ref",
+        title: "With Ref",
         name: "buttonWithRef",
       },
     ],
@@ -267,13 +274,13 @@ export const routes = [
     name: "center",
     title: "Center",
     variants: [
-      { title: "Center Usage", name: "centerUsage" },
+      { title: "Basic", name: "centerUsage" },
       {
-        title: "Center With Icons",
+        title: "With Icons",
         name: "centerWithIcons",
       },
       {
-        title: "Center Square Circle",
+        title: "Square Circle",
         name: "centerSquareCircle",
       },
     ],
@@ -284,45 +291,45 @@ export const routes = [
     name: "checkbox",
     title: "Checkbox",
     variants: [
-      { title: "Checkbox Usage", name: "checkboxUsage" },
+      { title: "Basic", name: "checkboxUsage" },
       {
-        title: "Controlled Checkbox",
+        title: "Controlled",
         name: "checkboxControlled",
       },
       {
-        title: "Uncontrolled Checkbox",
+        title: "Uncontrolled",
         name: "checkboxUncontrolled",
       },
       {
-        title: "Checkbox Disabled",
+        title: "Disabled",
         name: "checkboxDisabled",
       },
       {
-        title: "Checkbox Invalid",
+        title: "Invalid",
         name: "checkboxInvalid",
       },
       {
-        title: "Checkbox Size",
+        title: "Size",
         name: "checkboxSize",
       },
       {
-        title: "Checkbox Color",
+        title: "Color",
         name: "checkboxColor",
       },
       {
-        title: "Checkbox Icon",
+        title: "Icon",
         name: "checkboxIcon",
       },
       {
-        title: "Checkbox Group",
+        title: "Group",
         name: "checkboxGroupExample",
       },
       {
-        title: "Checkbox Form Controlled",
+        title: "Form Controlled",
         name: "checkboxFormControlled",
       },
       {
-        title: "Checkbox With Ref",
+        title: "With Ref",
         name: "checkboxWithRef",
       },
     ],
@@ -333,33 +340,33 @@ export const routes = [
     name: "circularProgress",
     title: "Circular Progress",
     variants: [
-      { title: "CircularProgress Usage", name: "circularProgressUsage" },
+      { title: "Basic", name: "circularProgressUsage" },
       {
-        title: "CircularProgress Size",
+        title: "Size",
         name: "circularProgressSize",
       },
       {
-        title: "CircularProgress Colors",
+        title: "Colors",
         name: "circularProgressColor",
       },
       {
-        title: "CircularProgress Thickness",
+        title: "Thickness",
         name: "circularProgressThickness",
       },
       {
-        title: "CircularProgress Track Color",
+        title: "Track Color",
         name: "circularProgressTrackColor",
       },
       {
-        title: "CircularProgress Label",
+        title: "Label",
         name: "circularProgressLabel",
       },
       {
-        title: "CircularProgress Min and Max",
+        title: "Min and Max",
         name: "circularProgressMinMax",
       },
       {
-        title: "CircularProgress Indeterminate",
+        title: "Indeterminate",
         name: "circularProgressIndeterminate",
       },
     ],
@@ -370,9 +377,9 @@ export const routes = [
     name: "closeButton",
     title: "CloseButton",
     variants: [
-      { title: "CloseButton Usage", name: "closeButtonUsage" },
+      { title: "Basic", name: "closeButtonUsage" },
       {
-        title: "CloseButton Size",
+        title: "Size",
         name: "closeButtonSize",
       },
     ],
@@ -383,9 +390,9 @@ export const routes = [
     name: "code",
     title: "Code",
     variants: [
-      { title: "Code Usage", name: "codeUsage" },
+      { title: "Basic", name: "codeUsage" },
       {
-        title: "Code Colors",
+        title: "Colors",
         name: "codeColor",
       },
     ],
@@ -396,13 +403,13 @@ export const routes = [
     name: "collapse",
     title: "Collapse",
     variants: [
-      { title: "Collapse Usage", name: "collapseUsage" },
+      { title: "Basic", name: "collapseUsage" },
       {
-        title: "Collapse Animation Duration (Web Support not Available)",
+        title: "Animation Duration (Web Support not Available)",
         name: "collapseDuration",
       },
       {
-        title: "Collapse onAnimationStart and onAnimationEnd",
+        title: "onAnimationStart and onAnimationEnd",
         name: "collapseCallbacks",
       },
     ],
@@ -412,7 +419,7 @@ export const routes = [
   {
     name: "column",
     title: "Column",
-    variants: [{ title: "Column Usage", name: "columnUsage" }],
+    variants: [{ title: "Basic", name: "columnUsage" }],
     screen: ColumnStack,
     icon: "clear-all",
   },
@@ -420,9 +427,9 @@ export const routes = [
     name: "container",
     title: "Container",
     variants: [
-      { title: "Container Usage", name: "containerUsage" },
+      { title: "Basic", name: "containerUsage" },
       {
-        title: "Container Centering Children",
+        title: "Centering Children",
         name: "containerCentering",
       },
     ],
@@ -440,19 +447,26 @@ export const routes = [
     name: "divider",
     title: "Divider",
     variants: [
-      { title: "Divider Usage", name: "dividerUsage" },
-      { title: "Divider Orientation", name: "dividerOrientation" },
-      { title: "Divider Composition", name: "dividerComposition" },
+      { title: "Basic", name: "dividerUsage" },
+      { title: "Orientation", name: "dividerOrientation" },
+      { title: "Composition", name: "dividerComposition" },
     ],
     screen: DividerStack,
     icon: "remove",
   },
   {
+    name: "fab",
+    title: "Fab",
+    variants: [{ title: "Basic", name: "fabBasic" }],
+    screen: FabStack,
+    icon: "play-circle-filled",
+  },
+  {
     name: "flex",
     title: "Flex",
     variants: [
-      { title: "Flex Usage", name: "flexUsage" },
-      { title: "Flex Spacer Example", name: "flexSpacer" },
+      { title: "Basic", name: "flexUsage" },
+      { title: "Spacer Example", name: "flexSpacer" },
     ],
     screen: FlexStack,
     icon: "reorder",
@@ -461,9 +475,9 @@ export const routes = [
     name: "formcontrol",
     title: "FormControl",
     variants: [
-      { title: "FormControl Usage", name: "formControlUsage" },
-      { title: "FormControl Formik Example", name: "formControlFormik" },
-      { title: "FormControl Custom Style Example", name: "formControlStyle" },
+      { title: "Basic", name: "formControlUsage" },
+      { title: "Formik Example", name: "formControlFormik" },
+      { title: "Custom Style Example", name: "formControlStyle" },
     ],
     screen: FormControlStack,
     icon: "receipt",
@@ -472,11 +486,11 @@ export const routes = [
     name: "heading",
     title: "Heading",
     variants: [
-      { title: "Heading Usage", name: "headingUsage" },
-      { title: "Heading Sizes", name: "headingSize" },
-      { title: "Heading Truncate", name: "headingTruncate" },
-      { title: "Heading Overriden Style", name: "headingOverriden" },
-      { title: "Heading Composition", name: "headingComposition" },
+      { title: "Basic", name: "headingUsage" },
+      { title: "Sizes", name: "headingSize" },
+      { title: "Truncate", name: "headingTruncate" },
+      { title: "Overriden Style", name: "headingOverriden" },
+      { title: "Composition", name: "headingComposition" },
     ],
     screen: HeadingStack,
     icon: "title",
@@ -484,7 +498,7 @@ export const routes = [
   {
     name: "hstack",
     title: "HStack",
-    variants: [{ title: "HStack Usage", name: "hstackUsage" }],
+    variants: [{ title: "Basic", name: "hstackUsage" }],
     screen: HstackStack,
     icon: "pause",
   },
@@ -492,7 +506,7 @@ export const routes = [
     name: "icon",
     title: "Icon",
     variants: [
-      { title: "Icon Usage", name: "iconUsage" },
+      { title: "Basic", name: "iconUsage" },
       { title: "Custom Icon", name: "iconCustom" },
       { title: "Create Icon", name: "iconCreate" },
     ],
@@ -503,9 +517,10 @@ export const routes = [
     name: "iconbutton",
     title: "IconButton",
     variants: [
-      { title: "Icon Button Usage", name: "iconButtonUsage" },
-      { title: "Icon Button Sizes", name: "iconButtonSize" },
-      { title: "Icon Button Variants", name: "iconButtonVariant" },
+      { title: "Basic", name: "iconButtonUsage" },
+      { title: "Sizes", name: "iconButtonSize" },
+      { title: "SVG Icon", name: "iconButtonSVGIcon" },
+      { title: "Variants", name: "iconButtonVariant" },
     ],
     screen: IconButtonStack,
     icon: "play-circle-filled",
@@ -514,11 +529,11 @@ export const routes = [
     name: "image",
     title: "Image",
     variants: [
-      { title: "Image Usage", name: "imageUsage" },
-      { title: "Image Sizes", name: "imageSize" },
-      { title: "Image Border Radius", name: "imageBorderRadius" },
-      { title: "Image Fallback Support", name: "imageFallback" },
-      { title: "Image With Ref", name: "imageRef" },
+      { title: "Basic", name: "imageUsage" },
+      { title: "Sizes", name: "imageSize" },
+      { title: "Border Radius", name: "imageBorderRadius" },
+      { title: "Fallback Support", name: "imageFallback" },
+      { title: "With Ref", name: "imageRef" },
     ],
     screen: ImageStack,
     icon: "photo",
@@ -527,14 +542,14 @@ export const routes = [
     name: "input",
     title: "Input",
     variants: [
-      { title: "Input Usage", name: "inputUsage" },
-      { title: "Input Sizes", name: "inputSize" },
-      { title: "Input Variants", name: "inputVariant" },
-      { title: "Input Addons", name: "inputAddon" },
-      { title: "Input Elements", name: "inputElement" },
-      { title: "Input Password", name: "inputPassword" },
-      { title: "Value Controlled Input", name: "inputControlled" },
-      { title: "Input Focus and Error borders", name: "inputFocusError" },
+      { title: "Basic", name: "inputUsage" },
+      { title: "Sizes", name: "inputSize" },
+      { title: "Variants", name: "inputVariant" },
+      { title: "Addons", name: "inputAddon" },
+      { title: "Elements", name: "inputElement" },
+      { title: "Password", name: "inputPassword" },
+      { title: "Controlled", name: "inputControlled" },
+      { title: "Focus and Error borders", name: "inputFocusError" },
     ],
     screen: InputStack,
     icon: "edit",
@@ -542,7 +557,7 @@ export const routes = [
   {
     name: "kbd",
     title: "Kbd",
-    variants: [{ title: "Kbd Usage", name: "kbdUsage" }],
+    variants: [{ title: "Basic", name: "kbdUsage" }],
     screen: KbdStack,
     icon: "explicit",
   },
@@ -550,11 +565,11 @@ export const routes = [
     name: "link",
     title: "Link",
     variants: [
-      { title: "Link Usage", name: "linkUsage" },
-      { title: "Link External", name: "linkExternal" },
-      { title: "Link Not Underlined", name: "linkNotUnderlined" },
-      { title: "Link custom onPress", name: "linkOnpress" },
-      { title: "Link Composition", name: "linkComposite" },
+      { title: "Basic", name: "linkUsage" },
+      { title: "External", name: "linkExternal" },
+      { title: "Not Underlined", name: "linkNotUnderlined" },
+      { title: "custom onPress", name: "linkOnpress" },
+      { title: "Composition", name: "linkComposite" },
     ],
     screen: LinkStack,
     icon: "open-in-new",
@@ -563,8 +578,12 @@ export const routes = [
     name: "list",
     title: "List",
     variants: [
-      { title: "List Usage", name: "listUsage" },
-      { title: "List with Icons", name: "listIcons" },
+      { title: "Basic", name: "listBisic" },
+      { title: "Ordered", name: "listOrdered" },
+      { title: "Unordered", name: "listUnordered" },
+      { title: "Styled", name: "listStyled" },
+      { title: "with Icons", name: "listIcons" },
+      { title: "Virtualized", name: "listVirtualized" },
     ],
     screen: ListStack,
     icon: "format-list-bulleted",
@@ -573,9 +592,9 @@ export const routes = [
     name: "menu",
     title: "Menu",
     variants: [
-      { title: "Menu Usage", name: "menuUsage" },
-      { title: "Menu Group", name: "menuGroup" },
-      { title: "Menu Options Group", name: "menuOptionGroup" },
+      { title: "Basic", name: "menuUsage" },
+      { title: "Group", name: "menuGroup" },
+      { title: "Options Group", name: "menuOptionGroup" },
     ],
     screen: MenuStack,
     icon: "menu",
@@ -584,10 +603,10 @@ export const routes = [
     name: "modal",
     title: "Modal",
     variants: [
-      { title: "Modal Usage", name: "modalUsage" },
-      { title: "Modal Size", name: "modalSize" },
-      { title: "Modal Ref Example", name: "modalRef" },
-      { title: "Modal with Keyboard Avoid View", name: "modalKeyboardAvoid" },
+      { title: "Basic", name: "modalUsage" },
+      { title: "Size", name: "modalSize" },
+      { title: "Ref Example", name: "modalRef" },
+      { title: "with Keyboard Avoid View", name: "modalKeyboardAvoid" },
     ],
     screen: ModalStack,
     icon: "picture-in-picture",
@@ -603,12 +622,12 @@ export const routes = [
     name: "numberinput",
     title: "NumberInput",
     variants: [
-      { title: "NumberInput Usage", name: "numberInputUsage" },
-      { title: "NumberInput DefaultValue", name: "numberInputDefaultValue" },
-      { title: "NumberInput Min Max", name: "numberInputMinMax" },
-      { title: "NumberInput Steps", name: "numberInputSteps" },
+      { title: "Basic", name: "numberInputUsage" },
+      { title: "DefaultValue", name: "numberInputDefaultValue" },
+      { title: "Min Max", name: "numberInputMinMax" },
+      { title: "Steps", name: "numberInputSteps" },
       {
-        title: "NumberInput FormControlled",
+        title: "FormControlled",
         name: "numberInputFormControlled",
       },
     ],
@@ -619,8 +638,8 @@ export const routes = [
     name: "overlay",
     title: "Overlay",
     variants: [
-      { title: "Overlay Usage", name: "overlayUsage" },
-      { title: "Overlay Customized", name: "overlayCustomized" },
+      { title: "Basic", name: "overlayUsage" },
+      { title: "Customized", name: "overlayCustomized" },
     ],
     screen: OverlayStack,
     icon: "view-carousel",
@@ -629,13 +648,13 @@ export const routes = [
     name: "pininput",
     title: "PinInput",
     variants: [
-      { title: "PinInput Usage", name: "pinInputUsage" },
-      { title: "PinInput Size", name: "pinInputSize" },
-      { title: "PinInput DefaultValue", name: "pinInputDefaultValue" },
-      { title: "PinInput Placeholder", name: "pinInputPlaceholder" },
-      { title: "PinInput Manage Focus", name: "pinInputManageFocus" },
-      { title: "PinInput Variants", name: "pinInputVariant" },
-      { title: "PinInput FormControlled", name: "pinInputFormControlled" },
+      { title: "Basic", name: "pinInputUsage" },
+      { title: "Size", name: "pinInputSize" },
+      { title: "DefaultValue", name: "pinInputDefaultValue" },
+      { title: "Placeholder", name: "pinInputPlaceholder" },
+      { title: "Manage Focus", name: "pinInputManageFocus" },
+      { title: "Variants", name: "pinInputVariant" },
+      { title: "FormControlled", name: "pinInputFormControlled" },
     ],
     screen: PinInputStack,
     icon: "fiber-pin",
@@ -644,9 +663,9 @@ export const routes = [
     name: "popover",
     title: "Popover",
     variants: [
-      { title: "Popover Usage", name: "popoverUsage" },
-      { title: "Popover Size", name: "popoverSize" },
-      { title: "Popover Focus on Open", name: "popoverRef" },
+      { title: "Basic", name: "popoverUsage" },
+      { title: "Size", name: "popoverSize" },
+      { title: "Focus on Open", name: "popoverRef" },
     ],
     screen: PopoverStack,
     icon: "filter-frames",
@@ -655,11 +674,11 @@ export const routes = [
     name: "progress",
     title: "Progress",
     variants: [
-      { title: "Progress Usage", name: "progressUsage" },
-      { title: "Progress Color", name: "progressColor" },
-      { title: "Progress Rounded", name: "progressRounded" },
-      { title: "Progress Custom BgColor", name: "progressBgColor" },
-      { title: "Progress Composition", name: "progressComposition" },
+      { title: "Basic", name: "progressUsage" },
+      { title: "Color", name: "progressColor" },
+      { title: "Rounded", name: "progressRounded" },
+      { title: "Custom BgColor", name: "progressBgColor" },
+      { title: "Composition", name: "progressComposition" },
     ],
     screen: ProgressStack,
     icon: "timeline",
@@ -669,39 +688,39 @@ export const routes = [
     title: "Radio",
     variants: [
       {
-        title: "Controlled Radio",
+        title: "Controlled",
         name: "radioControlled",
       },
       {
-        title: "Uncontrolled Radio",
+        title: "Uncontrolled",
         name: "radioUncontrolled",
       },
       {
-        title: "Radio Disabled",
+        title: "Disabled",
         name: "radioDisabled",
       },
       {
-        title: "Radio Invalid",
+        title: "Invalid",
         name: "radioInvalid",
       },
       {
-        title: "Radio Size",
+        title: "Size",
         name: "radioSize",
       },
       {
-        title: "Radio Color",
+        title: "Color",
         name: "radioColor",
       },
       {
-        title: "Radio Icon",
+        title: "Icon",
         name: "radioIcon",
       },
       {
-        title: "Radio Form Controlled",
+        title: "Form Controlled",
         name: "radioFormControlled",
       },
       {
-        title: "Radio With Ref",
+        title: "With Ref",
         name: "radioWithRef",
       },
     ],
@@ -713,19 +732,19 @@ export const routes = [
     title: "Responsive",
     variants: [
       {
-        title: "Responsive Basic",
+        title: "Basic",
         name: "responsiveUsage",
       },
       {
-        title: "Responsive FontSize",
+        title: "FontSize",
         name: "responsiveFontSize",
       },
       {
-        title: "Responsive More",
+        title: "More",
         name: "responsiveMore",
       },
       {
-        title: "Responsive Demo",
+        title: "Demo",
         name: "responsiveDemo",
       },
     ],
@@ -737,7 +756,7 @@ export const routes = [
     title: "Row",
     variants: [
       {
-        title: "Row Basic",
+        title: "Basic",
         name: "rowUsage",
       },
     ],
@@ -749,8 +768,16 @@ export const routes = [
     title: "Select",
     variants: [
       {
-        title: "Select Basic",
-        name: "selectUsage",
+        title: "Basic",
+        name: "selectBasic",
+      },
+      {
+        title: "Native",
+        name: "selectNative",
+      },
+      {
+        title: "Styled",
+        name: "selectStyled",
       },
     ],
     screen: SelectStack,
@@ -761,11 +788,11 @@ export const routes = [
     title: "SimpleGrid",
     variants: [
       {
-        title: "SimpleGrid using Columns",
+        title: "using Columns",
         name: "simpleGridColumns",
       },
       {
-        title: "SimpleGrid using minChildWidth",
+        title: "using minChildWidth",
         name: "simpleGridMinChildWidth",
       },
     ],
@@ -777,15 +804,15 @@ export const routes = [
     title: "Skeleton",
     variants: [
       {
-        title: "Skeleton Usage",
+        title: "Basic",
         name: "skeletonUsage",
       },
       {
-        title: "Skeleton Color",
+        title: "Color",
         name: "skeletonColor",
       },
       {
-        title: "Skeleton Loaded",
+        title: "Loaded",
         name: "skeletonLoaded",
       },
     ],
@@ -797,28 +824,32 @@ export const routes = [
     title: "Slider",
     variants: [
       {
-        title: "Slider Usage",
+        title: "Basic",
         name: "sliderUsage",
       },
       {
-        title: "Slider Size",
+        title: "Size",
         name: "sliderSize",
       },
       {
-        title: "Slider Color",
+        title: "Color",
         name: "sliderColor",
       },
       {
-        title: "Slider Value",
+        title: "Value",
         name: "sliderValue",
       },
       {
-        title: "Slider Customized",
+        title: "Customized",
         name: "sliderCustomized",
       },
       {
-        title: "Slider Form Controlled",
+        title: "Form Controlled",
         name: "sliderFormControlled",
+      },
+      {
+        title: "Vertical",
+        name: "sliderVertical",
       },
     ],
     screen: SliderStack,
@@ -829,11 +860,11 @@ export const routes = [
     title: "Snackbar",
     variants: [
       {
-        title: "Snackbar Usage",
+        title: "Basic",
         name: "snackbarUsage",
       },
       {
-        title: "Snackbar Hook",
+        title: "Hook",
         name: "snackbarHook",
       },
     ],
@@ -845,16 +876,24 @@ export const routes = [
     title: "Spinner",
     variants: [
       {
-        title: "Spinner Usage",
+        title: "Basic",
         name: "spinnerUsage",
       },
       {
-        title: "Spinner Color",
+        title: "Color",
         name: "spinnerColor",
       },
       {
-        title: "Spinner Size",
+        title: "Size",
         name: "spinnerSize",
+      },
+      {
+        title: "Duration",
+        name: "spinnerDuration",
+      },
+      {
+        title: "Variant",
+        name: "spinnerVariant",
       },
     ],
     screen: SpinnerStack,
@@ -865,7 +904,7 @@ export const routes = [
     title: "Stack",
     variants: [
       {
-        title: "Stack Usage",
+        title: "Basic",
         name: "stackUsage",
       },
     ],
@@ -877,11 +916,11 @@ export const routes = [
     title: "Stat",
     variants: [
       {
-        title: "Stat Default",
+        title: "Default",
         name: "statDefault",
       },
       {
-        title: "Stat with Indicator",
+        title: "with Indicator",
         name: "statIndicator",
       },
     ],
@@ -893,19 +932,19 @@ export const routes = [
     title: "Switch",
     variants: [
       {
-        title: "Switch Usage",
+        title: "Basic",
         name: "switchUsage",
       },
       {
-        title: "Switch Sizes",
+        title: "Sizes",
         name: "switchSize",
       },
       {
-        title: "Switch BgColor",
+        title: "BgColor",
         name: "switchBgColor",
       },
       {
-        title: "Switch Accessibility",
+        title: "Accessibility",
         name: "switchAccessibility",
       },
     ],
@@ -917,35 +956,35 @@ export const routes = [
     title: "Tabs",
     variants: [
       {
-        title: "Tabs Usage",
+        title: "Basic",
         name: "tabsUsage",
       },
       {
-        title: "Tabs Composition",
+        title: "Composition",
         name: "tabsComposition",
       },
       {
-        title: "Tabs Variants",
+        title: "Variants",
         name: "tabsVariant",
       },
       {
-        title: "Tabs Alignment",
+        title: "Alignment",
         name: "tabsAlignment",
       },
       {
-        title: "Tabs Colors",
+        title: "Colors",
         name: "tabsColor",
       },
       {
-        title: "Tabs Size",
+        title: "Size",
         name: "tabsSize",
       },
       {
-        title: "Tabs isFitted",
+        title: "isFitted",
         name: "tabsFitted",
       },
       {
-        title: "Tabs Bar Only",
+        title: "Bar Only",
         name: "tabsBarOnly",
       },
     ],
@@ -957,24 +996,20 @@ export const routes = [
     title: "Tag",
     variants: [
       {
-        title: "Tag Usage",
+        title: "Basic",
         name: "tagUsage",
       },
       {
-        title: "Tag Sizes",
+        title: "Sizes",
         name: "tagSize",
       },
       {
-        title: "Tag LeftIcon",
-        name: "tagLeftIcon",
+        title: "variants",
+        name: "tagVariants",
       },
       {
-        title: "Tag RightIcon",
-        name: "tagRightIcon",
-      },
-      {
-        title: "Tag CloseButton",
-        name: "tagCloseButton",
+        title: "withIcon",
+        name: "tagWithIcon",
       },
       {
         title: "Custom Tag",
@@ -989,23 +1024,23 @@ export const routes = [
     title: "Text",
     variants: [
       {
-        title: "Text Usage",
+        title: "Basic",
         name: "textUsage",
       },
       {
-        title: "Text Changing FontSize",
+        title: "Changing FontSize",
         name: "textFontSize",
       },
       {
-        title: "Text Truncated",
+        title: "Truncated",
         name: "textTruncated",
       },
       {
-        title: "Text Overriden",
+        title: "Overriden",
         name: "textOverriden",
       },
       {
-        title: "Text Nested",
+        title: "Nested",
         name: "textNested",
       },
     ],
@@ -1017,19 +1052,19 @@ export const routes = [
     title: "TextArea",
     variants: [
       {
-        title: "TextArea Usage",
+        title: "Basic",
         name: "textAreaUsage",
       },
       {
-        title: "TextArea Invalid and Disabled",
+        title: "Invalid and Disabled",
         name: "textAreaInvalidDisabled",
       },
       {
-        title: "TextArea Sizes",
+        title: "Sizes",
         name: "textAreaSize",
       },
       {
-        title: "TextArea Value Controlled",
+        title: "Value Controlled",
         name: "textAreaValueControlled",
       },
     ],
@@ -1041,15 +1076,15 @@ export const routes = [
     title: "Toast",
     variants: [
       {
-        title: "Toast Usage",
+        title: "Basic",
         name: "toastUsage",
       },
       {
-        title: "Toast Position",
+        title: "Position",
         name: "toastPosition",
       },
       {
-        title: "Toast Offset",
+        title: "Offset",
         name: "toastOffset",
       },
     ],
@@ -1061,27 +1096,27 @@ export const routes = [
     title: "Transition",
     variants: [
       {
-        title: "Transition Fade",
+        title: "Fade",
         name: "transitionFade",
       },
       {
-        title: "Transition Scale Fade",
+        title: "Scale Fade",
         name: "transitionScaleFade",
       },
       {
-        title: "Transition Slide",
+        title: "Slide",
         name: "transitionSlide",
       },
       {
-        title: "Transition Slide Wrapped inside Parent",
+        title: "Slide Wrapped inside Parent",
         name: "transitionSlideWrapped",
       },
       {
-        title: "Transition Slide Composition",
+        title: "Slide Composition",
         name: "transitionSlideComposition",
       },
       {
-        title: "Transition Slide Fade",
+        title: "Slide Fade",
         name: "transitionSlideFade",
       },
     ],
@@ -1089,67 +1124,101 @@ export const routes = [
     icon: "leak-add",
   },
   {
-    name: "usebreakpointvalue",
-    title: "useBreakpointValue",
+    name: "typeahead",
+    title: "Typeahead",
     variants: [
       {
-        title: "useBreakpointValue Usage",
-        name: "useBreakpointValue",
+        title: "Basic",
+        name: "typeaheadBasic",
+      },
+      {
+        title: "Hook",
+        name: "typeaheadHook",
+      },
+      {
+        title: "Render Item",
+        name: "typeaheadRenderItem",
       },
     ],
-    screen: UseHookStack,
-    icon: "linear-scale",
+    screen: TypeaheadStack,
+    icon: "edit",
   },
+
+  // NOTE: These examples are removed becasue they're functional not visual
+  // {
+  //   name: "usebreakpointvalue",
+  //   title: "useBreakpointValue",
+  //   variants: [
+  //     {
+  //       title: "useBreakpointValue Usage",
+  //       name: "useBreakpointValue",
+  //     },
+  //   ],
+  //   screen: UseHookStack,
+  //   icon: "linear-scale",
+  // },
+  // {
+  //   name: "useclipboard",
+  //   title: "useClipboard",
+  //   variants: [
+  //     {
+  //       title: "Basic",
+  //       name: "useClipboard",
+  //     },
+  //   ],
+  //   screen: UseHookStack,
+  //   icon: "linear-scale",
+  // },
+  // {
+  //   name: "usedisclose",
+  //   title: "useDisclose",
+  //   variants: [
+  //     {
+  //       title: "Basic",
+  //       name: "useDisclose",
+  //     },
+  //   ],
+  //   screen: UseHookStack,
+  //   icon: "linear-scale",
+  // },
+  // {
+  //   name: "usemediaquery",
+  //   title: "useMediaQuery",
+  //   variants: [
+  //     {
+  //       title: "MinWidth",
+  //       name: "useMediaQueryMinWidth",
+  //     },
+  //     {
+  //       title: "MaxHeight",
+  //       name: "useMediaQueryMaxHeight",
+  //     },
+  //     {
+  //       title: "Orientation",
+  //       name: "useMediaQueryOrientation",
+  //     },
+  //   ],
+  //   screen: UseMediaQueryStack,
+  //   icon: "linear-scale",
+  // },
   {
-    name: "useclipboard",
-    title: "useClipboard",
+    name: "view",
+    title: "View",
     variants: [
       {
-        title: "useClipboard Usage",
-        name: "useClipboard",
+        title: "Basic",
+        name: "viewBasic",
       },
     ],
-    screen: UseHookStack,
-    icon: "linear-scale",
-  },
-  {
-    name: "usedisclose",
-    title: "useDisclose",
-    variants: [
-      {
-        title: "useDisclose Usage",
-        name: "useDisclose",
-      },
-    ],
-    screen: UseHookStack,
-    icon: "linear-scale",
-  },
-  {
-    name: "usemediaquery",
-    title: "useMediaQuery",
-    variants: [
-      {
-        title: "useMediaQuery MinWidth",
-        name: "useMediaQueryMinWidth",
-      },
-      {
-        title: "useMediaQuery MaxHeight",
-        name: "useMediaQueryMaxHeight",
-      },
-      {
-        title: "useMediaQuery Orientation",
-        name: "useMediaQueryOrientation",
-      },
-    ],
-    screen: UseMediaQueryStack,
-    icon: "linear-scale",
+    screen: ViewStack,
+    icon: "crop-square",
   },
   {
     name: "vstack",
     title: "VStack",
     variants: [
       {
-        title: "VStack Usage",
+        title: "Basic",
         name: "vstackUsage",
       },
     ],
@@ -1161,19 +1230,19 @@ export const routes = [
     title: "Wrap",
     variants: [
       {
-        title: "Wrap Usage",
+        title: "Basic",
         name: "wrapUsage",
       },
       {
-        title: "Wrap Spacing",
+        title: "Spacing",
         name: "wrapSpacing",
       },
       {
-        title: "Wrap Alignment Align",
+        title: "Alignment Align",
         name: "wrapAlignmentAlign",
       },
       {
-        title: "Wrap Alignment Justify",
+        title: "Alignment Justify",
         name: "wrapAlignmentJustify",
       },
     ],
@@ -1185,11 +1254,11 @@ export const routes = [
     title: "ZStack",
     variants: [
       {
-        title: "ZStack Usage",
+        title: "Basic",
         name: "zstackUsage",
       },
       {
-        title: "ZStack items Centered",
+        title: "items Centered",
         name: "zstackCentered",
       },
     ],

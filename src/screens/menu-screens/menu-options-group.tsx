@@ -9,7 +9,7 @@ export const MenuOGExample = function () {
         closeOnSelect={false}
         onOpen={() => console.log("opened")}
         onClose={() => console.log("closed")}
-        trigger={(triggerProps: JSX.IntrinsicAttributes) => {
+        trigger={(triggerProps: any) => {
           return (
             <IconButton icon={<Icon name="menu" />} {...triggerProps}>
               Show Menu
@@ -23,7 +23,9 @@ export const MenuOGExample = function () {
         </Menu.OptionGroup>
         <Divider />
         <Menu.OptionGroup title="Country" type="checkbox">
-          <Menu.ItemOption value="email">Email</Menu.ItemOption>
+          <Menu.ItemOption value="email" _text={{ fontWeight: "bold" }}>
+            Email
+          </Menu.ItemOption>
           <Menu.ItemOption value="phone">Phone</Menu.ItemOption>
           <Menu.ItemOption value="country">Country</Menu.ItemOption>
         </Menu.OptionGroup>

@@ -19,15 +19,13 @@ export const ModalSize = function () {
         size={size}
       >
         <Modal.Content>
-          {/* <Modal.CloseButton /> */}
-          <Modal.Header fontSize="4xl" fontWeight="bold">
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: "4xl", fontWeight: "bold" }}>
             Hello World
           </Modal.Header>
           <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
-            cupiditate expedita, ipsa corporis officia totam similique delectus!
-            Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
-            Accusamus?
+            cupiditate expedita, ipsa delectus!
             <Input mt={4} placeholder="Lorem ipsum dolor sit" />
           </Modal.Body>
           <Modal.Footer>
@@ -35,7 +33,7 @@ export const ModalSize = function () {
               Save
             </Button>
             <Button
-              colorScheme="red"
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}

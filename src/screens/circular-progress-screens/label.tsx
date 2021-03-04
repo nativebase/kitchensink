@@ -5,9 +5,16 @@ export const CircularProgressLabelExample = function () {
   return (
     <Wrapper>
       <Center>
-        <Heading>Adding label</Heading>
-        <CircularProgress mt={6} value={45} size={60} color="red.200">
-          <CircularProgress.Label>45%</CircularProgress.Label>
+        <Heading>Adding Min and Max</Heading>
+        <CircularProgress
+          mt={6}
+          value={550}
+          max={1000}
+          min={100}
+          size={100}
+          color="red.200"
+        >
+          <CircularProgress.Label>550%</CircularProgress.Label>
         </CircularProgress>
       </Center>
     </Wrapper>

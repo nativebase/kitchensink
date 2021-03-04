@@ -14,7 +14,6 @@ import {
   Icon,
   Accordion,
   useColorModeValue,
-  useColorMode,
 } from "native-base";
 import { routes } from "./routes";
 // Drawer Needs stack navigator to display headers
@@ -23,57 +22,40 @@ const DrawerNavigator = createDrawerNavigator();
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   const selectedIndex = props.state.index;
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <DrawerContentScrollView {...props}>
       <Box py={8} bg={useColorModeValue("gray.50", "gray.800")}>
         <VStack>
           <Box pl={8}>
-            <Heading>Nativebase V3</Heading>
+            <Heading
+              size="xl"
+              color={useColorModeValue("emerald.400", "emerald.500")}
+            >
+              Nativebase v3
+            </Heading>
           </Box>
           <Box pl={8}>
-            <Heading>KitchenSink</Heading>
+            <Heading
+              size="lg"
+              color={useColorModeValue("indigo.400", "indigo.500")}
+            >
+              KitchenSink
+            </Heading>
           </Box>
-          <Button
-            mx={10}
-            my={4}
-            endIcon={
-              colorMode === "light" ? (
-                <Icon
-                  name="brightness-3"
-                  color="white"
-                  size={6}
-                  type="MaterialIcons"
-                />
-              ) : (
-                <Icon
-                  name="brightness-7"
-                  color="gray.800"
-                  size={6}
-                  type="MaterialIcons"
-                />
-              )
-            }
-            colorScheme={colorMode === "light" ? "blue" : "red"}
-            onPress={() => {
-              toggleColorMode && toggleColorMode();
-            }}
-          >
-            {`${colorMode === "light" ? "Dark" : "Light"} Mode`}
-          </Button>
           <Box p={4} />
-          {routes.map((item: any, index: number) => {
-            return (
-              <Accordion key={`drawer-content-${index}`} border={0}>
-                <Accordion.Item>
+          <Accordion allowToggle border={0}>
+            {routes.map((item: any, index: number) => {
+              return (
+                // <Accordion allowToggle key={`drawer-content-${index}`} border={0}>
+                <Accordion.Item key={`drawer-content-${index}`}>
                   <Accordion.Summary
                     // borderWidth={0}
                     // border={1}
                     borderRadius={0}
                     _expanded={{
-                      bg: "blue.200",
+                      bg: useColorModeValue("emerald.400", "emerald.500"),
                       _text: {
-                        color: "white",
+                        color: useColorModeValue("white", "black"),
                       },
                     }}
                   >
@@ -123,9 +105,9 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                     )}
                   </Accordion.Details>
                 </Accordion.Item>
-              </Accordion>
-            );
-          })}
+              );
+            })}
+          </Accordion>
         </VStack>
       </Box>
     </DrawerContentScrollView>

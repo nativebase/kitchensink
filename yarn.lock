@@ -5849,10 +5849,10 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base@^3.0.0-next.32:
-  version "3.0.0-next.32"
-  resolved "https://registry.npmjs.org/native-base/-/native-base-3.0.0-next.32.tgz#bce188a7520bbfcb3fee8b2843e5d3ea5f74007c"
-  integrity sha512-PWet6FyuLDZApywcC8x0tGN4biPm+V4KNOQbnWefdB3cgfSfdvmj/TaJOoRaWMUWBZVY9j5XAHHYX8TuMlxaZA==
+native-base@^3.0.0-next.33:
+  version "3.0.0-next.33"
+  resolved "https://registry.npmjs.org/native-base/-/native-base-3.0.0-next.33.tgz#b1e7176b785f0d9b8c50c9c8212992b2d8292405"
+  integrity sha512-AJ7XxzQAuL4L/emqEAjRGx/XfKIfK+bjuloT9mA83HyAzvb7lbcHQa1VOTnM12t+mq56y6aEnT9e8l3tnl57zw==
   dependencies:
     "@react-aria/visually-hidden" "^3.2.1"
     "@react-native-aria/button" "^0.2.2"
@@ -5860,7 +5860,6 @@ native-base@^3.0.0-next.32:
     "@react-native-aria/focus" "^0.2.4"
     "@react-native-aria/interactions" "^0.2.2"
     "@react-native-aria/radio" "^0.2.2"
-    "@react-native-picker/picker" "^1.9.11"
     "@react-stately/radio" "^3.2.1"
     babel-eslint "^10.1.0"
     deepmerge "^4.2.2"

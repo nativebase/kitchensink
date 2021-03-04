@@ -16,7 +16,8 @@ export const SnackbarHook = function () {
         <Button
           onPress={() =>
             setSnackbar(template, {
-              accessibilityAnnouncement: "Welldone, we are proud of you.",
+              accessibilityAnnouncement: "Well done, we are proud of you.",
+              autoHideDuration: 1000,
             })
           }
         >
@@ -25,9 +26,8 @@ export const SnackbarHook = function () {
         <Button
           onPress={() =>
             setSnackbar(template, {
-              enableOverlay: true,
               placement: "top",
-              accessibilityAnnouncement: "Welldone, we are proud of you.",
+              accessibilityAnnouncement: "Well done, we are proud of you.",
             })
           }
         >

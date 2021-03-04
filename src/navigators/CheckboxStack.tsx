@@ -14,6 +14,8 @@ import {
   CheckboxWithRef,
 } from "../screens";
 import { MenuButton } from "../components";
+import { ThemeButton } from "../components";
+import { useColorModeValue } from "native-base";
 
 const Stack = createStackNavigator();
 export function CheckboxStack(props: any) {
@@ -27,6 +29,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -36,6 +47,15 @@ export function CheckboxStack(props: any) {
           headerTitle: "Controlled Checkbox",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />
@@ -47,6 +67,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -56,6 +85,15 @@ export function CheckboxStack(props: any) {
           headerTitle: "Checkbox Disabled",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />
@@ -67,6 +105,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -76,6 +123,15 @@ export function CheckboxStack(props: any) {
           headerTitle: "Checkbox Size",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />
@@ -87,6 +143,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -96,6 +161,15 @@ export function CheckboxStack(props: any) {
           headerTitle: "Checkbox Icon",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />
@@ -107,6 +181,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -117,6 +200,15 @@ export function CheckboxStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -126,6 +218,15 @@ export function CheckboxStack(props: any) {
           headerTitle: "Checkbox With Ref",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />

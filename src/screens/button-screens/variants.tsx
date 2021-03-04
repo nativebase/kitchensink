@@ -8,7 +8,7 @@ export const ButtonVariant = function () {
       <HStack space={2}>
         {["solid", "outline", "ghost", "link", "unstyled"].map(
           (variant: any) => (
-            <Button variant={variant} colorScheme="teal">
+            <Button variant={variant} colorScheme="teal" key={variant}>
               Button
             </Button>
           )
