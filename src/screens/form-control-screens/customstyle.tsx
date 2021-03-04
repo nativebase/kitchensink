@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  FormControl,
-  FormLabel,
-  Input,
-  FormErrorMessage,
-  FormHelperText,
-  Stack,
-  Text,
-} from "native-base";
+import { FormControl, Input, Stack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const FormControlStyle = function () {
@@ -15,43 +7,76 @@ export const FormControlStyle = function () {
     <Wrapper>
       <Stack width="90%" space={4}>
         <Text bold underline>
+          Default:
+        </Text>
+        <FormControl>
+          <FormControl.Label>Favorite framework</FormControl.Label>
+          <Input />
+          <FormControl.HelperText>
+            We'll keep this between us.
+          </FormControl.HelperText>
+          <FormControl.ErrorMessage>
+            Something is wrong.
+          </FormControl.ErrorMessage>
+        </FormControl>
+        <Text bold underline>
           Custom style for disable:
         </Text>
         <FormControl isDisabled>
-          <FormLabel _invalid={{ backgroundColor: "#FED7D7" }}>
+          <FormControl.Label
+            _disabled={{
+              _text: {
+                color: "gray.400",
+                fontWeight: "bold",
+              },
+            }}
+          >
             Favorite framework
-          </FormLabel>
-          <Input p={2} placeholder="Is it react?" />
-          <FormHelperText _disabled={{ backgroundColor: "#eee" }}>
+          </FormControl.Label>
+          <Input />
+          <FormControl.HelperText
+            _disabled={{
+              borderLeftWidth: 1,
+              mt: 1,
+              px: 1,
+              pl: 2,
+              borderColor: "gray.400",
+            }}
+          >
             We'll keep this between us.
-          </FormHelperText>
-          <FormErrorMessage>Something is wrong.</FormErrorMessage>
+          </FormControl.HelperText>
+          <FormControl.ErrorMessage>
+            Something is wrong.
+          </FormControl.ErrorMessage>
         </FormControl>
         <Text bold underline>
           Custom style for invalid:
         </Text>
         <FormControl isRequired isInvalid>
-          <FormLabel _invalid={{ backgroundColor: "#FED7D7" }}>
+          <FormControl.Label
+            _invalid={{
+              _text: {
+                color: "rose.500",
+                fontWeight: "bold",
+              },
+            }}
+          >
             Favorite framework
-          </FormLabel>
-          <Input p={2} placeholder="Is it react?" />
-          <FormHelperText _disabled={{ backgroundColor: "#eee" }}>
+          </FormControl.Label>
+          <Input />
+          <FormControl.HelperText
+            _invalid={{
+              _text: {
+                color: "red.400",
+                underline: true,
+              },
+            }}
+          >
             We'll keep this between us.
-          </FormHelperText>
-          <FormErrorMessage>Something is wrong.</FormErrorMessage>
-        </FormControl>
-        <Text bold underline>
-          Custom style for disable as well as invalid:
-        </Text>
-        <FormControl isRequired isInvalid isDisabled>
-          <FormLabel _invalid={{ backgroundColor: "#FED7D7" }}>
-            Favorite framework
-          </FormLabel>
-          <Input p={2} placeholder="Is it react?" />
-          <FormHelperText _disabled={{ backgroundColor: "#eee" }}>
-            We'll keep this between us.
-          </FormHelperText>
-          <FormErrorMessage>Something is wrong.</FormErrorMessage>
+          </FormControl.HelperText>
+          <FormControl.ErrorMessage>
+            Something is wrong.
+          </FormControl.ErrorMessage>
         </FormControl>
       </Stack>
     </Wrapper>

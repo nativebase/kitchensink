@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Menu,
-  MenuItem,
-  Divider,
-  IconButton,
-  MenuGroup,
-  Icon,
-} from "native-base";
+import { Menu, Divider, IconButton, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
 export const MenuGroupExample = function () {
@@ -16,7 +9,7 @@ export const MenuGroupExample = function () {
         closeOnSelect={false}
         onOpen={() => console.log("opened")}
         onClose={() => console.log("closed")}
-        trigger={(triggerProps: JSX.IntrinsicAttributes) => {
+        trigger={(triggerProps: any) => {
           return (
             <IconButton icon={<Icon name="menu" />} {...triggerProps}>
               Show Menu
@@ -24,15 +17,15 @@ export const MenuGroupExample = function () {
           );
         }}
       >
-        <MenuGroup title="Profile">
-          <MenuItem>Menu item 1</MenuItem>
-          <MenuItem>Menu item 2</MenuItem>
-        </MenuGroup>
+        <Menu.Group title="Profile">
+          <Menu.Item>Menu item 1</Menu.Item>
+          <Menu.Item>Menu item 2</Menu.Item>
+        </Menu.Group>
         <Divider />
-        <MenuGroup title="Help">
-          <MenuItem disabled>Menu item 3</MenuItem>
-          <MenuItem>Menu item 4</MenuItem>
-        </MenuGroup>
+        <Menu.Group title="Help">
+          <Menu.Item isDisabled>Menu item 3</Menu.Item>
+          <Menu.Item>Menu item 4</Menu.Item>
+        </Menu.Group>
       </Menu>
     </Wrapper>
   );

@@ -1,36 +1,31 @@
-import React from 'react';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Box,
-  Heading,
-  Icon,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Breadcrumb, Box, Heading, Icon } from "native-base";
+import { Wrapper } from "../../components";
 export const BreadCrumbComponentSeparator = function () {
   return (
     <Wrapper>
       <Box>
-        <Heading mb={4}>BreadCrumb with Custom Separator</Heading>
+        <Heading mb={4}>Breadcrumb with Custom Separator</Heading>
         <Breadcrumb
           spacing={1}
-          separator={<Icon name='keyboard-arrow-right' size={5} />}
+          separator={<Icon name="keyboard-arrow-right" size={5} />}
         >
-          <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink>Home (This is currently active)</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink>Docs</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink
-              href='https://github.com/GeekyAnts/nativebase-v3'
+          <Breadcrumb.Item isCurrentPage>
+            <Breadcrumb.Link>Home (This is currently active)</Breadcrumb.Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <Breadcrumb.Link href="https://alpha.nativebase.io/" isExternal>
+              Docs
+            </Breadcrumb.Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <Breadcrumb.Link
+              href="https://github.com/GeekyAnts/nativebase"
               isExternal
             >
               Github
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+            </Breadcrumb.Link>
+          </Breadcrumb.Item>
         </Breadcrumb>
       </Box>
     </Wrapper>

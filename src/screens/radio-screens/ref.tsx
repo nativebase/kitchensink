@@ -1,5 +1,5 @@
 import React from "react";
-import { RadioGroup, Radio, Icon } from "native-base";
+import { Radio, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
 export const RadioRef = function () {
@@ -7,7 +7,7 @@ export const RadioRef = function () {
 
   return (
     <Wrapper>
-      <RadioGroup
+      <Radio.Group
         name="exampleGroup"
         colorScheme="success"
         onChange={(value: any) => {
@@ -38,7 +38,7 @@ export const RadioRef = function () {
         >
           Correct
         </Radio>
-      </RadioGroup>
+      </Radio.Group>
     </Wrapper>
   );
 };

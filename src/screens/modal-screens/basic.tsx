@@ -1,52 +1,41 @@
-import React from 'react';
-import {
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  Button,
-  Center,
-  Input,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Modal, Button, Center, Input } from "native-base";
+import { Wrapper } from "../../components";
 
 export const ModalUsage = function () {
   const [modalVisible, setModalVisible] = React.useState(false);
   return (
     <Wrapper>
       <Modal
-        isCentered
         isOpen={modalVisible}
         onClose={setModalVisible}
         overlayVisible={true}
       >
-        <ModalContent>
-          {/* <ModalCloseButton /> */}
-          <ModalHeader fontSize="4xl" fontWeight="bold">
+        <Modal.Content>
+          <Modal.CloseButton />
+          <Modal.Header _text={{ fontSize: "4xl", fontWeight: "bold" }}>
             Hello World
-          </ModalHeader>
-          <ModalBody>
+          </Modal.Header>
+          <Modal.Body>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi
             cupiditate expedita, ipsa corporis officia totam similique delectus!
             Debitis esse, ea blanditiis iste enim iure at odit fugiat autem.
-            Accusamus?
             <Input mt={4} placeholder="Lorem ipsum dolor sit" />
-          </ModalBody>
-          <ModalFooter>
+          </Modal.Body>
+          <Modal.Footer>
             <Button colorScheme="blue" mr={1}>
-              Save
+              Done
             </Button>
             <Button
+              colorScheme="secondary"
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
             >
-              Close
+              Cancel
             </Button>
-          </ModalFooter>
-        </ModalContent>
+          </Modal.Footer>
+        </Modal.Content>
       </Modal>
       <Center>
         <Button
@@ -59,4 +48,4 @@ export const ModalUsage = function () {
       </Center>
     </Wrapper>
   );
-}
+};

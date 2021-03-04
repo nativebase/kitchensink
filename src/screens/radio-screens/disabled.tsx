@@ -1,11 +1,11 @@
 import React from "react";
-import { Radio, Text, RadioGroup } from "native-base";
+import { Radio, Text } from "native-base";
 import { Wrapper } from "../../components";
 
 export const RadioDisabled = function () {
   return (
     <Wrapper>
-      <RadioGroup defaultValue="1" name="exampleGroup">
+      <Radio.Group defaultValue="1" name="exampleGroup">
         <Radio value="1" isDisabled>
           <Text mx={2}>First</Text>
         </Radio>
@@ -15,7 +15,7 @@ export const RadioDisabled = function () {
         <Radio value="3">
           <Text mx={2}>Third</Text>
         </Radio>
-      </RadioGroup>
+      </Radio.Group>
     </Wrapper>
   );
 };

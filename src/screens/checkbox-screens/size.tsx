@@ -9,13 +9,7 @@ export const CheckboxSize = function () {
         <Checkbox value="red" colorScheme="red" size="sm" defaultIsChecked>
           <Text mx={2}>Checkbox</Text>
         </Checkbox>
-        <Checkbox
-          colorScheme="green"
-          size="md"
-          icon={<Icon name="done" type="MaterialIcons" size={40} />}
-          defaultIsChecked
-          value="green"
-        >
+        <Checkbox colorScheme="green" size="md" defaultIsChecked value="green">
           <Text mx={2}>Checkbox</Text>
         </Checkbox>
         <Checkbox

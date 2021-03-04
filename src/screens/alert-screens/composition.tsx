@@ -1,45 +1,64 @@
-import React from 'react';
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-  AlertIcon,
-  Box,
-  VStack,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Alert, Box, VStack, CloseButton } from "native-base";
+import { Wrapper } from "../../components";
 export const AlertComposition = () => {
   return (
     <Wrapper>
-      <VStack mx={3} space={3}>
+      <VStack mx={2} space={3}>
         <Alert
-          status='success'
-          variant='subtle'
-          display='flex'
-          flexDirection='column'
-          alignItems='center'
-          justifyContent='center'
-          height='200px'
+          status="success"
+          display="flex"
+          variant="outline"
+          borderColor="gray.200"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          height="200px"
         >
-          <AlertIcon boxSize='40px' mr={0} />
-          <AlertTitle mt={4} mb={1}>
-            Application submitted!
-          </AlertTitle>
-          <AlertDescription>
-            Thanks for submitting your application. Our team will get back to
-            you soon.
-          </AlertDescription>
+          <Alert.Icon boxSize="40px" mr={0} />
+          <Alert.Title mt={4} mb={2}>
+            This is a success alert
+          </Alert.Title>
+          <Alert.Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Alert.Description>
         </Alert>
 
-        <Alert status='success'>
-          <AlertIcon />
+        <Alert
+          status="success"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          height="200px"
+        >
+          <Alert.Icon boxSize="40px" mr={0} />
+          <Alert.Title mt={4} mb={2}>
+            This is a success alert
+          </Alert.Title>
+          <Alert.Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Alert.Description>
+        </Alert>
+
+        <Alert status="success">
+          <Alert.Icon />
           <Box flex={1}>
-            <AlertTitle>Success!</AlertTitle>
-            <AlertDescription>
-              Your application has been received. We will review your
-              application and respond within the next 48 hours.
-            </AlertDescription>
+            <Alert.Title>This is a success alert</Alert.Title>
+            <Alert.Description>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </Alert.Description>
           </Box>
+          <CloseButton position="absolute" top={2} right={2} />
         </Alert>
       </VStack>
     </Wrapper>

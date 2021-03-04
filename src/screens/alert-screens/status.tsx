@@ -1,41 +1,32 @@
-import React from 'react';
-import {
-  Stack,
-  AlertDescription,
-  Alert,
-  AlertIcon,
-  AlertTitle,
-} from 'native-base';
+import React from "react";
+import { Stack, Alert, HStack } from "native-base";
 
-import { Wrapper } from '../../components';
+import { Wrapper } from "../../components";
 export const AlertStatus = function () {
   return (
     <Wrapper>
-      <Stack space={3} mx={3}>
-        <Alert status='error'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>There was an error.</AlertDescription>
-        </Alert>
-
-        <Alert status='success'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>Data uploaded to the server.</AlertDescription>
-        </Alert>
-
-        <Alert status='warning'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>Your account is about expire</AlertDescription>
-        </Alert>
-
-        <Alert status='default'>
-          <AlertIcon />
-          <AlertTitle>Error Alert</AlertTitle>
-          <AlertDescription>NativeBase is going live soon.</AlertDescription>
-        </Alert>
-      </Stack>
+      <HStack>
+        {["subtle", "solid", "outline"].map((key: any) => (
+          <Stack space={3} mx={3}>
+            <Alert status="error" variant={key}>
+              <Alert.Icon />
+              <Alert.Title>This is an error alert</Alert.Title>
+            </Alert>
+            <Alert status="warning" variant={key}>
+              <Alert.Icon />
+              <Alert.Title>This is a warning alert</Alert.Title>
+            </Alert>
+            <Alert status="info" variant={key}>
+              <Alert.Icon />
+              <Alert.Title>This is an info alert</Alert.Title>
+            </Alert>
+            <Alert status="success" variant={key}>
+              <Alert.Icon />
+              <Alert.Title>This is a success alert</Alert.Title>
+            </Alert>
+          </Stack>
+        ))}
+      </HStack>
     </Wrapper>
   );
 };

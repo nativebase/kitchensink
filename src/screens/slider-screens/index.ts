@@ -4,3 +4,4 @@ export * from "./customized";
 export * from "./formcontrolled";
 export * from "./size";
 export * from "./value";
+export * from "./vertical";

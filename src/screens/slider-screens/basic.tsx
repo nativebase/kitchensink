@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-  Box,
-} from "native-base";
+import { Slider, Box } from "native-base";
 import { Wrapper } from "../../components";
 
 export const SliderBasic = function () {
@@ -18,10 +12,10 @@ export const SliderBasic = function () {
           accessibilityDecrementSteps={5}
           accessibilityLabel="This is a test slider"
         >
-          <SliderTrack>
-            <SliderFilledTrack />
-          </SliderTrack>
-          <SliderThumb />
+          <Slider.Track>
+            <Slider.FilledTrack />
+          </Slider.Track>
+          <Slider.Thumb />
         </Slider>
       </Box>
     </Wrapper>

@@ -9,10 +9,10 @@ export const InputElements = () => {
       <Input
         w="90%"
         InputLeftElement={
-          <Icon name="phone" fontSize="xl" type="MaterialIcons" />
+          <Icon name="phone" fontSize="xl" type="MaterialIcons" m={2} />
         }
         InputRightElement={
-          <Icon name="person" fontSize="xl" type="MaterialIcons" />
+          <Icon name="person" fontSize="xl" type="MaterialIcons" m={2} />
         }
         placeholder="Left and Right InputElement"
       />

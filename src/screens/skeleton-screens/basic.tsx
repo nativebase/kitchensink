@@ -5,9 +5,9 @@ export const SkeletonUsage = function () {
   return (
     <Wrapper>
       <Stack width="90%">
-        <Skeleton my={2} height="20px" />
-        <Skeleton my={2} height="20px" />
-        <Skeleton my={2} height="20px" />
+        <Skeleton variant="text" height={6} />
+        <Skeleton my={2} height={6} variant="rect" />
+        <Skeleton my={2} height={6} variant="circle" size={20} />
       </Stack>
     </Wrapper>
   );

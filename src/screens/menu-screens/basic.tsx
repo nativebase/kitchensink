@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, MenuItem, Divider, IconButton, Icon } from "native-base";
+import { Menu, Divider, IconButton, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
 export const MenuUsage = function () {
@@ -7,20 +7,14 @@ export const MenuUsage = function () {
     <Wrapper>
       <Menu
         trigger={(triggerProps: any) => {
-          return (
-            <IconButton
-              icon={<Icon name="menu" />}
-              {...triggerProps}
-              bg="teal.200"
-            />
-          );
+          return <IconButton icon={<Icon name="menu" />} {...triggerProps} />;
         }}
       >
-        <MenuItem disabled>Menu item 1</MenuItem>
-        <MenuItem>Menu item 2</MenuItem>
-        <MenuItem disabled>Menu item 3</MenuItem>
+        <Menu.Item isDisabled>Menu item 1</Menu.Item>
+        <Menu.Item>Menu item 2</Menu.Item>
+        <Menu.Item isDisabled>Menu item 3</Menu.Item>
         <Divider />
-        <MenuItem>Menu item 4</MenuItem>
+        <Menu.Item>Menu item 4</Menu.Item>
       </Menu>
     </Wrapper>
   );

@@ -13,12 +13,7 @@ import {
   Heading,
   Icon,
   Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionIcon,
-  AccordionPanel,
   useColorModeValue,
-  useColorMode,
 } from "native-base";
 import { routes } from "./routes";
 // Drawer Needs stack navigator to display headers
@@ -27,53 +22,47 @@ const DrawerNavigator = createDrawerNavigator();
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
   const selectedIndex = props.state.index;
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <DrawerContentScrollView {...props}>
       <Box py={8} bg={useColorModeValue("gray.50", "gray.800")}>
         <VStack>
           <Box pl={8}>
-            <Heading>Nativebase V3</Heading>
+            <Heading
+              size="xl"
+              color={useColorModeValue("emerald.400", "emerald.500")}
+            >
+              Nativebase v3
+            </Heading>
           </Box>
           <Box pl={8}>
-            <Heading>KitchenSink</Heading>
+            <Heading
+              size="lg"
+              color={useColorModeValue("indigo.400", "indigo.500")}
+            >
+              KitchenSink
+            </Heading>
           </Box>
-          <Button
-            my={8}
-            rightIcon={
-              colorMode === "light" ? (
-                <Icon
-                  name="brightness-3"
-                  color="white"
-                  size={6}
-                  type="MaterialIcons"
-                />
-              ) : (
-                <Icon
-                  name="brightness-7"
-                  color="gray.800"
-                  size={6}
-                  type="MaterialIcons"
-                />
-              )
-            }
-            colorScheme={colorMode === "light" ? "blue" : "red"}
-            onPress={() => {
-              toggleColorMode();
-            }}
-          >
-            {`${colorMode === "light" ? "Dark" : "Light"} Mode`}
-          </Button>
           <Box p={4} />
-          {routes.map((item: any, index: number) => {
-            return (
-              <Accordion key={`drawer-content-${index}`}>
-                <AccordionItem>
-                  <AccordionButton>
+          <Accordion allowToggle border={0}>
+            {routes.map((item: any, index: number) => {
+              return (
+                // <Accordion allowToggle key={`drawer-content-${index}`} border={0}>
+                <Accordion.Item key={`drawer-content-${index}`}>
+                  <Accordion.Summary
+                    // borderWidth={0}
+                    // border={1}
+                    borderRadius={0}
+                    _expanded={{
+                      bg: useColorModeValue("emerald.400", "emerald.500"),
+                      _text: {
+                        color: useColorModeValue("white", "black"),
+                      },
+                    }}
+                  >
                     <Box>
                       <HStack
                         key={index}
-                        py={2}
+                        // py={2}
                         pl={0}
                         space={3}
                         alignItems="center"
@@ -83,37 +72,42 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                           name={item.icon}
                           type="MaterialIcons"
                         />
-                        <Text fontSize="lg">{item.title}</Text>
+                        <Text fontSize="lg" bold>
+                          {item.title}
+                        </Text>
                       </HStack>
                     </Box>
-                    <AccordionIcon
+                    <Accordion.Icon
                       color={useColorModeValue("black", "gray.100")}
                     />
-                  </AccordionButton>
-                  <AccordionPanel borderWidth={0}>
-                    {item.variants.map((variant: { name: any; title: any; }, ind: number) => {
-                      const isSelected = selectedIndex === ind;
-                      return (
-                        <Button
-                        key={ind}
-                          pl={8}
-                          justifyContent="space-between"
-                          onPress={() =>
-                            props.navigation.navigate(item.name, {
-                              screen: variant.name,
-                            })
-                          }
-                          variant="ghost"
-                        >
-                          <Text fontSize="lg">{variant.title}</Text>
-                        </Button>
-                      );
-                    })}
-                  </AccordionPanel>
-                </AccordionItem>
-              </Accordion>
-            );
-          })}
+                  </Accordion.Summary>
+                  <Accordion.Details py={0} border={0}>
+                    {item.variants.map(
+                      (variant: { name: any; title: any }, ind: number) => {
+                        const isSelected = selectedIndex === ind;
+                        return (
+                          <Button
+                            key={ind}
+                            // py={0}
+                            pl={8}
+                            justifyContent="space-between"
+                            onPress={() =>
+                              props.navigation.navigate(item.name, {
+                                screen: variant.name,
+                              })
+                            }
+                            variant="ghost"
+                          >
+                            <Text fontSize="lg">{variant.title}</Text>
+                          </Button>
+                        );
+                      }
+                    )}
+                  </Accordion.Details>
+                </Accordion.Item>
+              );
+            })}
+          </Accordion>
         </VStack>
       </Box>
     </DrawerContentScrollView>

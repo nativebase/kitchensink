@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Checkbox,
-  CheckboxGroup,
-  VStack,
-  Text,
-  Container,
-} from "native-base";
+import { FormControl, Checkbox, VStack, Text, Container } from "native-base";
 import { Wrapper } from "../../components";
 
 export const CheckboxFormControlled = function () {
@@ -18,8 +8,8 @@ export const CheckboxFormControlled = function () {
     <Wrapper>
       <Container>
         <FormControl isRequired isInvalid>
-          <FormLabel>Select Item</FormLabel>
-          <CheckboxGroup
+          <FormControl.Label>Select Item</FormControl.Label>
+          <Checkbox.Group
             colorScheme="green"
             defaultValue={groupValue}
             onChange={(values: any) => {
@@ -43,9 +33,13 @@ export const CheckboxFormControlled = function () {
             >
               <Text mx={2}>Indeterminate Item</Text>
             </Checkbox>
-          </CheckboxGroup>
-          <FormHelperText>We'll keep this between us.</FormHelperText>
-          <FormErrorMessage>Something is wrong.</FormErrorMessage>
+          </Checkbox.Group>
+          <FormControl.HelperText>
+            We'll keep this between us.
+          </FormControl.HelperText>
+          <FormControl.ErrorMessage>
+            Something is wrong.
+          </FormControl.ErrorMessage>
         </FormControl>
 
         <VStack mt={3} alignItems="baseline">

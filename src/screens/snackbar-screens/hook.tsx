@@ -1,21 +1,13 @@
-import React from 'react';
-import {
-  Button,
-  Alert,
-  AlertIcon,
-  AlertDescription,
-  useSnackbar,
-  VStack,
-  AlertTitle,
-} from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Button, Alert, useSnackbar, VStack } from "native-base";
+import { Wrapper } from "../../components";
 export const SnackbarHook = function () {
   const { setSnackbar } = useSnackbar();
   const template = (
-    <Alert status='success'>
-      <AlertIcon />
-      <AlertTitle>Simple Snack</AlertTitle>
-      <AlertDescription>Welldone, we are proud of you.</AlertDescription>
+    <Alert status="success">
+      <Alert.Icon />
+      <Alert.Title>Simple Snack</Alert.Title>
+      <Alert.Description>Welldone, we are proud of you.</Alert.Description>
     </Alert>
   );
   return (
@@ -24,7 +16,8 @@ export const SnackbarHook = function () {
         <Button
           onPress={() =>
             setSnackbar(template, {
-              accessibilityAnnouncement: 'Welldone, we are proud of you.',
+              accessibilityAnnouncement: "Well done, we are proud of you.",
+              autoHideDuration: 1000,
             })
           }
         >
@@ -33,9 +26,8 @@ export const SnackbarHook = function () {
         <Button
           onPress={() =>
             setSnackbar(template, {
-              enableOverlay: true,
-              placement: 'top',
-              accessibilityAnnouncement: 'Welldone, we are proud of you.',
+              placement: "top",
+              accessibilityAnnouncement: "Well done, we are proud of you.",
             })
           }
         >

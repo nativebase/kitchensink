@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-  Box,
-} from "native-base";
+import { Slider, Box } from "native-base";
 import { Wrapper } from "../../components";
 
 export const SliderColor = function () {
@@ -13,10 +7,10 @@ export const SliderColor = function () {
     <Wrapper>
       <Box mx={5} width="80%">
         <Slider defaultValue={70} colorScheme="red">
-          <SliderTrack>
-            <SliderFilledTrack />
-          </SliderTrack>
-          <SliderThumb />
+          <Slider.Track>
+            <Slider.FilledTrack />
+          </Slider.Track>
+          <Slider.Thumb />
         </Slider>
       </Box>
     </Wrapper>

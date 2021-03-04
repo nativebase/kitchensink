@@ -1,15 +1,15 @@
 import React from "react";
-import { PinInput, PinInputField } from "native-base";
+import { PinInput } from "native-base";
 import { Wrapper } from "../../components";
 
 export const PinInputUsage = function () {
   return (
     <Wrapper>
       <PinInput size="md" value="32" defaultValue="98">
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
-        <PinInputField />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
+        <PinInput.Field />
       </PinInput>
     </Wrapper>
   );

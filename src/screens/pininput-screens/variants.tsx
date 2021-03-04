@@ -1,5 +1,5 @@
 import React from "react";
-import { PinInput, PinInputField, Stack } from "native-base";
+import { PinInput, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
 export const PinInputVariant = function () {
@@ -7,29 +7,29 @@ export const PinInputVariant = function () {
     <Wrapper>
       <Stack space={5}>
         <PinInput variant="outline">
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
         <PinInput variant="underlined">
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
         <PinInput variant="rounded">
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
         <PinInput variant="filled">
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
         <PinInput variant="unstyled">
-          <PinInputField />
-          <PinInputField />
-          <PinInputField />
+          <PinInput.Field />
+          <PinInput.Field />
+          <PinInput.Field />
         </PinInput>
       </Stack>
     </Wrapper>

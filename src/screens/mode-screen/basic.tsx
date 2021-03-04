@@ -29,7 +29,7 @@ export const ModeUsage = function () {
       <Button
         colorScheme={colorMode === 'light' ? 'blue' : 'red'}
         onPress={() => {
-          toggleColorMode();
+          toggleColorMode && toggleColorMode();
         }}
       >
         Change mode

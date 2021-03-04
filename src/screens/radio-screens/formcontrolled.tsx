@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Radio,
-  RadioGroup,
-  Text,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Container,
-} from "native-base";
+import { Radio, Text, FormControl, Container } from "native-base";
 import { Wrapper } from "../../components";
 
 export const RadioFormControlled = function () {
@@ -16,8 +7,8 @@ export const RadioFormControlled = function () {
     <Wrapper>
       <Container>
         <FormControl isRequired isInvalid>
-          <FormLabel>Select One</FormLabel>
-          <RadioGroup defaultValue="1" name="exampleGroup">
+          <FormControl.Label>Select One</FormControl.Label>
+          <Radio.Group defaultValue="1" name="exampleGroup">
             <Radio value="1">
               <Text mx={2}>First</Text>
             </Radio>
@@ -27,9 +18,13 @@ export const RadioFormControlled = function () {
             <Radio value="3">
               <Text mx={2}>Third</Text>
             </Radio>
-          </RadioGroup>
-          <FormHelperText>We'll keep this between us.</FormHelperText>
-          <FormErrorMessage>Something is wrong.</FormErrorMessage>
+          </Radio.Group>
+          <FormControl.HelperText>
+            We'll keep this between us.
+          </FormControl.HelperText>
+          <FormControl.ErrorMessage>
+            Something is wrong.
+          </FormControl.ErrorMessage>
         </FormControl>
       </Container>
     </Wrapper>

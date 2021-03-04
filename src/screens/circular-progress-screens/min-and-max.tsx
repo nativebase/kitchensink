@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  CircularProgress,
-  Heading,
-  Center,
-  CircularProgressLabel,
-} from "native-base";
+import { CircularProgress, Heading, Center } from "native-base";
 import { Wrapper } from "../../components";
 export const CircularProgressMinMax = function () {
   return (
@@ -19,7 +14,7 @@ export const CircularProgressMinMax = function () {
           size={100}
           color="red.200"
         >
-          <CircularProgressLabel>550%</CircularProgressLabel>
+          <CircularProgress.Label>550%</CircularProgress.Label>
         </CircularProgress>
       </Center>
     </Wrapper>

@@ -1,11 +1,11 @@
 import React from "react";
-import { Radio, RadioGroup, Text, Icon } from "native-base";
+import { Radio, Text, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
 export const RadioIcon = function () {
   return (
     <Wrapper>
-      <RadioGroup defaultValue="1" size="lg" name="exampleGroup">
+      <Radio.Group defaultValue="1" size="lg" name="exampleGroup">
         <Radio
           colorScheme="green"
           value="1"
@@ -27,7 +27,7 @@ export const RadioIcon = function () {
         >
           <Text mx={2}>Warning</Text>
         </Radio>
-      </RadioGroup>
+      </Radio.Group>
     </Wrapper>
   );
 };

@@ -1,14 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import {
-  SkeletonCircleExample,
-  SkeletonColor,
-  SkeletonLoaded,
-  SkeletonTextExammple,
-  SkeletonUsage,
-  SkeletonWrapper,
-} from "../screens";
+import { SkeletonColor, SkeletonLoaded, SkeletonUsage } from "../screens";
 import { MenuButton } from "../components";
+import { ThemeButton } from "../components";
+import { useColorModeValue } from "native-base";
 
 const Stack = createStackNavigator();
 export function SkeletonStack(props: any) {
@@ -22,35 +17,14 @@ export function SkeletonStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
-        }}
-      />
-      <Stack.Screen
-        name="skeletonWrapper"
-        component={SkeletonWrapper}
-        options={{
-          headerTitle: "Skeleton Wrapper",
-          headerLeft: () => {
-            return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
           },
-        }}
-      />
-      <Stack.Screen
-        name="skeletonCircle"
-        component={SkeletonCircleExample}
-        options={{
-          headerTitle: "Skeleton Circle",
-          headerLeft: () => {
-            return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
           },
-        }}
-      />
-      <Stack.Screen
-        name="skeletonText"
-        component={SkeletonTextExammple}
-        options={{
-          headerTitle: "Skeleton Text",
-          headerLeft: () => {
-            return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />
@@ -62,6 +36,15 @@ export function SkeletonStack(props: any) {
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
         }}
       />
       <Stack.Screen
@@ -71,6 +54,15 @@ export function SkeletonStack(props: any) {
           headerTitle: "Skeleton Loaded",
           headerLeft: () => {
             return <MenuButton toggleDrawer={props.navigation.toggleDrawer} />;
+          },
+          headerStyle: {
+            backgroundColor: useColorModeValue("#f5f5f5", "#3f3f46"),
+          },
+          headerTitleStyle: {
+            color: useColorModeValue("#000", "#fff"),
+          },
+          headerRight: () => {
+            return <ThemeButton toggleDrawer={props.navigation.toggleDrawer} />;
           },
         }}
       />

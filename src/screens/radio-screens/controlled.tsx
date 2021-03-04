@@ -1,5 +1,5 @@
 import React from "react";
-import { Radio, RadioGroup, Text } from "native-base";
+import { Radio, Text } from "native-base";
 import type { IRadioValue } from "native-base";
 import { Wrapper } from "../../components";
 
@@ -8,7 +8,7 @@ export const RadioControlled = function ControlledRadio() {
 
   return (
     <Wrapper>
-      <RadioGroup
+      <Radio.Group
         name="myRadioGroup"
         value={value}
         onChange={(nextValue: any) => {
@@ -21,7 +21,7 @@ export const RadioControlled = function ControlledRadio() {
         <Radio value="two">
           <Text>Two</Text>
         </Radio>
-      </RadioGroup>
+      </Radio.Group>
     </Wrapper>
   );
 };
