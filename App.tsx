@@ -10,6 +10,9 @@ import {
   DarkTheme,
 } from "@react-navigation/native";
 import { kitchensinkTheme } from "./src/theme";
+import { enableScreens } from "react-native-screens";
+
+enableScreens(true);
 
 const NavigationProvider = (props: any) => {
   return (
