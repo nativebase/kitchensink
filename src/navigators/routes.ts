@@ -65,7 +65,7 @@ import {
   VStackStack,
   WrapStack,
   ZStackStack,
-} from "./index";
+} from "./NBComponentStack";
 export const routes = [
   {
     name: "appbar",

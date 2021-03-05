@@ -2,17 +2,30 @@ import "intl";
 import "intl/locale-data/jsonp/en";
 
 import React from "react";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider, useColorModeValue } from "native-base";
 import { RootStack } from "./src/navigators/RootStack";
-import { NavigationContainer } from "@react-navigation/native";
+import {
+  NavigationContainer,
+  DefaultTheme,
+  DarkTheme,
+} from "@react-navigation/native";
 import { kitchensinkTheme } from "./src/theme";
+
+const NavigationProvider = (props: any) => {
+  return (
+    <NavigationContainer
+      theme={useColorModeValue(DefaultTheme, DarkTheme)}
+      {...props}
+    />
+  );
+};
 
 export default function App() {
   return (
     <NativeBaseProvider theme={kitchensinkTheme}>
-      <NavigationContainer>
+      <NavigationProvider>
         <RootStack />
-      </NavigationContainer>
+      </NavigationProvider>
     </NativeBaseProvider>
   );
 }

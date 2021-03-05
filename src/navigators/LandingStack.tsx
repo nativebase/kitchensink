@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { LandingScreen, AppbarExamples } from "../screens";
+import { LandingScreen } from "../screens";
 import { Drawer } from "./Drawer";
 
 const Stack = createStackNavigator();
