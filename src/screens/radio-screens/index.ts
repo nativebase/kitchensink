@@ -4,6 +4,5 @@ export * from "./disabled";
 export * from "./formcontrolled";
 export * from "./icon";
 export * from "./invalid";
-export * from "./ref";
 export * from "./size";
 export * from "./uncontrolled";

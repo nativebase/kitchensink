@@ -5,4 +5,3 @@ export * from "./loading";
 export * from "./sizes";
 export * from "./usage";
 export * from "./variants";
-export * from "./with-ref";

@@ -1,6 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { IconCreate, IconCustom, IconUsage } from "../../screens";
+import { IconCustom, IconUsage } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
 const Stack = createStackNavigator();
@@ -16,11 +16,6 @@ export function IconStack(props: any) {
         name="iconCustom"
         component={IconCustom}
         options={useHeaderOptions("Custom Icon", props)}
-      />
-      <Stack.Screen
-        name="iconCreate"
-        component={IconCreate}
-        options={useHeaderOptions("Create Icon", props)}
       />
     </Stack.Navigator>
   );

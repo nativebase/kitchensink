@@ -11,7 +11,6 @@ import {
   CheckboxSize,
   CheckboxUncontrolled,
   CheckboxUsage,
-  CheckboxWithRef,
 } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
@@ -68,11 +67,6 @@ export function CheckboxStack(props: any) {
         name="checkboxFormControlled"
         component={CheckboxFormControlled}
         options={useHeaderOptions("Checkbox Form Controlled", props)}
-      />
-      <Stack.Screen
-        name="checkboxWithRef"
-        component={CheckboxWithRef}
-        options={useHeaderOptions("Checkbox With Ref", props)}
       />
     </Stack.Navigator>
   );

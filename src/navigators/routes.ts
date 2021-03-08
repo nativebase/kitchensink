@@ -55,12 +55,9 @@ import {
   TagStack,
   TextAreaStack,
   TextStack,
-  ThemeStack,
   ToastStack,
   TransitionStack,
   TypeaheadStack,
-  UseHookStack,
-  UseMediaQueryStack,
   ViewStack,
   VStackStack,
   WrapStack,
@@ -70,7 +67,7 @@ export const routes = [
   {
     name: "appbar",
     title: "App Bar",
-    variants: [{ title: "Examples", name: "appbarExamples" }],
+    variants: [{ title: "Basic", name: "appbarExamples" }],
     screen: AppbarStack,
     icon: "credit-card",
   },
@@ -100,7 +97,6 @@ export const routes = [
         title: "DisableOverlay",
         name: "actionsheetDisableOverlay",
       },
-      { title: "Composition", name: "actionsheetComposition" },
     ],
     screen: ActionsheetStack,
     icon: "more-vert",
@@ -187,10 +183,6 @@ export const routes = [
         title: "Variants",
         name: "badgeVariant",
       },
-      {
-        title: "Composition",
-        name: "badgeConposition",
-      },
     ],
     screen: BadgeStack,
     icon: "looks-one",
@@ -203,10 +195,6 @@ export const routes = [
       {
         title: "Composite",
         name: "boxComposite",
-      },
-      {
-        title: "with Refs",
-        name: "boxRef",
       },
     ],
     screen: BoxStack,
@@ -261,10 +249,6 @@ export const routes = [
       {
         title: "Composition",
         name: "buttonComposition",
-      },
-      {
-        title: "With Ref",
-        name: "buttonWithRef",
       },
     ],
     screen: ButtonStack,
@@ -327,10 +311,6 @@ export const routes = [
       {
         title: "Form Controlled",
         name: "checkboxFormControlled",
-      },
-      {
-        title: "With Ref",
-        name: "checkboxWithRef",
       },
     ],
     screen: CheckboxStack,
@@ -437,13 +417,6 @@ export const routes = [
     icon: "settings-overscan",
   },
   {
-    name: "customtheme",
-    title: "Custom Theme",
-    variants: [{ title: "Custom Theme Example", name: "customThemeUsage" }],
-    screen: ThemeStack,
-    icon: "settings",
-  },
-  {
     name: "divider",
     title: "Divider",
     variants: [
@@ -489,7 +462,6 @@ export const routes = [
       { title: "Basic", name: "headingUsage" },
       { title: "Sizes", name: "headingSize" },
       { title: "Truncate", name: "headingTruncate" },
-      { title: "Overriden Style", name: "headingOverriden" },
       { title: "Composition", name: "headingComposition" },
     ],
     screen: HeadingStack,
@@ -508,7 +480,6 @@ export const routes = [
     variants: [
       { title: "Basic", name: "iconUsage" },
       { title: "Custom Icon", name: "iconCustom" },
-      { title: "Create Icon", name: "iconCreate" },
     ],
     screen: IconStack,
     icon: "warning",
@@ -533,7 +504,6 @@ export const routes = [
       { title: "Sizes", name: "imageSize" },
       { title: "Border Radius", name: "imageBorderRadius" },
       { title: "Fallback Support", name: "imageFallback" },
-      { title: "With Ref", name: "imageRef" },
     ],
     screen: ImageStack,
     icon: "photo",
@@ -719,10 +689,6 @@ export const routes = [
         title: "Form Controlled",
         name: "radioFormControlled",
       },
-      {
-        title: "With Ref",
-        name: "radioWithRef",
-      },
     ],
     screen: RadioStack,
     icon: "radio-button-checked",
@@ -742,10 +708,6 @@ export const routes = [
       {
         title: "More",
         name: "responsiveMore",
-      },
-      {
-        title: "Demo",
-        name: "responsiveDemo",
       },
     ],
     screen: ResponsiveStack,

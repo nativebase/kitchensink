@@ -1,12 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import {
-  ImageBR,
-  ImageFallback,
-  ImageRef,
-  ImageSize,
-  ImageUsage,
-} from "../../screens";
+import { ImageBR, ImageFallback, ImageSize, ImageUsage } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
 const Stack = createStackNavigator();
@@ -32,11 +26,6 @@ export function ImageStack(props: any) {
         name="imageFallback"
         component={ImageFallback}
         options={useHeaderOptions("Image Fallback", props)}
-      />
-      <Stack.Screen
-        name="imageRef"
-        component={ImageRef}
-        options={useHeaderOptions("Image With Ref", props)}
       />
     </Stack.Navigator>
   );

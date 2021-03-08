@@ -1,11 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import {
-  BadgeColor,
-  BadgeUsage,
-  BadgeVariants,
-  BadgeComposition,
-} from "../../screens";
+import { BadgeColor, BadgeUsage, BadgeVariants } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
 const Stack = createStackNavigator();
@@ -25,11 +20,6 @@ export function BadgeStack(props: any) {
       <Stack.Screen
         name="badgeVariant"
         component={BadgeVariants}
-        options={useHeaderOptions("Badge Variants", props)}
-      />
-      <Stack.Screen
-        name="badgeComposition"
-        component={BadgeComposition}
         options={useHeaderOptions("Badge Variants", props)}
       />
     </Stack.Navigator>

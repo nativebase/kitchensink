@@ -9,7 +9,6 @@ import {
   RadioInvalid,
   RadioSize,
   RadioUnControlled,
-  RadioRef,
 } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
@@ -56,11 +55,6 @@ export function RadioStack(props: any) {
         name="radioFormControlled"
         component={RadioFormControlled}
         options={useHeaderOptions("Radio Form Controlle", props)}
-      />
-      <Stack.Screen
-        name="RadioWithRef"
-        component={RadioRef}
-        options={useHeaderOptions("Radio With Ref", props)}
       />
     </Stack.Navigator>
   );

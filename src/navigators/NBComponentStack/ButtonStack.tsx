@@ -8,7 +8,6 @@ import {
   ButtonSize,
   ButtonUsage,
   ButtonVariant,
-  ButtonWithRef,
 } from "../../screens";
 import { useHeaderOptions } from "../../components";
 
@@ -50,11 +49,6 @@ export function ButtonStack(props: any) {
         name="buttonComposition"
         component={ButtonComposition}
         options={useHeaderOptions("Button Composition", props)}
-      />
-      <Stack.Screen
-        name="buttonWithRef"
-        component={ButtonWithRef}
-        options={useHeaderOptions("Button With Ref", props)}
       />
     </Stack.Navigator>
   );

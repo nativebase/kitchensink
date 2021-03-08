@@ -1,7 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
-  ResponsiveDemo,
   ResponsiveMore,
   ResponsiveUsage,
   ResposiveFontSize,
@@ -26,11 +25,6 @@ export function ResponsiveStack(props: any) {
         name="responsiveMore"
         component={ResponsiveMore}
         options={useHeaderOptions("Resposive More", props)}
-      />
-      <Stack.Screen
-        name="responsiveDemo"
-        component={ResponsiveDemo}
-        options={useHeaderOptions("Resposive Demo", props)}
       />
     </Stack.Navigator>
   );

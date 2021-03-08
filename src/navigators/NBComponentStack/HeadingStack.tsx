@@ -2,7 +2,6 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
   HeadingComposition,
-  HeadingOverriden,
   HeadingSize,
   HeadingTruncate,
   HeadingUsage,
@@ -27,11 +26,6 @@ export function HeadingStack(props: any) {
         name="headingTruncate"
         component={HeadingTruncate}
         options={useHeaderOptions("Heading Truncate", props)}
-      />
-      <Stack.Screen
-        name="headingOverriden"
-        component={HeadingOverriden}
-        options={useHeaderOptions("Heading Overriden Style", props)}
       />
       <Stack.Screen
         name="headingComposition"
