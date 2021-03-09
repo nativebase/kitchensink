@@ -12,6 +12,7 @@ import {
   HStack,
   Heading,
   Icon,
+  Divider,
   Accordion,
   useColorModeValue,
 } from "native-base";
@@ -21,7 +22,7 @@ import { routes } from "./routes";
 const DrawerNavigator = createDrawerNavigator();
 
 function CustomDrawerContent(props: DrawerContentComponentProps) {
-  const selectedIndex = props.state.index;
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
   return (
     <DrawerContentScrollView {...props}>
       <Box py={8} bg={useColorModeValue("gray.50", "gray.800")}>
@@ -43,14 +44,12 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
             </Heading>
           </Box>
           <Box p={4} />
-          <Accordion allowToggle border={0}>
+          <Divider borderWidth={0.59} />
+          <Accordion border={0}>
             {routes.map((item: any, index: number) => {
               return (
-                // <Accordion allowToggle key={`drawer-content-${index}`} border={0}>
                 <Accordion.Item key={`drawer-content-${index}`}>
                   <Accordion.Summary
-                    // borderWidth={0}
-                    // border={1}
                     borderRadius={0}
                     _expanded={{
                       bg: useColorModeValue("emerald.400", "emerald.500"),
@@ -83,22 +82,36 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                   </Accordion.Summary>
                   <Accordion.Details py={0} border={0}>
                     {item.variants.map(
-                      (variant: { name: any; title: any }, ind: number) => {
-                        const isSelected = selectedIndex === ind;
+                      (variant: { name: string; title: any }, ind: number) => {
+                        const index = item.name.concat(ind);
+                        const isSelected = selectedIndex === index;
                         return (
                           <Button
                             key={ind}
-                            // py={0}
                             pl={8}
                             justifyContent="space-between"
-                            onPress={() =>
+                            onPress={() => {
+                              setSelectedIndex(index);
                               props.navigation.navigate(item.name, {
                                 screen: variant.name,
-                              })
-                            }
+                              });
+                            }}
                             variant="ghost"
                           >
-                            <Text fontSize="lg">{variant.title}</Text>
+                            <Text
+                              fontSize="lg"
+                              bold={isSelected}
+                              color={
+                                isSelected
+                                  ? useColorModeValue(
+                                      "indigo.400",
+                                      "indigo.500"
+                                    )
+                                  : useColorModeValue("gray.800", "gray.200")
+                              }
+                            >
+                              {variant.title}
+                            </Text>
                           </Button>
                         );
                       }
@@ -108,6 +121,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
               );
             })}
           </Accordion>
+          <Divider borderWidth={0.59} />
         </VStack>
       </Box>
     </DrawerContentScrollView>
