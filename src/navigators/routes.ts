@@ -196,6 +196,14 @@ export const routes = [
         title: "Composite",
         name: "boxComposite",
       },
+      {
+        title: "Composite Card",
+        name: "boxCompositeCard",
+      },
+      {
+        title: "Composite Shoes Card",
+        name: "boxCompositeShoeCard",
+      },
     ],
     screen: BoxStack,
     icon: "crop-square",
