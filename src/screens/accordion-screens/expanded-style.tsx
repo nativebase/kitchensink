@@ -8,7 +8,7 @@ export const AccordionExpandedStyle = () => {
         <Accordion allowMultiple>
           <Accordion.Item>
             <Accordion.Summary _expanded={{ backgroundColor: "orange.300" }}>
-              <Box>Click me to see a different style</Box>
+              Click me to see a different style
               <Accordion.Icon />
             </Accordion.Summary>
             <Accordion.Details>
@@ -20,7 +20,7 @@ export const AccordionExpandedStyle = () => {
           </Accordion.Item>
           <Accordion.Item id={9} isDisabled>
             <Accordion.Summary _disabled={{ backgroundColor: "gray.300" }}>
-              <Box>I'm Disabled 😢</Box>
+              I'm Disabled 😢
               <Accordion.Icon />
             </Accordion.Summary>
             <Accordion.Details>

@@ -8,7 +8,7 @@ export const AccordionUsage = () => {
         <Accordion index={[0, 1]}>
           <Accordion.Item>
             <Accordion.Summary>
-              <Box>Section 1 title</Box>
+              Section 1 title
               <Accordion.Icon />
             </Accordion.Summary>
             <Accordion.Details>
@@ -20,7 +20,7 @@ export const AccordionUsage = () => {
           </Accordion.Item>
           <Accordion.Item>
             <Accordion.Summary>
-              <Box>Section 2 title</Box>
+              Section 2 title
               <Accordion.Icon />
             </Accordion.Summary>
             <Accordion.Details>
@@ -32,7 +32,7 @@ export const AccordionUsage = () => {
           </Accordion.Item>
           <Accordion.Item>
             <Accordion.Summary>
-              <Box>Section 3 title</Box>
+              Section 3 title
               <Accordion.Icon />
             </Accordion.Summary>
             <Accordion.Details>
