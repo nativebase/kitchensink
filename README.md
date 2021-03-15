@@ -10,6 +10,10 @@ An example app with all the UI components of NativeBase V3
 | :--------------------------------------: | :----------------------------------------------: |
 | ![ios-demo](/readme-assets/ios-demo.gif) | ![android-demo](/readme-assets/android-demo.gif) |
 
+|                   Web                    |
+| :--------------------------------------: |
+| ![web-demo](/readme-assets/web-demo.gif) |
+
 ## Installation
 
 - **Clone and install packages**
@@ -56,4 +60,3 @@ yarn
         yarn start
       ```
     - Let the metro bundler start and your browser will open at `http://localhost:19002/`, Click on `Run in web browser`.
-

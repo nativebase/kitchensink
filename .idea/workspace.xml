@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1fdaab3-938d-457a-95d1-1e67d67d8b6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/readme-assets/ios-demo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/readme-assets/ios-demo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigators/NBComponentStack/BoxStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigators/NBComponentStack/BoxStack.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigators/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigators/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/box-screens/composition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/box-screens/composition.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/box-screens/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/box-screens/index.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pnC855erK7XpYydnCogrHwpUXn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1fdaab3-938d-457a-95d1-1e67d67d8b6e" name="Default Changelist" comment="" />
+      <created>1615809304042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615809304042</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="164" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615809356757">
+      <screen x="0" y="25" width="1920" height="962" />
+    </state>
+    <state x="164" y="79" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.962@0.25.1920.962" timestamp="1615809356757" />
+    <state x="100" y="125" width="1200" height="591" key="AVDManager" timestamp="1615810630579">
+      <screen x="0" y="25" width="1920" height="962" />
+    </state>
+    <state x="100" y="125" width="1200" height="591" key="AVDManager/0.25.1920.962@0.25.1920.962" timestamp="1615810630579" />
+    <state x="201" y="56" key="SettingsEditor" timestamp="1615810620029">
+      <screen x="0" y="25" width="1920" height="962" />
+    </state>
+    <state x="201" y="56" key="SettingsEditor/0.25.1920.962@0.25.1920.962" timestamp="1615810620029" />
+    <state x="365" y="189" key="run.anything.popup" timestamp="1615810625413">
+      <screen x="0" y="25" width="1920" height="962" />
+    </state>
+    <state x="365" y="189" key="run.anything.popup/0.25.1920.962@0.25.1920.962" timestamp="1615810625413" />
+  </component>
+</project>
