@@ -38,12 +38,12 @@ import {
 } from "./index";
 // Drawer Needs stack navigator to display headers
 // https://github.com/react-navigation/react-navigation/issues/1632
-const DrawerNavigator = createDrawerNavigator();
 const routes = [
   {
     name: "appbar",
     title: "App Bar",
     variants: [{ title: "Examples", name: "appbarExamples" }],
+    screen: AppbarStack,
     icon: "credit-card",
   },
   {
@@ -60,6 +60,7 @@ const routes = [
         name: "accordionAccessingInternalState",
       },
     ],
+    screen: AccordionStack,
     icon: "menu",
   },
   {
@@ -73,6 +74,7 @@ const routes = [
       },
       { title: "Actionsheet Composition", name: "actionsheetComposition" },
     ],
+    screen: ActionsheetStack,
     icon: "more-vert",
   },
   {
@@ -367,9 +369,9 @@ const routes = [
   },
 ];
 
-function CustomDrawerContent(props: DrawerContentComponentProps) {
-  const selectedIndex = props.state.index;
-
+export default function CustomDrawerContent(
+  props: DrawerContentComponentProps
+) {
   return (
     <DrawerContentScrollView {...props}>
       <Box py={8}>
@@ -382,6 +384,7 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
             <Heading>KitchenSink</Heading>
           </Box>
           <Box p={4} />
+
           {routes.map((item, index) => {
             return (
               <Accordion>
@@ -403,15 +406,12 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
                   </AccordionButton>
                   <AccordionPanel borderWidth={0}>
                     {item.variants.map((variant, ind) => {
-                      const isSelected = selectedIndex === ind;
                       return (
                         <Button
                           pl={8}
                           justifyContent="space-between"
                           onPress={() =>
-                            props.navigation.navigate(item.name, {
-                              screen: variant.name,
-                            })
+                            props.navigation.navigate(variant.name)
                           }
                           variant="ghost"
                         >
@@ -427,24 +427,5 @@ function CustomDrawerContent(props: DrawerContentComponentProps) {
         </VStack>
       </Box>
     </DrawerContentScrollView>
-  );
-}
-
-export function Drawer() {
-  return (
-    <DrawerNavigator.Navigator
-      initialRouteName="accordion"
-      drawerContent={CustomDrawerContent}
-    >
-      {routes.map((route) => {
-        return (
-          <DrawerNavigator.Screen
-            name={route.name}
-            key={route.name}
-            component={route.screen}
-          />
-        );
-      })}
-    </DrawerNavigator.Navigator>
   );
 }

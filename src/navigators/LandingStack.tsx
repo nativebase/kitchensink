@@ -7,13 +7,13 @@ const Stack = createStackNavigator();
 export function LandingStack() {
   return (
     <Stack.Navigator initialRouteName="enterSubdomain">
-      <Stack.Screen
+      {/* <Stack.Screen
         name="landing"
         component={LandingScreen}
         options={{
           headerShown: false,
         }}
-      />
+      /> */}
       <Stack.Screen
         name="drawer"
         component={Drawer}
