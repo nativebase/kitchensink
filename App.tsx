@@ -13,8 +13,6 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawerContent from "./src/navigators/CustomDrawer";
 import ScreenMap from "./ScreenMap";
 
-enableScreens();
-
 const Drawer = createDrawerNavigator();
 
 const NavigationProvider = (props: any) => {
@@ -27,6 +25,8 @@ const NavigationProvider = (props: any) => {
 };
 
 export default function App() {
+  enableScreens();
+
   return (
     <NativeBaseProvider>
       <NavigationProvider>
