@@ -14,7 +14,7 @@ export const CircularProgressLabelExample = function () {
           size={100}
           color="red.200"
         >
-          <CircularProgress.Label>550%</CircularProgress.Label>
+          550%
         </CircularProgress>
       </Center>
     </Wrapper>

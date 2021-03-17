@@ -17,7 +17,6 @@ export const AlertDialogTransition = function () {
           isOpen={isOpen}
           isCentered
         >
-          <AlertDialog.Overlay />
           <AlertDialog.Content>
             <AlertDialog.CloseButton />
             <AlertDialog.Header>Discard Changes?</AlertDialog.Header>

@@ -546,7 +546,7 @@ export const routes = [
       { title: "Basic", name: "linkUsage" },
       { title: "External", name: "linkExternal" },
       { title: "Not Underlined", name: "linkNotUnderlined" },
-      { title: "custom onPress", name: "linkOnpress" },
+      { title: "Custom onPress", name: "linkOnpress" },
       { title: "Composition", name: "linkComposite" },
     ],
     screen: LinkStack,

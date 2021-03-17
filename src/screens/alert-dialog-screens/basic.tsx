@@ -18,7 +18,6 @@ export const AlertDialogUsage = function () {
           onClose={onClose}
           motionPreset="slide"
         >
-          <AlertDialog.Overlay />
           <AlertDialog.Content>
             <AlertDialog.Header _text={{ fontSize: "lg", fontWeight: "bold" }}>
               Delete Customer

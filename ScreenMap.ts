@@ -26,12 +26,15 @@ import {
   BadgeUsage,
   BadgeVariants,
   BoxComposite,
+  BoxCompositeCard,
+  BoxCompositeShoeCard,
   BoxUsage,
   BreadCrumbComponentSeparator,
   BreadCrumbComposition,
   BreadCrumbSeparators,
   BreadCrumbUsage,
   ButtonComposition,
+  ButtonGroupExample,
   ButtonIcon,
   ButtonLoading,
   ButtonSize,
@@ -314,6 +317,14 @@ const ScreenMap = [
     screen: BoxComposite,
     name: "boxComposite",
   },
+  {
+    screen: BoxCompositeCard,
+    name: "boxCompositeCard",
+  },
+  {
+    screen: BoxCompositeShoeCard,
+    name: "boxCompositeShoeCard",
+  },
 
   // Breadcrumb
   { screen: BreadCrumbUsage, name: "breadCrumbUsage" },
@@ -350,7 +361,7 @@ const ScreenMap = [
   },
   {
     name: "buttonGroupExample",
-    screen: ButtonGroup,
+    screen: ButtonGroupExample,
   },
   {
     name: "buttonComposition",
@@ -381,7 +392,7 @@ const ScreenMap = [
     screen: CheckboxControlled,
   },
   {
-    name: "checboxUncontrolled",
+    name: "checkboxUncontrolled",
     screen: CheckboxUncontrolled,
   },
   {
@@ -401,7 +412,7 @@ const ScreenMap = [
     screen: CheckboxColor,
   },
   {
-    name: "checboxIcon",
+    name: "checkboxIcon",
     screen: CheckboxIcon,
   },
   {
@@ -409,7 +420,7 @@ const ScreenMap = [
     screen: CheckboxGroupExample,
   },
   {
-    name: "checboxFormControlled",
+    name: "checkboxFormControlled",
     screen: CheckboxFormControlled,
   },
 
