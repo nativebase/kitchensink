@@ -1,9 +1,9 @@
 import React from "react";
 import { Circle, Square, Box, HStack, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const CenterSquareCircle = function () {
+export const CenterSquareCircle = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Circle size={98} bg="tomato">
           <Icon name="audiotrack" type="MaterialIcons" color="white" size={8} />

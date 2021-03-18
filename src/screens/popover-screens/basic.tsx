@@ -2,9 +2,9 @@ import React from "react";
 import { Popover, Button } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PopoverUsage = function () {
+export const PopoverUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Popover>
         <Popover.Trigger>
           <Button>Trigger</Button>

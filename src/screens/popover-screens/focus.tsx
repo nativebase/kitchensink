@@ -3,10 +3,10 @@ import { Popover, Button, Input } from "native-base";
 import type { TextInput } from "react-native";
 import { Wrapper } from "../../components";
 
-export const PopoverRef = function () {
+export const PopoverRef = function (props: any) {
   const initialFocusRef = React.useRef<TextInput>(null);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Popover initialFocusRef={initialFocusRef} closeOnBlur={false}>
         <Popover.Trigger>
           <Button>Trigger</Button>

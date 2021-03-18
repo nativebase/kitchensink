@@ -25,20 +25,21 @@ export default function CustomDrawerContent(
     <DrawerContentScrollView {...props}>
       <Box py={8}>
         <VStack>
-          <Box pl={8}>
+          <Box px={6}>
             <Heading>Nativebase V3</Heading>
           </Box>
 
-          <Box pl={8}>
-            <Heading>KitchenSink</Heading>
+          <Box px={6} pt={2} pb={4}>
+            <Text fontWeight={"500"}>KitchenSink</Text>
           </Box>
-          <Box p={4} />
 
           {routes.map((item, index) => {
             return (
-              <Accordion>
+              <Accordion border={0} mx={2}>
                 <Accordion.Item>
-                  <Accordion.Summary>
+                  <Accordion.Summary
+                    _expanded={{ backgroundColor: "teal.100" }}
+                  >
                     <Box>
                       <HStack
                         key={index}
@@ -48,7 +49,9 @@ export default function CustomDrawerContent(
                         alignItems="center"
                       >
                         <Icon name={item.icon} type="MaterialIcons" />
-                        <Text fontSize="lg">{item.title}</Text>
+                        <Text fontSize="md" pl={4}>
+                          {item.title}
+                        </Text>
                       </HStack>
                     </Box>
                     <Accordion.Icon />
@@ -57,14 +60,17 @@ export default function CustomDrawerContent(
                     {item.variants.map((variant, ind) => {
                       return (
                         <Button
+                          key={ind}
                           pl={8}
                           justifyContent="space-between"
                           onPress={() =>
-                            props.navigation.navigate(variant.name)
+                            props.navigation.navigate(variant.name, {
+                              title: item.title,
+                            })
                           }
                           variant="ghost"
                         >
-                          <Text fontSize="lg">{variant.title}</Text>
+                          <Text fontSize="sm">{variant.title}</Text>
                         </Button>
                       );
                     })}

@@ -1,9 +1,9 @@
 import React from "react";
 import { CircularProgress, Heading, Center } from "native-base";
 import { Wrapper } from "../../components";
-export const CircularProgressTrackColor = function () {
+export const CircularProgressTrackColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Center>
         <Heading>Changing the TrackColor</Heading>
         <CircularProgress

@@ -2,9 +2,9 @@ import React from "react";
 import { Avatar, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const AvatarFallback = function () {
+export const AvatarFallback = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Avatar mr={1} source={{ uri: "https://bit.ly/broken-link" }}>
           RS

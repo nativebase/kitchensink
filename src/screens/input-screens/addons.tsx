@@ -10,9 +10,9 @@ import {
 } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputAddons = () => {
+export const InputAddons = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <InputGroup>
           <InputLeftAddon children={<Text>https://</Text>} />

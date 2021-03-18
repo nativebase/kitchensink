@@ -2,9 +2,9 @@ import React from "react";
 import { Avatar, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const AvatarBadgeExample = function () {
+export const AvatarBadgeExample = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Avatar
           source={{

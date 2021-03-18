@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from "native-base";
 import { Wrapper } from "../../components";
-export const ResponsiveMore = () => {
+export const ResponsiveMore = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box
         height={{
           base: "75%", // 0-768px

@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Text, Heading } from "native-base";
 import { Wrapper } from "../../components";
-export const ContainerCentering = function () {
+export const ContainerCentering = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Container centerContent>
         <Heading>Benefits</Heading>
         <Text>

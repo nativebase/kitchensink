@@ -2,10 +2,10 @@ import React from "react";
 import { Select } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RowUsage = function () {
+export const RowUsage = function (props: any) {
   let [language, setLanguage] = React.useState<string>("");
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Select
         selectedValue={language}
         minWidth={200}

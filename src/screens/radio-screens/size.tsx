@@ -2,9 +2,9 @@ import React from "react";
 import { Radio, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioSize = function () {
+export const RadioSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Radio.Group name="exampleGroup" defaultValue="1">
         <Radio value="1" colorScheme="red" size="sm">
           <Text mx={2}>Small</Text>

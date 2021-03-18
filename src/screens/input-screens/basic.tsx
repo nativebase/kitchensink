@@ -3,9 +3,9 @@ import React from "react";
 import { Input } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputUsage = () => {
+export const InputUsage = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Input placeholder="Default Input" />
     </Wrapper>
   );

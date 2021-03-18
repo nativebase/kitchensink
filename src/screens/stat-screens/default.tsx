@@ -2,9 +2,9 @@ import React from "react";
 import { Stat, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const StatDefault = function () {
+export const StatDefault = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading>Basic Stat Usage</Heading>
         <Stat mt={6}>

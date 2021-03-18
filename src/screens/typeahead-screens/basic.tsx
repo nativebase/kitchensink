@@ -2,7 +2,7 @@ import React from "react";
 import { Typeahead, Box, Icon, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TypeaheadBasic = function () {
+export const TypeaheadBasic = function (props: any) {
   let countries = [
     "Afghanistan",
     "Australia",
@@ -19,7 +19,7 @@ export const TypeaheadBasic = function () {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading>Typeahead</Heading>
         <Typeahead

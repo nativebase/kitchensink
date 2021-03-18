@@ -2,9 +2,9 @@ import React from "react";
 import { Checkbox, HStack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const CheckboxColor = function () {
+export const CheckboxColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Checkbox value="critical" colorScheme="critical" defaultIsChecked>
           <Text mx={2}>Critical</Text>

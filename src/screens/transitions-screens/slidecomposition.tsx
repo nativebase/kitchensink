@@ -1,11 +1,11 @@
 import React from "react";
 import { Slide, Button, Box, Center, Heading } from "native-base";
 import { Wrapper } from "../../components";
-export const TransitionSlideComposition = function () {
+export const TransitionSlideComposition = function (props: any) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width="90%" height="50%" alignItems="center" justifyContent="center">
         <Heading fontSize="xs">
           This is an example to show how slider can be used.

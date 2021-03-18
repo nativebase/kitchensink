@@ -3,9 +3,9 @@ import React from "react";
 import { Input, Stack, Center, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputSize = () => {
+export const InputSize = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack alignItems="center" space={4}>
         <Center>
           <Heading>Size Input</Heading>

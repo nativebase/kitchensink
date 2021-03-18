@@ -2,9 +2,9 @@ import React from "react";
 import { Badge, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const BadgeColor = function () {
+export const BadgeColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Badge m={2} colorScheme="success">
           SUCCESS

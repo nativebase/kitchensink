@@ -7,9 +7,9 @@ import {
   NumberDecrementStepper,
 } from "native-base";
 import { Wrapper } from "../../components";
-export const NumberInpDefaultValue = function () {
+export const NumberInpDefaultValue = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <NumberInput defaultValue="5">
         <NumberInputField />
         <NumberInputStepper>

@@ -2,9 +2,9 @@ import React from "react";
 import { Heading, Link, View } from "native-base";
 import { Wrapper } from "../../components";
 
-export const LinkExternal = () => {
+export const LinkExternal = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <View>
         <Heading>External Link</Heading>
         <Link

@@ -2,9 +2,9 @@ import React from "react";
 import { List, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ListIcons = function () {
+export const ListIcons = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box height="50%">
         <Heading>List with Icons</Heading>
         <List mt={2} fontSize={24} spacing={4} my={2}>

@@ -2,9 +2,9 @@ import React from "react";
 import { Heading, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const HeadingSize = function () {
+export const HeadingSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack>
         <Heading size={48}>(48) In love with React Native</Heading>
         <Heading size="2xl">(2xl) In love with React Native</Heading>

@@ -2,9 +2,9 @@ import React from "react";
 import { Button } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ButtonComposition = function () {
+export const ButtonComposition = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Button
         size="md"
         height="48px"

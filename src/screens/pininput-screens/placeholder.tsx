@@ -2,9 +2,9 @@ import React from "react";
 import { PinInput } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PinInputPlaceholder = function () {
+export const PinInputPlaceholder = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <PinInput placeholder="🥳">
         <PinInput.Field />
         <PinInput.Field />

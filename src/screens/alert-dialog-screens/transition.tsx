@@ -3,12 +3,12 @@ import { AlertDialog, Button, Center } from "native-base";
 import type { TouchableOpacity } from "react-native";
 
 import { Wrapper } from "../../components";
-export const AlertDialogTransition = function () {
+export const AlertDialogTransition = function (props: any) {
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = () => setIsOpen(false);
   const cancelRef = React.useRef<TouchableOpacity>(null);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Center>
         <AlertDialog
           motionPreset="slide"

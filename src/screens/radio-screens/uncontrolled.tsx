@@ -2,9 +2,9 @@ import React from "react";
 import { Radio, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioUnControlled = function () {
+export const RadioUnControlled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Radio.Group defaultValue="1" name="myRadioGroup">
         <Radio value="1">
           <Text mx={2}>First</Text>

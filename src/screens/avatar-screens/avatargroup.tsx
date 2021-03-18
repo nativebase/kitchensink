@@ -2,9 +2,9 @@ import React from "react";
 import { Avatar } from "native-base";
 import { Wrapper } from "../../components";
 
-export const AvatarGroupExample = function () {
+export const AvatarGroupExample = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Avatar.Group size="lg" max={4}>
         <Avatar
           source={{

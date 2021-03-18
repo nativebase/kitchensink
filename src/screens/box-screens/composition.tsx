@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Heading, Icon, AspectRatio, Image, Text } from "native-base";
 import { Wrapper } from "../../components";
-export const BoxComposite = () => {
+export const BoxComposite = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width={72} bg="gray.50" p={2}>
         <Box bg="white" shadow={1}>
           <Box>

@@ -2,9 +2,9 @@ import React from "react";
 import { Button, HStack, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ButtonIcon = function () {
+export const ButtonIcon = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         <Button
           startIcon={<Icon name="menu" size={6} type="MaterialIcons" />}

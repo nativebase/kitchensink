@@ -2,9 +2,9 @@ import React from "react";
 import { FormControl, Input } from "native-base";
 import { Wrapper } from "../../components";
 
-export const FormControlUsage = function () {
+export const FormControlUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <FormControl isRequired isInvalid>
         <FormControl.Label>Favorite framework</FormControl.Label>
         <Input p={2} placeholder="Is it react?" />

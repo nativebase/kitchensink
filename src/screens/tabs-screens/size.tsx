@@ -2,9 +2,9 @@ import React from "react";
 import { VStack, Tabs } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TabsSize = function () {
+export const TabsSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack width="100%" p={3} space={7}>
         {/* Small Tabs */}
         <Tabs size="sm">

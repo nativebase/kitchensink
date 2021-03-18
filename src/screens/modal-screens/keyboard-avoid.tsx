@@ -2,10 +2,10 @@ import React from "react";
 import { Modal, Button, Input, VStack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ModalKeyboardAvoid = function () {
+export const ModalKeyboardAvoid = function (props: any) {
   const [modalVisible, setModalVisible] = React.useState(false);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Modal
         isCentered
         isOpen={modalVisible}

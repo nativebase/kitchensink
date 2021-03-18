@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Heading, Tabs, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TabsComposition = function () {
+export const TabsComposition = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width="100%" p={3}>
         <Heading>This is an example for Tabs</Heading>
         <Tabs my={10}>

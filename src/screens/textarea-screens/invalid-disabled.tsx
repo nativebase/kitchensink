@@ -2,9 +2,9 @@ import React from "react";
 import { TextArea, Heading, Center, Text, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextAreaInvalidDisabled = function () {
+export const TextAreaInvalidDisabled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Center>
           <Heading>TextArea</Heading>

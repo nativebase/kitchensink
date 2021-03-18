@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Image } from "native-base";
 import { Wrapper } from "../../components";
-export const ImageUsage = function () {
+export const ImageUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box size={200}>
         <Image
           source={{

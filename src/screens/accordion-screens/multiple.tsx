@@ -1,9 +1,9 @@
 import React from "react";
 import { Accordion, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const AccordionMultiple = () => {
+export const AccordionMultiple = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box m={3}>
         <Accordion allowMultiple>
           <Accordion.Item>

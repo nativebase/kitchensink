@@ -2,9 +2,9 @@ import React from "react";
 import { Switch, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SwitchBgColor = function () {
+export const SwitchBgColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={4}>
         <Switch />
         <Switch offTrackColor="rose.200" onTrackColor="lime.200" />

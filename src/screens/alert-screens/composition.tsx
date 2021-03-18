@@ -1,9 +1,9 @@
 import React from "react";
 import { Alert, Box, VStack, CloseButton } from "native-base";
 import { Wrapper } from "../../components";
-export const AlertComposition = () => {
+export const AlertComposition = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack mx={2} space={3}>
         <Alert
           status="success"

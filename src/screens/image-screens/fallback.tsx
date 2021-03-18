@@ -1,9 +1,9 @@
 import React from "react";
 import { Image } from "native-base";
 import { Wrapper } from "../../components";
-export const ImageFallback = function () {
+export const ImageFallback = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Image
         size={150}
         alt="nativebase"

@@ -49,9 +49,9 @@ function Composition({ loaded }: any) {
   );
 }
 
-export const SkeletonLoaded = function () {
+export const SkeletonLoaded = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={4}>
         <Composition />
         <Composition loaded />

@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Text, Button, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const HeadingComposition = function () {
+export const HeadingComposition = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading mb={4}>Modern online and offline payments for Africa</Heading>
         <Text fontSize="xl">

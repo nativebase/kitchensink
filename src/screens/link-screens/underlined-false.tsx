@@ -2,9 +2,9 @@ import React from "react";
 import { Heading, Link, View } from "native-base";
 import { Wrapper } from "../../components";
 
-export const LinkNotUnderlined = () => {
+export const LinkNotUnderlined = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <View>
         <Heading>Link without underline</Heading>
         <Link isUnderlined={false} mt={4}>

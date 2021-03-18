@@ -2,9 +2,9 @@ import React from "react";
 import { TextArea, Heading, Center, Text, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextAreaUsage = function () {
+export const TextAreaUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Center>
           <Heading>TextArea</Heading>

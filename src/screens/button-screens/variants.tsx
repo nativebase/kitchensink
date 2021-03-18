@@ -2,9 +2,9 @@ import React from "react";
 import { Button, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ButtonVariant = function () {
+export const ButtonVariant = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         {["solid", "outline", "ghost", "link", "unstyled"].map(
           (variant: any) => (

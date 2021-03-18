@@ -2,9 +2,9 @@ import React from "react";
 import { Flex, Text, Spacer, Center } from "native-base";
 import { Wrapper } from "../../components";
 
-export const FlexSpacer = () => {
+export const FlexSpacer = (props: any) => {
   return (
-    <Flex direction="row">
+    <Flex {...props} direction="row">
       <Center w="100px" bg="tomato">
         <Text>Box 1</Text>
       </Center>

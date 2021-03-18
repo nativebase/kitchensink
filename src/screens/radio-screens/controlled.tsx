@@ -3,11 +3,11 @@ import { Radio, Text } from "native-base";
 import type { IRadioValue } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioControlled = function ControlledRadio() {
+export const RadioControlled = function ControlledRadio(props: any) {
   const [value, setValue] = React.useState<IRadioValue>("one");
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Radio.Group
         name="myRadioGroup"
         value={value}

@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, Snackbar, Alert, VStack } from "native-base";
 import { Wrapper } from "../../components";
-export const SnackbarUsage = function () {
+export const SnackbarUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Text>Snackbar will stay for 10 secs, default is 5 sec.</Text>
       <Snackbar
         autoHideDuration={10000}

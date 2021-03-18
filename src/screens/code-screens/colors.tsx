@@ -1,9 +1,9 @@
 import React from "react";
 import { Code, Stack } from "native-base";
 import { Wrapper } from "../../components";
-export const CodeColor = function () {
+export const CodeColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Code>let direction = "row";</Code>
         <Code colorScheme="danger">console.log('Hey there!');</Code>

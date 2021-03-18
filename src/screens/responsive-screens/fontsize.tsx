@@ -1,9 +1,9 @@
 import React from "react";
 import { Text } from "native-base";
 import { Wrapper } from "../../components";
-export const ResposiveFontSize = () => {
+export const ResposiveFontSize = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Text fontSize={{ base: "24px", md: "40px", lg: "56px" }}>
         This is responsive text
       </Text>

@@ -2,10 +2,10 @@ import React from "react";
 import { FormControl, Checkbox, VStack, Text, Container } from "native-base";
 import { Wrapper } from "../../components";
 
-export const CheckboxFormControlled = function () {
+export const CheckboxFormControlled = function (props: any) {
   const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Container>
         <FormControl isRequired isInvalid>
           <FormControl.Label>Select Item</FormControl.Label>

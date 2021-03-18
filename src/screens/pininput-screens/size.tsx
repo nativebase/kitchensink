@@ -2,9 +2,9 @@ import React from "react";
 import { PinInput, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PinInputSize = function () {
+export const PinInputSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={5}>
         <PinInput size="2xl">
           <PinInput.Field />

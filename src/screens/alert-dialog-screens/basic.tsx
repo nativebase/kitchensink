@@ -2,12 +2,12 @@ import React from "react";
 import { AlertDialog, Button, Center } from "native-base";
 import type { TouchableOpacity } from "react-native";
 import { Wrapper } from "../../components";
-export const AlertDialogUsage = function () {
+export const AlertDialogUsage = function (props: any) {
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = () => setIsOpen(false);
   const cancelRef = React.useRef<TouchableOpacity>(null);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Center>
         <Button colorScheme="danger" onPress={() => setIsOpen(!isOpen)}>
           Delete Customer

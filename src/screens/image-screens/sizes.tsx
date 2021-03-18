@@ -1,9 +1,9 @@
 import React from "react";
 import { HStack, Image } from "native-base";
 import { Wrapper } from "../../components";
-export const ImageSize = function () {
+export const ImageSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack alignItems="center">
         <Image
           size={12}

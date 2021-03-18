@@ -2,10 +2,10 @@ import React from "react";
 import { Button, useToast, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ToastPosition = function () {
-  const toast  = useToast();
+export const ToastPosition = function (props: any) {
+  const toast = useToast();
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={2}>
         <Button
           onPress={() => {

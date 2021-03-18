@@ -2,9 +2,9 @@ import React from "react";
 import { Alert, Stack } from "native-base";
 
 import { Wrapper } from "../../components";
-export const AlertVariants = function () {
+export const AlertVariants = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4} mx={3}>
         <Alert variant="solid" status="teal">
           <Alert.Icon />

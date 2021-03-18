@@ -2,9 +2,9 @@ import React from "react";
 import { FormControl, Slider, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SliderFormControlled = function () {
+export const SliderFormControlled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={4} mx={10} width="80%">
         <FormControl isRequired isInvalid isDisabled>
           <FormControl.Label>Just Slide</FormControl.Label>

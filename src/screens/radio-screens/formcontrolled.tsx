@@ -2,9 +2,9 @@ import React from "react";
 import { Radio, Text, FormControl, Container } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioFormControlled = function () {
+export const RadioFormControlled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Container>
         <FormControl isRequired isInvalid>
           <FormControl.Label>Select One</FormControl.Label>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Collapse, Stack, Heading, Button, Box, Text } from "native-base";
 import { Wrapper } from "../../components";
-export const CollapseCallbacks = function () {
+export const CollapseCallbacks = function (props: any) {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
   const [text, setText] = React.useState(
@@ -17,7 +17,7 @@ export const CollapseCallbacks = function () {
   const handleColorToggle = () =>
     setColor(color === "green" ? "indigo" : "green");
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Heading>onAnimationStart & onAnimationEnd</Heading>
         <Text>{text}</Text>

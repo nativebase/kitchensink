@@ -3,9 +3,9 @@ import React from "react";
 import { Input, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputElements = () => {
+export const InputElements = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Input
         w="90%"
         InputLeftElement={

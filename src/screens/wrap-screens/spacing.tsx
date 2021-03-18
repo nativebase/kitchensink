@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrap, Center } from "native-base";
 import { Wrapper } from "../../components";
-export const WrapSpacing = function () {
+export const WrapSpacing = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Wrap spacing={10} direction="row">
         <Center w="180px" h="80px" bg="red.200">
           Box 1

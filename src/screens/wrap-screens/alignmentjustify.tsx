@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrap, Center } from "native-base";
 import { Wrapper } from "../../components";
-export const WrapAlignmentJustify = function () {
+export const WrapAlignmentJustify = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Wrap spacing={10} justify="center" direction="row">
         <Center w="100px" h="80px" bg="red.200">
           Box 1

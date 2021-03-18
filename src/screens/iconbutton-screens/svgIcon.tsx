@@ -2,9 +2,9 @@ import React from "react";
 import { IconButton, Icon } from "native-base";
 import { Path, Circle } from "react-native-svg";
 import { Wrapper } from "../../components";
-export const IconButtonSVGIcon = function () {
+export const IconButtonSVGIcon = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <IconButton
         colorScheme="blue"
         variant="solid"

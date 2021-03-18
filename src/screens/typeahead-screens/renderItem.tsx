@@ -2,7 +2,7 @@ import React from "react";
 import { Typeahead, Box, Text, Icon, Heading, useColorMode } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TypeaheadRenderItem = function () {
+export const TypeaheadRenderItem = function (props: any) {
   let countries = [
     { name: "Afghanistan", abbr: "AFG" },
     { name: "Australia", abbr: "AUS" },
@@ -20,7 +20,7 @@ export const TypeaheadRenderItem = function () {
 
   const { colorMode } = useColorMode();
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading>Typeahead</Heading>
         <Typeahead

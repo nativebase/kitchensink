@@ -2,9 +2,9 @@ import React from "react";
 import { FormControl, Input, Stack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const FormControlStyle = function () {
+export const FormControlStyle = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack width="90%" space={4}>
         <Text bold underline>
           Default:

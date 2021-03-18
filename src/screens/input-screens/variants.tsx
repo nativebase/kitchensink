@@ -3,9 +3,9 @@ import React from "react";
 import { Input, Stack, Center, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputVariant = () => {
+export const InputVariant = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Center>
           <Heading>Input Variants</Heading>

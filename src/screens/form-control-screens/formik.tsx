@@ -14,7 +14,7 @@ function validateEmail(email: string) {
   return re.test(email);
 }
 
-export const FormControlFormik = function () {
+export const FormControlFormik = function (props: any) {
   const formik = useFormik<IFormFields>({
     initialValues: {
       firstName: "",
@@ -46,7 +46,7 @@ export const FormControlFormik = function () {
   console.log(values);
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <FormControl isRequired isInvalid={"firstName" in errors}>
         <FormControl.Label>First Name</FormControl.Label>
         <Input

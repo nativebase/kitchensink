@@ -2,9 +2,9 @@ import React from "react";
 import { PinInput } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PinInputManageFocus = function () {
+export const PinInputManageFocus = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <PinInput manageFocus={false}>
         <PinInput.Field />
         <PinInput.Field />

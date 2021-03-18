@@ -1,9 +1,9 @@
 import React from "react";
 import { Breadcrumb, Box, Heading, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const BreadCrumbComposition = function () {
+export const BreadCrumbComposition = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading mb={4}>Breadcrumb Composition</Heading>
         <Breadcrumb spacing={2} fontSize="lg">

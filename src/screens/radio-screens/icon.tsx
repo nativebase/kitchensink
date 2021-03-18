@@ -2,9 +2,9 @@ import React from "react";
 import { Radio, Text, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioIcon = function () {
+export const RadioIcon = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Radio.Group defaultValue="1" size="lg" name="exampleGroup">
         <Radio
           colorScheme="green"

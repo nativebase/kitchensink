@@ -2,10 +2,10 @@ import React from "react";
 import { Select, VStack, Text, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SelectStyled = function () {
+export const SelectStyled = function (props: any) {
   let [language, setLanguage] = React.useState<string>("js");
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack alignItems="center" space={2}>
         <Select
           variant="styled"

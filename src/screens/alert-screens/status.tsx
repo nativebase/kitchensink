@@ -2,9 +2,9 @@ import React from "react";
 import { Stack, Alert, HStack } from "native-base";
 
 import { Wrapper } from "../../components";
-export const AlertStatus = function () {
+export const AlertStatus = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         {["subtle", "solid", "outline"].map((key: any) => (
           <Stack space={3} mx={3}>

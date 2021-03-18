@@ -2,9 +2,9 @@ import React from "react";
 import { Slider, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SliderSize = function () {
+export const SliderSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={4} width="80%">
         <Slider defaultValue={40} colorScheme="red" size="lg">
           <Slider.Track>

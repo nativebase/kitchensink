@@ -1,9 +1,9 @@
 import React from "react";
 import { Center, Box, HStack, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const CenterWithIcons = function () {
+export const CenterWithIcons = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Center w="40px" h="40px" bg="blue.200" color="white">
           <Icon

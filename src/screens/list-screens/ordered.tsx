@@ -2,9 +2,9 @@ import React from "react";
 import { List, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ListOrdered = function () {
+export const ListOrdered = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box w="50%">
         <Heading fontSize={24}>Ordered List</Heading>
         <List.Ordered my={2} spacing={2}>

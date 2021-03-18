@@ -2,9 +2,9 @@ import React from "react";
 import { Divider, Flex, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const DividerComposition = function () {
+export const DividerComposition = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Flex direction="row" p={4}>
         <Text>Simple</Text>
         <Divider bg="red.500" w={1} mx={4} orientation="vertical" />

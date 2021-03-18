@@ -1,9 +1,9 @@
 import React from "react";
 import { CloseButton, HStack } from "native-base";
 import { Wrapper } from "../../components";
-export const CloseButtonSize = function () {
+export const CloseButtonSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space="md">
         <CloseButton size="sm" color="teal.200" />
         <CloseButton size="md" color="red.200" />

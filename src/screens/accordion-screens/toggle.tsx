@@ -1,9 +1,9 @@
 import React from "react";
 import { Accordion, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const AccordionToggle = () => {
+export const AccordionToggle = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box m={3}>
         <Accordion allowToggle defaultIndex={[2]}>
           <Accordion.Item>

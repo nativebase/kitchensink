@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrap, Center } from "native-base";
 import { Wrapper } from "../../components";
-export const WrapAlignmentAlign = function () {
+export const WrapAlignmentAlign = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Wrap spacing={10} align="center" direction="row">
         <Center w="100px" h="80px" bg="red.200">
           Box 1

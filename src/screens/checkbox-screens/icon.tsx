@@ -2,9 +2,9 @@ import React from "react";
 import { Checkbox, HStack, Text, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const CheckboxIcon = function () {
+export const CheckboxIcon = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Checkbox
           value="orange"

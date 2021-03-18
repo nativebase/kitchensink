@@ -2,9 +2,9 @@ import React from "react";
 import { PinInput, Center, FormControl } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PinInputFormControlled = function () {
+export const PinInputFormControlled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Center>
         <FormControl isRequired isInvalid>
           <FormControl.Label>OTP</FormControl.Label>

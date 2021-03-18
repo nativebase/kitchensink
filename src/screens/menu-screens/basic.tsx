@@ -2,9 +2,9 @@ import React from "react";
 import { Menu, Divider, IconButton, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const MenuUsage = function () {
+export const MenuUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Menu
         trigger={(triggerProps: any) => {
           return <IconButton icon={<Icon name="menu" />} {...triggerProps} />;

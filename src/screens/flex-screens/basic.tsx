@@ -2,9 +2,9 @@ import React from "react";
 import { Flex, Text, Center } from "native-base";
 import { Wrapper } from "../../components";
 
-export const FlexUsage = function () {
+export const FlexUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Flex h={500} w={100}>
         <Center w={100} h={100} bg="green.500">
           Box 1

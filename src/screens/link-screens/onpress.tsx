@@ -2,13 +2,13 @@ import React from "react";
 import { Heading, Link, View, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const LinkOnpress = () => {
+export const LinkOnpress = (props: any) => {
   const [state, setState] = React.useState(false);
   const toggleState = () => {
     setState(!state);
   };
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <View>
         <Heading>Custom onClick Functionality</Heading>
         <Link onClick={toggleState} mt={4}>

@@ -2,9 +2,9 @@ import React from "react";
 import { Menu, IconButton, Divider, Icon } from "native-base";
 import { Wrapper } from "../../components";
 
-export const MenuOGExample = function () {
+export const MenuOGExample = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Menu
         closeOnSelect={false}
         onOpen={() => console.log("opened")}

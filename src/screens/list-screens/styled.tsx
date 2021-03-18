@@ -2,9 +2,9 @@ import React from "react";
 import { List, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ListStyled = function () {
+export const ListStyled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box w="50%">
         <Heading fontSize={24}>Styled List</Heading>
         <List.Ordered

@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Tabs } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TabsFitted = function () {
+export const TabsFitted = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width="100%" p={3}>
         <Tabs isFitted>
           <Tabs.Bar>

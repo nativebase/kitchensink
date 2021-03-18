@@ -2,9 +2,9 @@ import React from "react";
 import { HStack, Text, Divider, Heading, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const HStackUsage = function () {
+export const HStackUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4} flex={1}>
         <Heading>HStack</Heading>
         <HStack divider={<Divider borderColor="red.200" />} reversed space={8}>

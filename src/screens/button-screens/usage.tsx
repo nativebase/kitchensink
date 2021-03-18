@@ -3,9 +3,9 @@ import { Alert } from "react-native";
 import { Button } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ButtonUsage = function () {
+export const ButtonUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Button
         size="sm"
         colorScheme="teal"

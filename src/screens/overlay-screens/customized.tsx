@@ -2,12 +2,12 @@ import React from "react";
 import { Button, useOverlay, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const OverlayCustomized = function () {
+export const OverlayCustomized = function (props: any) {
   const [disableOverlay, setDisableOverlay] = React.useState(false);
   const { closeOverlay, setOverlay } = useOverlay();
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={3}>
         <Button
           onPress={() =>

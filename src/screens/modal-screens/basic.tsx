@@ -2,10 +2,10 @@ import React from "react";
 import { Modal, Button, Center, Input } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ModalUsage = function () {
+export const ModalUsage = function (props: any) {
   const [modalVisible, setModalVisible] = React.useState(false);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Modal
         isOpen={modalVisible}
         onClose={setModalVisible}

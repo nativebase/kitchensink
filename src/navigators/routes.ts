@@ -124,10 +124,10 @@ export const routes = [
     title: "Alert Dialog",
     variants: [
       { title: "Basic", name: "alertDialogUsage" },
-      {
-        title: "Transition",
-        name: "alertDialogTransition",
-      },
+      // {
+      //   title: "Transition",
+      //   name: "alertDialogTransition",
+      // },
     ],
     screen: AlertDialogStack,
     icon: "assignment-late",
@@ -642,8 +642,8 @@ export const routes = [
     title: "Popover",
     variants: [
       { title: "Basic", name: "popoverUsage" },
-      { title: "Size", name: "popoverSize" },
-      { title: "Focus on Open", name: "popoverRef" },
+      // { title: "Size", name: "popoverSize" },
+      // { title: "Focus on Open", name: "popoverRef" },
     ],
     screen: PopoverStack,
     icon: "filter-frames",
@@ -789,42 +789,42 @@ export const routes = [
     screen: SkeletonStack,
     icon: "texture",
   },
-  {
-    name: "slider",
-    title: "Slider",
-    variants: [
-      {
-        title: "Basic",
-        name: "sliderUsage",
-      },
-      {
-        title: "Size",
-        name: "sliderSize",
-      },
-      {
-        title: "Color",
-        name: "sliderColor",
-      },
-      {
-        title: "Value",
-        name: "sliderValue",
-      },
-      {
-        title: "Customized",
-        name: "sliderCustomized",
-      },
-      {
-        title: "Form Controlled",
-        name: "sliderFormControlled",
-      },
-      {
-        title: "Vertical",
-        name: "sliderVertical",
-      },
-    ],
-    screen: SliderStack,
-    icon: "tune",
-  },
+  // {
+  //   name: "slider",
+  //   title: "Slider",
+  //   variants: [
+  //     {
+  //       title: "Basic",
+  //       name: "sliderUsage",
+  //     },
+  //     {
+  //       title: "Size",
+  //       name: "sliderSize",
+  //     },
+  //     {
+  //       title: "Color",
+  //       name: "sliderColor",
+  //     },
+  //     {
+  //       title: "Value",
+  //       name: "sliderValue",
+  //     },
+  //     {
+  //       title: "Customized",
+  //       name: "sliderCustomized",
+  //     },
+  //     {
+  //       title: "Form Controlled",
+  //       name: "sliderFormControlled",
+  //     },
+  //     {
+  //       title: "Vertical",
+  //       name: "sliderVertical",
+  //     },
+  //   ],
+  //   screen: SliderStack,
+  //   icon: "tune",
+  // },
   {
     name: "snackbar",
     title: "Snackbar",
@@ -861,10 +861,10 @@ export const routes = [
         title: "Duration",
         name: "spinnerDuration",
       },
-      {
-        title: "Variant",
-        name: "spinnerVariant",
-      },
+      // {
+      //   title: "Variant",
+      //   name: "spinnerVariant",
+      // },
     ],
     screen: SpinnerStack,
     icon: "donut-large",
@@ -1097,18 +1097,18 @@ export const routes = [
     name: "typeahead",
     title: "Typeahead",
     variants: [
-      {
-        title: "Basic",
-        name: "typeaheadBasic",
-      },
+      // {
+      //   title: "Basic",
+      //   name: "typeaheadBasic",
+      // },
       {
         title: "Hook",
         name: "typeaheadHook",
       },
-      {
-        title: "Render Item",
-        name: "typeaheadRenderItem",
-      },
+      // {
+      //   title: "Render Item",
+      //   name: "typeaheadRenderItem",
+      // },
     ],
     screen: TypeaheadStack,
     icon: "edit",

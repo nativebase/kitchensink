@@ -2,9 +2,9 @@ import React from "react";
 import { Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextBasic = function () {
+export const TextBasic = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Text>This is Text.</Text>
     </Wrapper>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 import { Fab, Icon, Text } from "native-base";
 import { Wrapper } from "../../components";
-export const FabBasic = function () {
+export const FabBasic = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Fab
         placement={"bottom-right"}
         bg="teal.200"

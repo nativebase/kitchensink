@@ -1,9 +1,9 @@
 import React from "react";
 import { Breadcrumb, Box, Heading } from "native-base";
 import { Wrapper } from "../../components";
-export const BreadCrumbSeparators = function () {
+export const BreadCrumbSeparators = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading mb={4}>Breadcrumb with String Separator</Heading>
         <Breadcrumb bold italic separator="-">

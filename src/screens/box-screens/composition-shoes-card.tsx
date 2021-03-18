@@ -10,9 +10,9 @@ import {
   IconButton,
 } from "native-base";
 import { Wrapper } from "../../components";
-export const BoxCompositeShoeCard = () => {
+export const BoxCompositeShoeCard = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Flex
         w={64}
         rounded={12}

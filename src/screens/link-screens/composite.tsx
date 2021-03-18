@@ -2,9 +2,9 @@ import React from "react";
 import { Heading, Link, View, Text, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const LinkComposite = () => {
+export const LinkComposite = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <View>
         <Heading>Composite Link Example</Heading>
         <Link href="https://nativebase.io" isExternal mt={4}>

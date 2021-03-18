@@ -1,9 +1,9 @@
 import React from "react";
 import { Alert, Box, CloseButton } from "native-base";
 import { Wrapper } from "../../components";
-export const AlertUsage = function () {
+export const AlertUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box mx={3}>
         <Alert status="error">
           <Alert.Icon />

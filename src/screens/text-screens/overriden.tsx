@@ -2,9 +2,9 @@ import React from "react";
 import { Text, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextOverriden = function () {
+export const TextOverriden = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={2} alignItems="center">
         <Text fontSize={20}>Custom font-size value for this text</Text>
         <Text bold>Bold</Text>

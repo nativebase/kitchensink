@@ -1,9 +1,9 @@
 import React from "react";
 import { Spinner, HStack, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const SpinnerVariant = function () {
+export const SpinnerVariant = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         <Spinner />
         <Spinner color="danger.400" variant="dotted" />

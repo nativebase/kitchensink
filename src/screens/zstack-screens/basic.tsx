@@ -2,9 +2,9 @@ import React from "react";
 import { ZStack, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ZStackUsage = function () {
+export const ZStackUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <ZStack alignItems="center">
         <Box p={16} bg="black" />
         <Box p={10} bg="red.200" />

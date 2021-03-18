@@ -2,9 +2,9 @@ import React from "react";
 import { Spinner, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SpinnerColor = function () {
+export const SpinnerColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         <Spinner color="danger.400" />
         <Spinner color="blue.500" />

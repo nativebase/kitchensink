@@ -2,12 +2,12 @@ import React from "react";
 import { Modal, Button, Input } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ModalRef = function () {
+export const ModalRef = function (props: any) {
   const [modalVisible, setModalVisible] = React.useState(false);
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Modal
         isCentered
         isOpen={modalVisible}

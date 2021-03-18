@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Text, Heading } from "native-base";
 import { Wrapper } from "../../components";
-export const ContainerUsage = function () {
+export const ContainerUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Container>
         <Heading>Benefits to a joint design and development system</Heading>
         <Text>

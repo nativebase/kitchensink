@@ -2,9 +2,9 @@ import React from "react";
 import { Stat, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const StatIndicator = function () {
+export const StatIndicator = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading>Stat with Indicator</Heading>
         <Stat.Group mt={6}>

@@ -26,9 +26,9 @@ const Item = ({ title }: any) => (
   </List.Item>
 );
 
-export const ListVirtualized = function () {
+export const ListVirtualized = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VirtualizedList
         data={DATA}
         initialNumToRender={4}

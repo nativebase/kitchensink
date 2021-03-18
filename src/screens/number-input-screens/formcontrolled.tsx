@@ -10,9 +10,9 @@ import {
 } from "native-base";
 import { Wrapper } from "../../components";
 
-export const NumberInpFormControlled = function () {
+export const NumberInpFormControlled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Container>
         <FormControl isRequired isInvalid>
           <FormControl.Label>How many components we have</FormControl.Label>

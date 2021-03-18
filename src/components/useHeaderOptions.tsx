@@ -7,6 +7,7 @@ export const useHeaderOptions = function (title: string, props: any) {
     headerTitle: title,
     headerLeft: () => (
       <IconButton
+        accessibilityLabel="Toggle Menu"
         pl={5}
         onPress={props.navigation.toggleDrawer}
         icon={<Icon name="md-menu" type="Ionicons" size={6} />}

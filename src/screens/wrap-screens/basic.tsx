@@ -1,10 +1,10 @@
 import React from "react";
 import { Wrap, Center } from "native-base";
 import { Wrapper } from "../../components";
-export const WrapUsage = function () {
+export const WrapUsage = function (props: any) {
   return (
-    <Wrapper>
-      <Wrap direction="row" justify={'center'}>
+    <Wrapper {...props}>
+      <Wrap direction="row" justify={"center"}>
         <Center w="180px" h="80px" bg="red.200">
           Box 1
         </Center>

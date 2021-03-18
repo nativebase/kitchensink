@@ -2,10 +2,10 @@ import React from "react";
 import { Select, VStack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SelectNative = function () {
+export const SelectNative = function (props: any) {
   let [language, setLanguage] = React.useState<string>("");
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack alignItems="center" space={2}>
         <Select
           variant="native" //defaultValue

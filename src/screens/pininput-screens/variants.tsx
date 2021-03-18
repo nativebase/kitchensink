@@ -2,9 +2,9 @@ import React from "react";
 import { PinInput, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const PinInputVariant = function () {
+export const PinInputVariant = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={5}>
         <PinInput variant="outline">
           <PinInput.Field />

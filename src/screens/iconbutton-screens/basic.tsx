@@ -1,13 +1,13 @@
 import React from "react";
 import { IconButton, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const IconButtonUsage = function () {
+export const IconButtonUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <IconButton
         colorScheme="blue"
         variant="outline"
-        icon={<Icon name={"search"}  />}
+        icon={<Icon name={"search"} />}
       />
     </Wrapper>
   );

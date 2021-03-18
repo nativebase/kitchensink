@@ -3,9 +3,9 @@ import React from "react";
 import { Input, Stack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const InputFocusError = () => {
+export const InputFocusError = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Input
           placeholder="Here is a sample placeholder"

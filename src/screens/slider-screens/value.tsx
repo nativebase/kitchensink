@@ -2,11 +2,11 @@ import React from "react";
 import { Slider, Stack, Text, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SliderValue = function () {
+export const SliderValue = function (props: any) {
   const [onChangeValue, setOnChangeValue] = React.useState(70);
   const [onChangeEndValue, setOnChangeEndValue] = React.useState(70);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack mx={5} space={4} alignItems="center" w="100%">
         <Text>onChangeValue - {onChangeValue}</Text>
         <Text>onChangeEndValue - {onChangeEndValue}</Text>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Stack, Heading, Icon, Text, HStack, Avatar } from "native-base";
 import { Wrapper } from "../../components";
-export const BoxCompositeCard = () => {
+export const BoxCompositeCard = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width={80} p={5} rounded="xl" bg="white" shadow={1}>
         <Stack space={6}>
           <Avatar

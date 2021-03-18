@@ -2,9 +2,9 @@ import React from "react";
 import { Checkbox, HStack, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const CheckboxDisabled = function () {
+export const CheckboxDisabled = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack>
         <Checkbox isDisabled value="one">
           <Text m={2}>Checkbox</Text>

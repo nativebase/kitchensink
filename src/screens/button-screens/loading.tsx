@@ -2,9 +2,9 @@ import React from "react";
 import { Button, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ButtonLoading = function () {
+export const ButtonLoading = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         <Button colorScheme="teal" isLoading>
           Button

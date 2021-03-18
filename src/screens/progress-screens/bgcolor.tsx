@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Progress, Center, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ProgressBgColor = function () {
+export const ProgressBgColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box w="90%">
         <Center mb={8}>
           <Heading>Custom Track Color</Heading>

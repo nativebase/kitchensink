@@ -2,9 +2,9 @@ import React from "react";
 import { Tag, Avatar } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TagCustom = function () {
+export const TagCustom = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Tag colorScheme="emerald" size="sm" rounded={"full"}>
         <Avatar
           mr={2}

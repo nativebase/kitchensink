@@ -1,9 +1,9 @@
 import React from "react";
 import { Breadcrumb, Box, Heading } from "native-base";
 import { Wrapper } from "../../components";
-export const BreadCrumbUsage = function () {
+export const BreadCrumbUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box>
         <Heading mb={4}>This is a Default Breadcrumb</Heading>
         <Breadcrumb>

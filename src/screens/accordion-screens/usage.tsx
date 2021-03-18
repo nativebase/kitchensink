@@ -1,9 +1,9 @@
 import React from "react";
 import { Accordion, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const AccordionUsage = () => {
+export const AccordionUsage = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box m={3}>
         <Accordion index={[0, 1]}>
           <Accordion.Item>

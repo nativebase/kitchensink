@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Alert, useSnackbar, VStack } from "native-base";
 import { Wrapper } from "../../components";
-export const SnackbarHook = function () {
+export const SnackbarHook = function (props: any) {
   const { setSnackbar } = useSnackbar();
   const template = (
     <Alert status="success">
@@ -11,7 +11,7 @@ export const SnackbarHook = function () {
     </Alert>
   );
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={3}>
         <Button
           onPress={() =>

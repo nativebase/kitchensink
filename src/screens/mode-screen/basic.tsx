@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Heading,
   useColorMode,
@@ -7,27 +7,27 @@ import {
   Avatar,
   Center,
   useColorModeValue,
-} from 'native-base';
+} from "native-base";
 
 const LocalWrapper = ({ children }: any) => {
   return (
     <Center
       height="100%"
       width="100%"
-      bg={useColorModeValue('gray.200', 'gray.800')}
+      bg={useColorModeValue("gray.200", "gray.800")}
     >
       {children}
     </Center>
   );
 };
 
-export const ModeUsage = function () {
+export const ModeUsage = function (props: any) {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <LocalWrapper>
+    <LocalWrapper {...props}>
       <Heading> I'm a Heading</Heading>
       <Button
-        colorScheme={colorMode === 'light' ? 'blue' : 'red'}
+        colorScheme={colorMode === "light" ? "blue" : "red"}
         onPress={() => {
           toggleColorMode && toggleColorMode();
         }}
@@ -40,7 +40,7 @@ export const ModeUsage = function () {
           borderWidth={2}
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1188747996843761665/8CiUdKZW_400x400.jpg",
           }}
         />
         <Avatar
@@ -48,10 +48,10 @@ export const ModeUsage = function () {
           borderWidth={2}
           source={{
             uri:
-              'https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg',
+              "https://pbs.twimg.com/profile_images/1177303899243343872/B0sUJIH0_400x400.jpg",
           }}
         />
       </HStack>
     </LocalWrapper>
   );
-}
+};

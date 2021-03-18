@@ -2,11 +2,11 @@ import React from "react";
 import { Button, useOverlay, VStack, Alert, CloseButton } from "native-base";
 import { Wrapper } from "../../components";
 
-export const OverlayUsage = function () {
+export const OverlayUsage = function (props: any) {
   const { closeOverlay, setOverlay } = useOverlay();
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={3}>
         <Button
           onPress={() =>

@@ -8,9 +8,9 @@ import {
 } from "native-base";
 import { Wrapper } from "../../components";
 
-export const NumberInpUsage = function () {
+export const NumberInpUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <NumberInput>
         <NumberInputField />
         <NumberInputStepper>

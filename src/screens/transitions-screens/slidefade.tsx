@@ -1,11 +1,11 @@
 import React from "react";
 import { SlideFade, Button, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const TransitionSlideFade = function () {
+export const TransitionSlideFade = function (props: any) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Button onPress={() => setIsOpen(!isOpen)}>
         Click Me to {isOpen ? "hide" : "show"}
       </Button>

@@ -2,9 +2,9 @@ import React from "react";
 import { Radio, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const RadioInvalid = function () {
+export const RadioInvalid = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Radio.Group name="exampleGroup">
         <Radio value="test" isInvalid>
           <Text mx={2}>Invalid Radio</Text>

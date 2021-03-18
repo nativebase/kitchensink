@@ -1,13 +1,13 @@
-import React from 'react';
-import { Icon } from 'native-base';
-import { Wrapper } from '../../components';
+import React from "react";
+import { Icon } from "native-base";
+import { Wrapper } from "../../components";
 
-export const IconUsage = function () {
+export const IconUsage = function (props: any) {
   return (
-    <Wrapper>
-      <Icon name='menu' type='MaterialIcons' />
-      <Icon type='Ionicons' name='md-checkmark-circle' />
-      <Icon name='stepforward' type='AntDesign' />
+    <Wrapper {...props}>
+      <Icon name="menu" type="MaterialIcons" />
+      <Icon type="Ionicons" name="md-checkmark-circle" />
+      <Icon name="stepforward" type="AntDesign" />
     </Wrapper>
   );
 };

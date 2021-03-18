@@ -2,9 +2,9 @@ import React from "react";
 import { VStack, HStack, Kbd, Text } from "native-base";
 import { Wrapper } from "../../components";
 
-export const KbdUsage = function () {
+export const KbdUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={8}>
         <HStack>
           <Kbd>shift</Kbd>

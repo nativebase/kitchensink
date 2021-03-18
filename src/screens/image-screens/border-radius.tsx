@@ -1,9 +1,9 @@
 import React from "react";
 import { Image } from "native-base";
 import { Wrapper } from "../../components";
-export const ImageBR = function () {
+export const ImageBR = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Image
         size={150}
         resizeMode={"contain"}

@@ -2,9 +2,9 @@ import React from "react";
 import { VStack, Text, Divider, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const VStackUsage = function () {
+export const VStackUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack
         divider={<Divider borderColor="red.200" />}
         space={4}

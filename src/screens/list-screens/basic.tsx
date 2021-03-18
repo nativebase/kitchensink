@@ -2,9 +2,9 @@ import React from "react";
 import { List, Heading, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ListBasic = function () {
+export const ListBasic = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box w="50%">
         <Heading fontSize={24}>Plain List</Heading>
         <List spacing={2} my={2}>

@@ -13,9 +13,9 @@ import { ScrollView, TouchableOpacity } from "react-native";
 
 import { Wrapper } from "../../components";
 
-export const AppbarExamples = function () {
+export const AppbarExamples = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <ScrollView style={{ width: "100%" }}>
         <VStack space={10}>
           <Box>

@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, Button, Center, Input } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ModalSize = function () {
+export const ModalSize = function (props: any) {
   const [modalVisible, setModalVisible] = React.useState(false);
   const [size, setSize] = React.useState("md");
 
@@ -11,7 +11,7 @@ export const ModalSize = function () {
     setModalVisible(!modalVisible);
   };
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Modal
         isCentered
         isOpen={modalVisible}

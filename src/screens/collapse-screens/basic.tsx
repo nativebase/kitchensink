@@ -1,11 +1,11 @@
 import React from "react";
 import { Collapse, Stack, Heading, Button, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const CollapseUsage = function () {
+export const CollapseUsage = function (props: any) {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Stack space={4}>
         <Heading>Default Collapse</Heading>
         <Collapse isOpen={show}>

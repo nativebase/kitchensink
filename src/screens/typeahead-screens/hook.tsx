@@ -11,7 +11,7 @@ import {
 import { Wrapper } from "../../components";
 import { ScrollView } from "react-native";
 
-export const TypeaheadHook = function () {
+export const TypeaheadHook = function (props: any) {
   let countries = [
     "Afghanistan",
     "Australia",
@@ -47,7 +47,7 @@ export const TypeaheadHook = function () {
   });
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width="100%" flexDirection="row">
         <Box flex={1}>
           <Input size="2xl" {...getInputProps()} />

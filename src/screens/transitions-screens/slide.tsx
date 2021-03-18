@@ -1,12 +1,12 @@
 import React from "react";
 import { Slide, Button, Box } from "native-base";
 import { Wrapper } from "../../components";
-export const TransitionSlide = function () {
+export const TransitionSlide = function (props: any) {
   const [isOpenBottom, setIsOpenBottom] = React.useState(false);
   const [isOpenTop, setIsOpenTop] = React.useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Button m={4} onPress={() => setIsOpenTop(!isOpenTop)}>
         Click Me to {isOpenTop ? "hide" : "show"} Top Silder
       </Button>

@@ -2,11 +2,11 @@ import React from "react";
 import { Button, useToast } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ToastOffset = function () {
-  const  toast = useToast();
+export const ToastOffset = function (props: any) {
+  const toast = useToast();
 
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Button
         onPress={() => {
           toast({

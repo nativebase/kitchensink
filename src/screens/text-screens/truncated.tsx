@@ -2,9 +2,9 @@ import React from "react";
 import { Text, VStack, Heading } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextTruncated = function () {
+export const TextTruncated = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={2} alignItems="center">
         <Heading mt={3}>Truncated </Heading>
         <Text isTruncated>

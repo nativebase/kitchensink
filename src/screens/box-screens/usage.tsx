@@ -1,9 +1,9 @@
 import React from "react";
 import { Box } from "native-base";
 import { Wrapper } from "../../components";
-export const BoxUsage = () => {
+export const BoxUsage = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box
         w={"100%"}
         bg="orange.300"

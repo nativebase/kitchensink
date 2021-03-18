@@ -2,10 +2,10 @@ import React from "react";
 import { Checkbox, Heading, HStack, Text, View } from "native-base";
 import { Wrapper } from "../../components";
 
-export const CheckboxGroupExample = function () {
+export const CheckboxGroupExample = function (props: any) {
   const [groupValue, setGroupValue] = React.useState(["Item 1 ", "Item 3 "]);
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <View display="flex" justifyContent="space-between" alignItems="center">
         <HStack mb={2} alignItems="baseline">
           <Heading mt={3}>CheckboxGroup </Heading>

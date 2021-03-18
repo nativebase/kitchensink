@@ -2,9 +2,9 @@ import React from "react";
 import { Text, VStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const TextFontSize = function () {
+export const TextFontSize = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack space={2} alignItems="center">
         <Text fontSize="xs">Extra Small</Text>
         <Text fontSize="sm">Small</Text>

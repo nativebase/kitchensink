@@ -2,9 +2,9 @@ import React from "react";
 import { Badge, VStack, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const BadgeVariants = function () {
+export const BadgeVariants = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <VStack>
         {["solid", "outline", "subtle"].map((key: any) => (
           <HStack key={key}>

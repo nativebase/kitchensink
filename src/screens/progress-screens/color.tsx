@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Progress } from "native-base";
 import { Wrapper } from "../../components";
 
-export const ProgressColor = function () {
+export const ProgressColor = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box w="90%">
         <Progress size="xs" mb={4} value={45} />
         <Progress size="sm" colorScheme="success" mb={4} value={45} />

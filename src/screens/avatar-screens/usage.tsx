@@ -2,9 +2,9 @@ import React from "react";
 import { Avatar, HStack } from "native-base";
 import { Wrapper } from "../../components";
 
-export const AvatarUsage = function () {
+export const AvatarUsage = function (props: any) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <HStack space={2}>
         <Avatar
           borderWidth={1}

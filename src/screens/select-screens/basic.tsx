@@ -2,10 +2,10 @@ import React from "react";
 import { Icon, Select, Box } from "native-base";
 import { Wrapper } from "../../components";
 
-export const SelectBasic = function () {
+export const SelectBasic = function (props: any) {
   let [language, setLanguage] = React.useState<string>("");
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box width={250}>
         <Select
           placeholder="Pick language"

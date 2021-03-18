@@ -1,9 +1,9 @@
 import React from "react";
 import { Accordion, Box, Icon } from "native-base";
 import { Wrapper } from "../../components";
-export const AccordionAccessingInternalState = () => {
+export const AccordionAccessingInternalState = (props: any) => {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <Box m={3}>
         <Accordion allowMultiple defaultIndex={[1]}>
           <Accordion.Item>
